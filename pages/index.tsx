@@ -1,13 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
-import styles from '@/pages/index.module.css'
+import Base from '../Base'
+
+// import styles from '@/pages/index.module.css'
 
 export default function Home() {
   return (
-    <div>
-      hello
-    </div>
+    <>
+      <Head>
+        <title>Simple Chat</title>
+      </Head>
+      <main>
+        <Base />
+      </main>
+    </>
     // <div className={styles.container}>
     //   <Head>
     //     <title>Create Next App</title>
