@@ -28,7 +28,19 @@ const NewsTimeLine = () => {
 
   return (
   <div className={styles.body}>
-    <div>News time line</div>
+    <div>
+      {news.map((el) => {
+        console.log(el)
+        return(
+            <>
+              <div>
+                <span>{el.url}</span>
+              </div>
+            </>
+          )
+        })
+      }
+    </div>
   </div>
   )
 }
