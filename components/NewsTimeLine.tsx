@@ -38,11 +38,11 @@ const NewsTimeLine = (props: Props) => {
       {news.map((el) => {
         console.log(el)
         return(
-            <>
+            <div key={el.url}>
               <div>
                 <span>{el.url}</span>
               </div>
-            </>
+            </div>
           )
         })
       }
