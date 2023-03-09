@@ -2,9 +2,15 @@ import styles from "./NewsTimeLine.module.css"
 import React, { useEffect, useState } from 'react';
 import { useNews } from '@/hooks/UseNews';
 
-const NewsTimeLine = () => {
+import * as NewsType from "@/types/News";
+
+type Props = {
+  news: NewsType.News[];
+}
+
+const NewsTimeLine = (props: Props) => {
   const { axios } = useNews();
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState<Props['news']>([]);
 
   const ENDPOINT_URL = 'http://localhost:4000/articles'
 
