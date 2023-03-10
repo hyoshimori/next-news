@@ -1,0 +1,11 @@
+.body{
+  background-color: yellowgreen;
+  margin: 10px 20px;
+}
+
+.news{
+  height: 20vh;
+  border-top: solid 1px blue;
+  border-bottom: solid 1px blue;
+  padding: 5px 0;
+}
