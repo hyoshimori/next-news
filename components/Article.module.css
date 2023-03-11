@@ -20,15 +20,14 @@
   width: 30vw;
 }
 
-.news__first{
-  display: inline-block;
-  background-color: black;
-  height: 40vh;
-  width: 30vw;
+.news__top{
+  background-color: aqua;
 }
 
-.news__parent{
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: row;
+.test{
+  background-color: blueviolet;
+}
+
+.news__top__wrapper{
+  background-color: black;
 }
