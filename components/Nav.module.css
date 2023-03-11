@@ -5,4 +5,8 @@
   background-color: white;
   color: black;
   padding: 10px 20px;
+  width: 15vw;
+}
+
+@media (max-width: 720px) {
 }
