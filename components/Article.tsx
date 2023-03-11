@@ -16,6 +16,8 @@ const Article = () => {
 
   const ENDPOINT_URL = 'http://localhost:4000/articles'
 
+
+
   useEffect(() => {
     console.log('hi');
     // making mockup json server api call
@@ -36,38 +38,24 @@ const Article = () => {
   return (
     <div className={styles.body}>
       <div>
-        {news.map((el, index) => {
-          let component;
-          switch (true) {
-            case index === 0:
-              component = (
-                <div key={el.url} className={styles.news__first}>
-                  <span>{el.url} (index is 1)</span>
-                </div>
-              );
-              break;
-            case index <= 5:
-              component = (
-                <div key={el.url} className={styles.news__second}>
-                  <span>{el.url}</span>
-                </div>
-              );
-              break;
-            default:
-              component = (
-                <div key={el.url} className={styles.news}>
-                  <span>{el.url}</span>
-                  <p>{index}</p>
-                </div>
-              );
-              break;
-          }
-          return index <= 5 ? (
-            <div className={styles.news__parent}>{component}</div>
-          ) : (
-            component
-          );
-        })}
+        <div className={styles.news__top__wrapper}>
+          {news.filter((el, index) => index === 0).map((el, index) =>
+            <div key={el.url} className={styles.news__top}>
+              <p>{el.url}: {index}</p>
+            </div>
+          )}
+          {news.filter((el, index) => index >= 1 && index <= 5).map((el, index) =>
+            <div key={el.url} className={styles.news__top}>
+              <p>{el.url}: {index + 1}</p>
+            </div>
+          )}
+        </div>
+        {news.filter((el, index) => index > 5).map((el, index) =>
+          <div key={el.url} className={styles.news}>
+            <span>{el.url}</span>
+            <p>{index + 6}</p>
+          </div>
+        )}
       </div>
     </div>
   )
