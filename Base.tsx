@@ -10,9 +10,6 @@ const Base = () => {
 
   return (
     <div className={styles.body}>
-      <div>
-        Hello from base
-      </div>
       <NewsTimeLine />
     </div>
   )
