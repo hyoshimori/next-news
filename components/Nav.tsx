@@ -3,7 +3,7 @@ import styles from "./Nav.module.css"
 const Nav = () => {
   return (
     <div className={styles.body}>
-      <div>News Next Times</div>
+      <h1>NextNews</h1>
     </div>
   )
 }
