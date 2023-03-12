@@ -1,5 +1,33 @@
 .body{
   display: flex;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+.body h1{
+  font-size: 1.7rem;
+  white-space: nowrap;
+}
+
+.body h1{
+  display: inline-block;
+  /* background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
+  background: -webkit-linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%); */
+  background: linear-gradient(45deg, #9cff8b 16%, #2BD2FF 57%, #2BFF88 90%);
+  background: -webkit-linear-gradient(45deg, #9cff8b 16%, #2BD2FF 57%, #2BFF88 90%);
+
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientEffect 2.5s infinite alternate;
+}
+
+/* @keyframes gradientEffect {
+  from {background-position: left}
+  to {background-position: right}
+} */
+
+.body a, .body span, .body p{
+  font-size: 1.2rem;
 }
 
 @media (max-width: 720px) {
