@@ -1,0 +1,38 @@
+.body{
+  background-color: yellowgreen;
+  margin: 10px 20px;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.news{
+  height: 20vh;
+  border-top: solid 1px blue;
+  border-bottom: solid 1px blue;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.news__second{
+  display: inline-block;
+  overflow-y: scroll;
+  width: 30vw;
+}
+
+.news__top{
+  background-color: aqua;
+}
+
+.test{
+  background-color: blueviolet;
+}
+
+.news__top__wrapper{
+  background-color: black;
+  display: flex;
+}
+
+.news__top__wrapper__for__five__articles{
+  overflow-x: scroll;
+}
