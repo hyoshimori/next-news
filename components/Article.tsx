@@ -16,8 +16,6 @@ const Article = () => {
 
   const ENDPOINT_URL = 'http://localhost:4000/articles'
 
-
-
   useEffect(() => {
     // making mockup json server api call
     axios.get(ENDPOINT_URL)
@@ -42,11 +40,13 @@ const Article = () => {
               <p>{el.url}: {index}</p>
             </div>
           )}
+        <div className={styles.news__top__wrapper__for__five__articles}>
           {news.filter((el, index) => index >= 1 && index <= 5).map((el, index) =>
             <div key={el.url} className={styles.news__top}>
               <p>{el.url}: {index + 1}</p>
             </div>
           )}
+        </div>
         </div>
         {news.filter((el, index) => index > 5).map((el, index) =>
           <div key={el.url} className={styles.news}>
