@@ -36,3 +36,11 @@
 .news__top__wrapper__for__five__articles{
   overflow-x: scroll;
 }
+
+@media (max-width: 720px) {
+  .news__top__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
