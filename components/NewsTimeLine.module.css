@@ -1,0 +1,10 @@
+.body{
+  /* background-color: grey; */
+  width: 80vw;
+}
+
+@media (max-width: 720px) {
+  .body{
+    width: 100vw;
+  }
+}
