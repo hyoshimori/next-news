@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main>
+    <div
+      class="body"
+    >
+      <div
+        class="body"
+      >
+        <div
+          class="body"
+          data-testid="article__component"
+        >
+          <div>
+            <div
+              class="news__top__wrapper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;

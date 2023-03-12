@@ -19,13 +19,11 @@ const Article = () => {
 
 
   useEffect(() => {
-    console.log('hi');
     // making mockup json server api call
     axios.get(ENDPOINT_URL)
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
-        console.log(response.data);
         // ↓ Use this for the api call
         // console.log(response.data.articles);
         setNews(response.data);
@@ -36,7 +34,7 @@ const Article = () => {
   }, []);
 
   return (
-    <div className={styles.body}>
+    <div className={styles.body} data-testid="article__component">
       <div>
         <div className={styles.news__top__wrapper}>
           {news.filter((el, index) => index === 0).map((el, index) =>
