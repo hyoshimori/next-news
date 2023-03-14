@@ -1,5 +1,11 @@
+.body *{
+  margin: 0;
+  padding: 0;
+}
+
 .body{
   display: flex;
+  justify-content: center;
   font-family: Helvetica,Arial,sans-serif;
 }
 
@@ -26,8 +32,24 @@
   to {background-position: right}
 } */
 
-.body a, .body span, .body p{
+.body a, .body span, .body p, .body a{
+  font-size: 1rem;
+}
+
+.body li{
   font-size: 1.2rem;
+}
+
+.body p{
+  color: black;
+}
+
+.body span{
+  color: rgb(70, 70, 70);
+}
+
+.body li{
+  color: rgb(70, 70, 70);
 }
 
 @media (max-width: 720px) {

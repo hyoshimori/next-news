@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Simple Chat</title>
+        <title>NextNews</title>
       </Head>
       <main>
         <Base />
