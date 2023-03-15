@@ -4,8 +4,12 @@ describe('News type', () => {
   it('should have the correct properties', () => {
     console.log('# types/News: ' ,'Correct properties check.');
     const news: News = {
+      source: {
+        name: 'forbes'
+      },
       id: '123',
       name: 'News Outlet',
+      title: 'A new title',
       author: 'John Smith',
       description: 'This is a news article.',
       url: 'https://example.com/article',
@@ -14,8 +18,10 @@ describe('News type', () => {
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     };
 
+    expect(news.source).toBeDefined();
     expect(news.id).toBeDefined();
     expect(news.name).toBeDefined();
+    expect(news.title).toBeDefined();
     expect(news.author).toBeDefined();
     expect(news.description).toBeDefined();
     expect(news.url).toBeDefined();

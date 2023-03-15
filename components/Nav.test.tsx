@@ -10,7 +10,7 @@ describe('# Nav Component', () => {
 
   it('displays the correct title', () => {
     const { getByText } = render(<Nav />);
-    const title = getByText('News Next Times');
+    const title = getByText('NextNews');
     expect(title).toBeInTheDocument();
 
     console.log('# component/Nav:' ,`"${title.innerHTML}"'s each first letter needs to be uppercase.`);
