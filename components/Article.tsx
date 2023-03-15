@@ -43,34 +43,40 @@ const Article = () => {
               <div className={styles.news__top__first__bottom}>
                 <span className={styles.news__top__first__bottom__source__name}>{el.source.name}</span>
                 <span className={styles.news__top__first__bottom__title}>{el.title}</span>
-                <span className={styles.news__top__first__bottom__author}>{el.author}</span>              </div>
+                <span className={styles.news__top__first__bottom__author}>{el.author}</span>
               </div>
+            </div>
           </a>
           )}
           <div className={styles.news__top__wrapper__for__five__articles}>
             {news.filter((el, index) => index >= 1 && index <= 5).map((el, index) =>
+            <a href={el.url} key={el.url}>
               <div key={el.url} className={styles.news__top__right}>
                 <span className={styles.news__top__source__name}>{el.source.name}</span>
                 <span className={styles.news__top__title}>{el.title}</span>
                 <span className={styles.news__top__author}>{el.author}</span>
               </div>
+            </a>
             )}
           </div>
         </div>
         <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
-        {news.filter((el, index) => index > 5 && index <= 30).map((el, index) =>
-        <a href={el.url} key={el.url}>
-          <div key={el.url} className={styles.news__latest}>
-            <div className={styles.news__top__first__bottom}>
-              <span className={styles.news__latest__source__name}>{el.source.name}</span>
-              <span className={styles.news__latest__title}>{el.title}</span>
-              <span className={styles.news__latest__author}>{el.author}</span>
+        <div className={styles.news__Latest__container}>
+          {news.filter((el, index) => index > 5 && index <= 30).map((el, index) =>
+          <a href={el.url} key={el.url}>
+            <div className={styles.news__Latest}>
+              <div key={el.url} className={styles.news__Latest__name__titile__author}>
+                <span className={styles.news__latest__source__name}>{el.source.name}</span>
+                <span className={styles.news__latest__title}>{el.title}</span>
+                <span className={styles.news__latest__author}>{el.author}</span>
+                <span className={styles.news__latest__published__At}>{el.publishedAt}</span>
+              </div>
+              {/* <p className={styles.news__latest__description}>{el.description}</p> */}
+              <img src={el.urlToImage} alt="" />
             </div>
-            <span className={styles.news__latest__author}>{el.description}</span>
-            <img src={el.urlToImage} alt="" />
-          </div>
-        </a>
-        )}
+          </a>
+          )}
+        </div>
       </div>
     </div>
   )
