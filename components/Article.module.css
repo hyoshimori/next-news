@@ -6,13 +6,6 @@
   padding: 10px 40px;
 }
 
-.news{
-  height: 20vh;
-  border-top: solid 2px rgb(240, 240, 240);;
-  padding: 5px;
-  overflow-y: scroll;
-}
-
 .news__top__right{
   /* background-color: aqua; */
   display: flex;
@@ -99,14 +92,60 @@ span.news__top__first__bottom__source__name{
 
 /* // the latest set up starts // */
 
-.news__latest{
+.news__Latest{
+  /* background-color: yellow; */
+  border-top: 2px solid rgb(240, 240, 240);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 30px 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.news__latest img{
-  width: 35%;
+.news__Latest:hover{
+  opacity: 0.5;
+}
+
+.news__Latest__name__titile__author{
+  display: flex;
+  flex-direction: column;
+  width: 27vw;
+}
+
+span.news__latest__title{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.news__Latest img{
+  width: 27vw;
+  height: 100%;
   object-fit: cover;
 }
+
+.news__latest__author{
+  /* background-color: brown; */
+  width: 20vw;
+}
+
+/* .news__latest__description{
+  display: inline-block;
+  width: 20vw;
+} */
+
+.news__Latest__container a{
+  text-decoration: none;
+}
+
+span.news__latest__source__name{
+  color: #32C569;
+}
+
+/* p.news__latest__description{
+  opacity: 0.5;
+} */
 
 /* // the latest set up ends // */
 
@@ -122,25 +161,44 @@ span.news__top__first__bottom__source__name{
     margin: 0 auto;
   }
 
-    /* // wrapper top part setup starts // */
+  /* // wrapper top part setup starts // */
 
-    .news__top__wrapper{
-    }
+  .news__top__wrapper{
+  }
 
-    .news__top__wrapper__for__five__articles{
-      width: 80vw;
-      max-width: 80vw;
-    }
+  .news__top__wrapper__for__five__articles{
+    width: 80vw;
+    max-width: 80vw;
+  }
 
-    .news__top__first{
-      max-width: 80vw;
-      margin-bottom: 40px;
-    }
+  .news__top__first{
+    max-width: 80vw;
+    margin-bottom: 40px;
+  }
 
-    .news__top__wrapper{
-      height: 100%;
-    }
+  .news__top__wrapper{
+    height: 100%;
+  }
 
 
-    /* // wrapper top part setup ends // */
+  /* // wrapper top part setup ends // */
+
+
+  /* // latest news setup starts here // */
+
+  .news__Latest{
+    flex-direction: column-reverse;
+  }
+
+  .news__Latest__name__titile__author{
+    width: 80vw;
+  }
+
+  .news__Latest img{
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+
+  /* // latest news setup ends here // */
+
 }
