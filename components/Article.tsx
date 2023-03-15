@@ -35,6 +35,7 @@ const Article = () => {
   return (
     <div className={styles.body} data-testid="article__component">
       <div>
+      <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
           {news.filter((el, index) => index === 0).map((el, index) =>
           <a href={el.url} key={el.url}>
@@ -71,7 +72,7 @@ const Article = () => {
                 <span className={styles.news__latest__author}>{el.author}</span>
                 <span className={styles.news__latest__published__At}>{el.publishedAt}</span>
               </div>
-              {/* <p className={styles.news__latest__description}>{el.description}</p> */}
+              <p className={styles.news__latest__description}>{el.description}</p>
               <img src={el.urlToImage} alt="" />
             </div>
           </a>
