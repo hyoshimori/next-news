@@ -33,7 +33,7 @@
 } */
 
 .body a, .body span, .body p, .body a{
-  font-size: 1rem;
+  font-size: 1.0rem;
 }
 
 .body li{
