@@ -37,8 +37,20 @@ describe('# Article component', () => {
 
 describe('# Article component', () => {
   it('renders without throwing any errors', () => {
+    console.log('# component/Article:' ,'Article renders without throwing any errors');
     const { getByTestId } = render(<Article />);
     const articleComponent = getByTestId('article__component');
     expect(articleComponent).toBeInTheDocument();
+  });
+});
+
+describe('Article', () => {
+  it('displays the "Trending" and "The Latest" sections', () => {
+    console.log('# component/Article:' ,'Article displays the "Trending" and "The Latest" sections');
+    const { getByText } = render(<Article />);
+    const trendingSection = getByText('Trending');
+    const latestSection = getByText('The Latest');
+    expect(trendingSection).toBeInTheDocument();
+    expect(latestSection).toBeInTheDocument();
   });
 });

@@ -1,0 +1,12 @@
+.body{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 2px solid rgb(240, 240, 240);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body p{
+  margin-right: 40px;
+}

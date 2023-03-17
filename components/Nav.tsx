@@ -21,7 +21,7 @@ const Nav = () => {
 
   return (
     <div className={styles.body}>
-      <MenuIcon style={{ cursor: 'pointer' }} className={styles.menu} onClick={toggleSwitch}/>
+      <MenuIcon data-testid="menu-icon" style={{ cursor: 'pointer' }} className={styles.menu} onClick={toggleSwitch}/>
       <div className={styles.icon__and__message}>
         <h1 className={styles.icon}>NextNews</h1>
         <p className={styles.botto__icon__message}>Geek News +</p>
@@ -42,8 +42,8 @@ const Nav = () => {
           </a>
         </ul>
       </div>
-      <div className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
-        <ArrowBackIcon style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
+      <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
+        <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
           <a className={styles.list__2} href="#">
             <li>Anime</li>
