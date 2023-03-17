@@ -38,7 +38,7 @@ const Article = () => {
       <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
           {news.filter((el, index) => index === 0).map((el, index) =>
-          <a href={el.url} key={el.url}>
+          <a href={el.url} key={el.url} target="_blank">
             <div key={el.url} className={styles.news__top__first}>
               <img src={el.urlToImage} alt="" />
               <div className={styles.news__top__first__bottom}>
@@ -51,7 +51,7 @@ const Article = () => {
           )}
           <div className={styles.news__top__wrapper__for__five__articles}>
             {news.filter((el, index) => index >= 1 && index <= 5).map((el, index) =>
-            <a href={el.url} key={el.url}>
+            <a href={el.url} key={el.url} target="_blank">
               <div key={el.url} className={styles.news__top__right}>
                 <span className={styles.news__top__source__name}>{el.source.name}</span>
                 <span className={styles.news__top__title}>{el.title}</span>
@@ -64,7 +64,7 @@ const Article = () => {
         <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
         <div className={styles.news__Latest__container}>
           {news.filter((el, index) => index > 5 && index <= 30).map((el, index) =>
-          <a href={el.url} key={el.url}>
+          <a href={el.url} key={el.url} target="_blank">
             <div className={styles.news__Latest}>
               <div key={el.url} className={styles.news__Latest__name__titile__author}>
                 <span className={styles.news__latest__source__name}>{el.source.name}</span>
