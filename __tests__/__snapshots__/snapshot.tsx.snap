@@ -39,9 +39,12 @@ exports[`renders homepage unchanged 1`] = `
         <div
           class="body"
         >
-          <span>
-            Footer
-          </span>
+          <p>
+            Next News
+          </p>
+          <p>
+            Contact
+          </p>
         </div>
       </div>
     </div>

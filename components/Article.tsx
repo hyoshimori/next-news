@@ -15,12 +15,15 @@ const Article = () => {
   const { axios } = useNews();
   const [news, setNews] = useState<NewsType.News>({ articles: [] });
 
-  const ENDPOINT_URL = 'http://localhost:4000/articles'
 
   useEffect(() => {
+    const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    console.log(API_KEY)
+    // const ENDPOINT_URL = 'http://localhost:4000/articles'
+    const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`
     // making mockup json server api call
-    // axios.get(ENDPOINT_URL)
-    axios.get('')
+    axios.get(ENDPOINT_URL)
+    // axios.get('')
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
@@ -30,7 +33,7 @@ const Article = () => {
         setNews(response.data);
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
       });
   }, []);
 
