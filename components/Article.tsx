@@ -2,6 +2,9 @@ import styles from "./Article.module.css"
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
+import { MyContext } from "Base";
+import { useContext } from "react";
+
 import { useNews } from '@/hooks/UseNews';
 
 import * as NewsType from "@/types/News";
@@ -12,18 +15,18 @@ type Props = {
 
 const Article = () => {
 
+  const value = useContext(MyContext);
+  console.log(value)
+
   const { axios } = useNews();
   const [news, setNews] = useState<NewsType.News>({ articles: [] });
 
-
   useEffect(() => {
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    console.log(API_KEY)
-    // const ENDPOINT_URL = 'http://localhost:4000/articles'
-    const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`
-    // making mockup json server api call
-    axios.get(ENDPOINT_URL)
-    // axios.get('')
+    // const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${API_KEY}`;
+    // const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`;
+    // axios.get(ENDPOINT_URL)
+    axios.get('')
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
