@@ -1,14 +1,16 @@
 export type News = {
-  source: {
+  articles: {
+    source: {
+      name: string;
+    };
+    id: string;
     name: string;
-  }
-  id: string;
-  name: string;
-  title: string;
-  author: string;
-  description: string;
-  url: string;
-  urlToImage: string;
-  publishedAt: string;
-  content: string;
-}
+    title: string;
+    author: string;
+    description: string;
+    url: string;
+    urlToImage: string;
+    publishedAt: string;
+    content: string;
+  }[];
+};

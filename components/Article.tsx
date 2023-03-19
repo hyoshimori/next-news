@@ -13,22 +13,27 @@ type Props = {
 const Article = () => {
 
   const { axios } = useNews();
-  const [news, setNews] = useState<Props['news']>([]);
+  const [news, setNews] = useState<NewsType.News>({ articles: [] });
 
-  const ENDPOINT_URL = 'http://localhost:4000/articles'
 
   useEffect(() => {
+    const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    console.log(API_KEY)
+    // const ENDPOINT_URL = 'http://localhost:4000/articles'
+    const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`
     // making mockup json server api call
     axios.get(ENDPOINT_URL)
+    // axios.get('')
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
+        console.log(response)
         // ↓ Use this for the api call
         // console.log(response.data.articles);
         setNews(response.data);
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
       });
   }, []);
 
@@ -37,7 +42,7 @@ const Article = () => {
       <div>
       <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
-          {news.filter((el, index) => index === 0).map((el, index) =>
+          {news && news.articles && news.articles.filter((el, index: number) => index === 0).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div key={el.url} className={styles.news__top__first}>
               <img src={el.urlToImage} alt="" />
@@ -50,7 +55,7 @@ const Article = () => {
           </a>
           )}
           <div className={styles.news__top__wrapper__for__five__articles}>
-            {news.filter((el, index) => index >= 1 && index <= 5).map((el, index) =>
+            {news && news.articles && news.articles.filter((el, index: number) => index >= 1 && index <= 5).map((el, index: number) =>
             <a href={el.url} key={el.url} target="_blank">
               <div key={el.url} className={styles.news__top__right}>
                 <span className={styles.news__top__source__name}>{el.source.name}</span>
@@ -63,7 +68,7 @@ const Article = () => {
         </div>
         <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
         <div className={styles.news__Latest__container}>
-          {news.filter((el, index) => index > 5 && index <= 30).map((el, index) =>
+          {news && news.articles && news.articles.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div className={styles.news__Latest}>
               <div key={el.url} className={styles.news__Latest__name__titile__author}>
