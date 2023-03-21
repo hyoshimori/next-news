@@ -11,6 +11,12 @@
   z-index: 999;
 } */
 
+.button__nav{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 
 .body{
   background-color: white;

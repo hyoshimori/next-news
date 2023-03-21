@@ -15,9 +15,11 @@ const Nav = () => {
     console.log('rendering!')
   };
 
-  // useEffect(() => {
-  //   document.body.className = isSwitchOn ? styles.overlay : '';
-  // }, [isSwitchOn]);
+  // define the type of the categoryHandler function. //
+  const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (event) => {
+    console.log('Button clicked!', (event.target as HTMLButtonElement).innerHTML);
+  };
+
 
   return (
     <div className={styles.body}>
@@ -28,34 +30,34 @@ const Nav = () => {
       </div>
       <div className={styles.category__1}>
         <ul className={styles.category}>
-          <a className={styles.list} href="#">
-            <li>Anime</li>
+          <a className={styles.list}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Anime</li></button>
           </a>
-          <a className={styles.list} href="#">
-            <li>Game</li>
+          <a className={styles.list}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Game</li></button>
           </a>
-          <a className={styles.list} href="#">
-            <li>Tech</li>
+          <a className={styles.list}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Tech</li></button>
           </a>
-          <a className={styles.list} href="#">
-            <li>Coding</li>
+          <a className={styles.list}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Coding</li></button>
           </a>
         </ul>
       </div>
       <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
-          <a className={styles.list__2} href="#">
-            <li>Anime</li>
+          <a className={styles.list__2}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Anime</li></button>
           </a>
-          <a className={styles.list__2} href="#">
-            <li>Game</li>
+          <a className={styles.list__2}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Game</li></button>
           </a>
-          <a className={styles.list__2} href="#">
-            <li>Tech</li>
+          <a className={styles.list__2}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Tech</li></button>
           </a>
-          <a className={styles.list__2} href="#">
-            <li>Coding</li>
+          <a className={styles.list__2}>
+            <button className={styles.button__nav} onClick={categoryHandler}><li>Coding</li></button>
           </a>
         </ul>
       </div>
