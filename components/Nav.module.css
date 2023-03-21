@@ -87,9 +87,9 @@ button.list__2:hover{
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:center;
+    margin: 0 auto;
   }
 
   .category__1{
