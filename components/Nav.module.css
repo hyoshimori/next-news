@@ -32,6 +32,10 @@
   color: #FEC005 !important;
 }
 
+.category{
+  padding-left: 0;
+}
+
 button.list, button.list__2{
   background-color: transparent;
   border: none;
@@ -54,7 +58,7 @@ button.list__2:hover{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 5vh 0;
+  margin: 10vh 0;
 }
 
 .category li, .category__2__ul li{
@@ -83,7 +87,7 @@ button.list__2:hover{
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 80vw;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -105,7 +109,14 @@ button.list__2:hover{
 
   .menu{
     display: block;
-    /* padding: 20px; */
+    position: absolute;
+    left: 30px;
+  }
+
+  .menu__2{
+    position: absolute;
+    left: 10px;
+    top: 12px;
   }
 
   .category__2{
