@@ -15,50 +15,37 @@ const Nav = () => {
     console.log('rendering!')
   };
 
-  // define the type of the categoryHandler function. //
-  const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-    console.log('Button clicked!', (event.target as HTMLButtonElement).innerHTML);
-  };
-
+  // useEffect(() => {
+  //   document.body.className = isSwitchOn ? styles.overlay : '';
+  // }, [isSwitchOn]);
 
   return (
     <div className={styles.body}>
       <MenuIcon data-testid="menu-icon" style={{ cursor: 'pointer' }} className={styles.menu} onClick={toggleSwitch}/>
       <div className={styles.icon__and__message}>
         <h1 className={styles.icon}>NextNews</h1>
-        <p className={styles.botto__icon__message}>Geek News +</p>
+        <span className={styles.botto__icon__message}>Geek News +</span>
       </div>
       <div className={styles.category__1}>
         <ul className={styles.category}>
-          <a className={styles.list}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Anime</li></button>
-          </a>
-          <a className={styles.list}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Game</li></button>
-          </a>
-          <a className={styles.list}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Tech</li></button>
-          </a>
-          <a className={styles.list}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Coding</li></button>
-          </a>
+            <li><button className={styles.list}>Anime</button></li>
+
+            <li><button className={styles.list}>Game</button></li>
+
+
+            <li><button className={styles.list}>Tech</button></li>
+
+
+            <li><button className={styles.list}>Coding</button></li>
         </ul>
       </div>
       <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
-          <a className={styles.list__2}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Anime</li></button>
-          </a>
-          <a className={styles.list__2}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Game</li></button>
-          </a>
-          <a className={styles.list__2}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Tech</li></button>
-          </a>
-          <a className={styles.list__2}>
-            <button className={styles.button__nav} onClick={categoryHandler}><li>Coding</li></button>
-          </a>
+            <li><button className={styles.list__2}>Anime</button></li>
+            <li><button className={styles.list__2}>Game</button></li>
+            <li><button className={styles.list__2}>Tech</button></li>
+            <li><button className={styles.list__2}>Coding</button></li>
         </ul>
       </div>
     </div>

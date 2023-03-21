@@ -1,35 +1,36 @@
-import React from 'react'
+import React, { createContext, useState } from "react";
 import styles from "./Base.module.css";
-import NewsTimeLine from './components/NewsTimeLine';
-import { createContext } from 'react';
+import NewsTimeLine from "./components/NewsTimeLine";
 
 // import * as NewsType from "@/types/News";
 import { Category } from "@/types/Category";
+import { MyContext } from "@/types/MyContext";
 
-import 'normalize.css';
+import "normalize.css";
 
-interface MyContext {
-  category: Category;
-}
-
-export const MyContext = createContext<MyContext>({
-  category: {
-    MyContext: {
-      country: "us",
-      category: "anime"
-    }
-  }
+// AppContext is the context object which provides and consumes the data in components.
+export const AppContext = createContext<MyContext>({
+  selectedCategory: {
+    country: "us",
+    category: "anime",
+  },
+  setSelectedCategory: () => {},
 });
-
 
 const Base = () => {
   // const newsData: NewsType.News[] = [ /*...*/ ];
+  const [selectedCategory, setSelectedCategory] = useState<Category["MyContext"]>({
+    country: "us",
+    category: "anime",
+  });
 
   return (
     <div className={styles.body}>
-      <NewsTimeLine />
+      <AppContext.Provider value={{ selectedCategory, setSelectedCategory }}>
+        <NewsTimeLine />
+      </AppContext.Provider>
     </div>
-  )
-}
+  );
+};
 
-export default Base
+export default Base;
