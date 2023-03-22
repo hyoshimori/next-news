@@ -1,9 +1,10 @@
 import styles from "./Article.module.css"
 import React, { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
+
+import { useContext } from "react";
+import { AppContext } from "../pages/_app";
 
 import { useNews } from '@/hooks/UseNews';
-
 import * as NewsType from "@/types/News";
 
 type Props = {
@@ -11,31 +12,55 @@ type Props = {
 }
 
 const Article = () => {
-
   const { axios } = useNews();
+
+  const { selectedCategory } = useContext(AppContext);
   const [news, setNews] = useState<NewsType.News>({ articles: [] });
 
 
+  // Get date, "today" and "from 20 days ago" //
+  const date = new Date
+  let currentDate = new Date();
+  let date20DaysAgo = new Date();
+  date20DaysAgo.setDate(currentDate.getDate() - 20);
+  // ************************* //
+
+
+  // return value must be string by "): string"
+  const convertDateFormat = (dateString : string): string => {
+    const date = new Date(dateString);
+    // extracts the year
+    const year = date.getFullYear();
+    // extracts the month
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
+
   useEffect(() => {
+    // Use convertDateFormat function to make "from" and  "to" date
+    const dateString = date.toString();
+    const dateString20Ago = date20DaysAgo.toString()
+    const from = convertDateFormat(dateString);
+    const to = convertDateFormat(dateString20Ago);
+
+    const category = selectedCategory.category
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    console.log(API_KEY)
-    // const ENDPOINT_URL = 'http://localhost:4000/articles'
-    const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`
-    // making mockup json server api call
-    axios.get(ENDPOINT_URL)
-    // axios.get('')
+    // const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&sortBy=publishedAt&apiKey=${API_KEY}`;
+    // const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`;
+    // axios.get(ENDPOINT_URL)
+    axios.get('')
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
-        console.log(response)
         // ↓ Use this for the api call
-        // console.log(response.data.articles);
         setNews(response.data);
       })
       .catch(error => {
-        // console.log(error);
+        console.log(error);
       });
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <div className={styles.body} data-testid="article__component">
