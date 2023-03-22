@@ -75,7 +75,7 @@ button.list__2:hover{
 }
 
 .menu{
-  display: none;
+  display: none !important;
 }
 
 .category__2{

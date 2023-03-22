@@ -11,21 +11,21 @@ const Nav = () => {
   const toggleSwitch = () => {
     setSwitchOn(!isSwitchOn);
     // Check if the switch is working
-    console.log("Menu pops up or disapears");
+    // console.log("Menu pops up or disapears");
   };
   //**********************************//
 
   // Check if the state is correctly updated //
   const value = useContext(AppContext);
-  console.log(value)
+  // console.log(value)
   // *************************************** //
 
   const { selectedCategory, setSelectedCategory } = useContext(AppContext);
 
   // Check if the data is correctly updated//
-  useEffect(() => {
-    console.log('UseEffect', selectedCategory);
-  }, [selectedCategory]);
+  // useEffect(() => {
+  //   console.log('UseEffect', selectedCategory);
+  // }, [selectedCategory]);
 
 
   const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (event) => {
