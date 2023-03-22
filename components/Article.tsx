@@ -47,10 +47,8 @@ const Article = () => {
 
     const category = selectedCategory.category
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    // const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&sortBy=publishedAt&apiKey=${API_KEY}`;
-    // const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`;
-    // axios.get(ENDPOINT_URL)
-    axios.get('')
+    const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&sortBy=publishedAt&apiKey=${API_KEY}`;
+    axios.get(ENDPOINT_URL)
     // ↓ production api link would be this
     // axios.get('')
       .then(response => {
