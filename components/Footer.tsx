@@ -4,8 +4,8 @@ import React from 'react';
 const Footer = () => {
   return (
   <div className={styles.body}>
-    <p>Next News</p>
-    <p>Contact</p>
+    <span>Next News</span>
+    <span>Contact</span>
   </div>
   )
 }

@@ -1,18 +1,14 @@
-import React from 'react'
+import React, { createContext, useState } from "react";
 import styles from "./Base.module.css";
-import NewsTimeLine from './components/NewsTimeLine';
-// import * as NewsType from "@/types/News";
-
-import 'normalize.css';
+import NewsTimeLine from "./components/NewsTimeLine";
+import "normalize.css";
 
 const Base = () => {
-  // const newsData: NewsType.News[] = [ /*...*/ ];
-
   return (
     <div className={styles.body}>
       <NewsTimeLine />
     </div>
-  )
-}
+  );
+};
 
-export default Base
+export default Base;
