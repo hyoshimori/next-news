@@ -108,7 +108,7 @@ button.list__2:hover{
   }
 
   .menu{
-    display: block;
+    display: block !important;
     position: absolute;
     left: 30px;
   }
