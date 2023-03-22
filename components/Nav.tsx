@@ -22,20 +22,19 @@ const Nav = () => {
 
   const { selectedCategory, setSelectedCategory } = useContext(AppContext);
 
+  // Check if the data is correctly updated//
   useEffect(() => {
     console.log('UseEffect', selectedCategory);
   }, [selectedCategory]);
 
 
   const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-    console.log("Button clicked!", (event.target as HTMLButtonElement).innerHTML);
+    // console.log("Button clicked!", (event.target as HTMLButtonElement).innerHTML);
     const newCategory = (event.target as HTMLButtonElement).innerHTML.toLowerCase()
     setSelectedCategory({
       country: "us",
       category: newCategory,
     });
-    console.log(`Button clicked! ${newCategory}`);
-    console.log(selectedCategory)
   };
 
 
