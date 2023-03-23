@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
+import { getCategoryNews } from '@/hooks/jsonApi';
 
 import { useNews } from '@/hooks/UseNews';
 import * as NewsType from "@/types/News";
@@ -37,21 +38,55 @@ const Article = () => {
     return `${year}-${month}-${day}`;
   };
 
+  // useEffect(() => {
+  //   const fetchNews = async () => {
+  //     const category = selectedCategory.category;
+  //     const fetchedNews = await getCategoryNews(category);
+  //     setNews(fetchedNews);
+  //   };
+
+  //   fetchNews();
+  // }, [selectedCategory]);
+
+
 
   useEffect(() => {
-    // Use convertDateFormat function to make "from" and  "to" date
-    const dateString = date.toString();
-    const dateString20Ago = date20DaysAgo.toString()
-    const from = convertDateFormat(dateString);
-    const to = convertDateFormat(dateString20Ago);
-
     const category = selectedCategory.category
-    const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&language=en&sortBy=publishedAt&apiKey=${API_KEY}`;
-    console.log(ENDPOINT_URL)
-    axios.get(ENDPOINT_URL)
-    // ↓ production api link would be this
-    // axios.get('../db/')
+    // ********** These are for the real api key ********** //
+    // Use convertDateFormat function to make "from" and  "to" date
+
+    // const dateString = date.toString();
+    // const dateString20Ago = date20DaysAgo.toString()
+    // const from = convertDateFormat(dateString);
+    // const to = convertDateFormat(dateString20Ago);
+
+
+    // const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    // const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&language=en&sortBy=publishedAt&apiKey=${API_KEY}`;
+    // console.log(ENDPOINT_URL)
+    // axios.get(ENDPOINT_URL)
+    // ********** These are for the real api key ********** //
+
+
+    // ********** This is for mock server ********** //
+    // const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+    // ********** This is for mock server ********** //
+
+    const apiBaseUrl = process.env.NODE_ENV === 'development'
+  ? process.env.NEXT_PUBLIC_API_BASE_URL_LOCAL
+  : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
+
+    // axios.get(`${apiBaseUrl}/${category}`)
+    //   .then(response => {
+    //     console.log(response);
+    //     setNews(response.data);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    // }, [selectedCategory]);
+
+
+    axios.get(`${apiBaseUrl}/${category}`)
       .then(response => {
         console.log(response)
         // ↓ Use this for the api call
