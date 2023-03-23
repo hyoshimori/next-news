@@ -47,11 +47,13 @@ const Article = () => {
 
     const category = selectedCategory.category
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&sortBy=publishedAt&apiKey=${API_KEY}`;
+    const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&language=en&sortBy=publishedAt&apiKey=${API_KEY}`;
+    console.log(ENDPOINT_URL)
     axios.get(ENDPOINT_URL)
     // ↓ production api link would be this
-    // axios.get('')
+    // axios.get('../db/')
       .then(response => {
+        console.log(response)
         // ↓ Use this for the api call
         setNews(response.data);
       })
