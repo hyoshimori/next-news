@@ -1,0 +1,1306 @@
+{
+  "status": "ok",
+  "totalResults": 1967,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Bangkok Post"
+      },
+      "author": null,
+      "title": "Is AI the future of art - and will it put artists out of work?",
+      "description": "Have you ever wondered what it would look like if Charles Darwin rode Napoleon's horse into battle against a dragon and its army of video game characters? Well, you could spend years - even decades - on artistic and design training to create the tableau yours…",
+      "url": "https://www.bangkokpost.com/life/arts-and-entertainment/2532951/is-ai-the-future-of-art-and-will-it-put-artists-out-of-work-virtual-human-monoc-a-creation-of-hong-kongs-gusto-collective-sells-digital-art-as-nfts-but-copyright-concerns-abound-",
+      "urlToImage": "https://static.bangkokpost.com/media/content/20230321/c1_2532951_700.jpg",
+      "publishedAt": "2023-03-21T05:07:00Z",
+      "content": "Have you ever wondered what it would look like if Charles Darwin rode Napoleon's horse into battle against a dragon and its army of video game characters? Well, you could spend years - even decades -… [+7194 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "KSDK.com"
+      },
+      "author": "Tracy Hinson (KSDK)",
+      "title": "Color coded hallways, doors and windows coming to St. Louis County schools",
+      "description": "Labeled corridors aimed at helping first responders get to emergencies faster.",
+      "url": "https://www.ksdk.com/article/news/education/color-coded-hallways-doors-and-windows-coming-to-st-louis-county-schools/63-59c82d86-88f3-4062-8dc7-e0d33f2415b7",
+      "urlToImage": "https://media.ksdk.com/assets/KSDK/images/f5301a26-c015-4db8-9669-bfec5f5cc1c7/f5301a26-c015-4db8-9669-bfec5f5cc1c7_1140x641.jpg",
+      "publishedAt": "2023-03-21T05:03:44Z",
+      "content": "ST. LOUIS COUNTY, Mo. St. Louis County schools are one step closer to being prepared for emergencies. \r\nActive shooters, natural disasters, fires and medical issues -- all require first responders to… [+2073 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Mssqltips.com"
+      },
+      "author": "John Miner",
+      "title": "Managing XML Files with Apache Spark",
+      "description": "In this article, we look at how to read and write XML files using Apache Spark. The article walks through how to do this with different data sets.",
+      "url": "https://www.mssqltips.com/sqlservertip/7595/read-and-write-xml-files-using-apache-spark/",
+      "urlToImage": "https://www.mssqltips.com/images_newsletter/7595_NewsletterImage.png",
+      "publishedAt": "2023-03-21T04:21:16Z",
+      "content": "By: John Miner   |   Updated: 2023-03-21   |   Comments   |   Related: &gt; Apache Spark\r\nProblem\r\nExtensible Markup Language (XML)\r\nis a markup language and file format. It is commonly used in web a… [+20001 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Tech Times"
+      },
+      "author": "Urian B.",
+      "title": "Coding Keyset by Douglas Engelbart Auctioned for $178,900 for Prototype With Cord and Serial Connector",
+      "description": "Douglas Engelbart's coding keyset was auctioned and sold for $178,900. Learn more about the prototype set for sale.",
+      "url": "https://www.techtimes.com/articles/289268/20230321/coding-keyset-by-douglas-engelbart-auctioned-for-178-900-for-a-prototype-with-cord-and-serial-connector.htm",
+      "urlToImage": "https://1734811051.rsc.cdn77.org/data/images/full/423782/us-entertainment-music-opera-internet.jpg",
+      "publishedAt": "2023-03-21T04:20:00Z",
+      "content": "The sale of Douglas Engelbart's mouse for over $178,900 could be seen as a victory for the pioneering spirit behind its design. Engelbart created one of the first computer mice in the 1960s. \r\nThe Lo… [+3111 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Trendhunter.com"
+      },
+      "author": null,
+      "title": "Personable Weather Chatbots - Carrot Weather Debuted a New ChatGPT-Powered Chatbot in 5.10 (TrendHunter.com)",
+      "description": "(TrendHunter.com) Carrot Weather has introduced a new chatbot feature based in ChatGPT 3.0 in its latest version 5.10 update. The chatbot is based on the GPT language model and allows users to chat directly with the...",
+      "url": "https://www.trendhunter.com/trends/carrot-weather-chatbot",
+      "urlToImage": "https://cdn.trendhunterstatic.com/thumbs/501/carrot-weather-chatbot.jpeg?auto=webp",
+      "publishedAt": "2023-03-21T03:35:03Z",
+      "content": "Carrot Weather has introduced a new chatbot feature based in ChatGPT 3.0 in its latest version 5.10 update. The chatbot is based on the GPT language model and allows users to chat directly with the a… [+700 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lesswrong.com"
+      },
+      "author": "So8res",
+      "title": "Deep Deceptiveness",
+      "description": "Published on March 21, 2023 2:51 AM GMTMetaThis post is an attempt to gesture at a class of AI notkilleveryoneism\r\n (alignment) problem that seems to me to go largely unrecognized. E.g., it isn’t discussed (or at least I don't recognize it) in the recent plan…",
+      "url": "https://www.lesswrong.com/posts/XWwvwytieLtEWaFJX/deep-deceptiveness",
+      "urlToImage": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
+      "publishedAt": "2023-03-21T02:51:55Z",
+      "content": "This post is an attempt to gesture at a class of AI notkilleveryoneism\r\n (alignment) problem that seems to me to go largely unrecognized. E.g., it isnt discussed (or at least I don't recognize it) in… [+29397 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Independent.ie"
+      },
+      "author": "Katherine Donnelly",
+      "title": "Colleges move to tackle threat posed by students using ChatGPT to pass work off as their own",
+      "description": "Third-level colleges are moving rapidly to tackle the threat posed to student learning and academic integrity by artificial intelligence (AI) software, such as ChatGPT.",
+      "url": "https://www.independent.ie/irish-news/education/colleges-move-to-tackle-threat-posed-by-students-using-chatgpt-to-pass-work-off-as-their-own-42396452.html",
+      "urlToImage": "https://www.independent.ie/irish-news/education/0beab/42396450.ece/AUTOCROP/w1240h700/1328699091",
+      "publishedAt": "2023-03-21T02:30:00Z",
+      "content": "Third-level colleges are moving rapidly to tackle the threat posed to student learning and academic integrity by artificial intelligence (AI) software, such as ChatGPT.The arrival of the ChatGPT chat… [+5143 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Trendhunter.com"
+      },
+      "author": null,
+      "title": "Material-Creating AI Tools - Roblox Adds the New Generative AI Materials and Coding Technologies (TrendHunter.com)",
+      "description": "(TrendHunter.com) In an effort to diversify the tools available for brands and developers, Roblox has announced the debut of the new AI-based material generation and coding features. The new additions may generate...",
+      "url": "https://www.trendhunter.com/trends/roblox",
+      "urlToImage": "https://cdn.trendhunterstatic.com/thumbs/501/roblox.jpeg?auto=webp",
+      "publishedAt": "2023-03-21T01:47:03Z",
+      "content": "In an effort to diversify the tools available for brands and developers, Roblox has announced the debut of the new AI-based material generation and coding features. The new additions may generate hig… [+840 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lesswrong.com"
+      },
+      "author": "Quintin Pope",
+      "title": "My Objections to \"We’re All Gonna Die with Eliezer Yudkowsky\"",
+      "description": "Published on March 21, 2023 12:06 AM GMTIntroductionI recently watched Eliezer Yudkowsky's appearance on the Bankless podcast, where he argued that AI was nigh-certain to end humanity. Since the podcast, some commentators have offered pushback against the doo…",
+      "url": "https://www.lesswrong.com/posts/wAczufCpMdaamF9fy/my-objections-to-we-re-all-gonna-die-with-eliezer-yudkowsky",
+      "urlToImage": "https://39669.cdn.cke-cs.com/rQvD3VnunXZu34m86e5f/images/7d2561cd226d966d1d3db12906bc2f033dae73b16a0ee8fa.png",
+      "publishedAt": "2023-03-21T00:06:07Z",
+      "content": "Introduction\r\nI recently watched Eliezer Yudkowsky's appearance on the Bankless podcast, where he argued that AI was nigh-certain to end humanity. Since the podcast, somecommentators have offered pus… [+57372 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Stephanie",
+      "title": "NYC Parks Tree Map",
+      "description": "One of the best parts of living in the city, particularly around this time of year when spring is slowly waking up, is walking around outside and keeping your eyes on what the plants are doing. Depending on where you are you can catch flowers beginning to bud…",
+      "url": "https://blog.adafruit.com/2023/03/20/nyc-parks-tree-map/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/trees-e1679065103404.png",
+      "publishedAt": "2023-03-21T00:00:39Z",
+      "content": "One of the best parts of living in the city, particularly around this time of year when spring is slowly waking up, is walking around outside and keeping your eyes on what the plants are doing. Depen… [+3802 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Elifesciences.org"
+      },
+      "author": "lugang@cuhk.edu.hk (Gang Lu), lugang@cuhk.edu.hk (Hongbin Liu), lugang@cuhk.edu.hk (Jing Jiang), lugang@cuhk.edu.hk (Jinlong Ma), lugang@cuhk.edu.hk (Jinsong Li), lugang@cuhk.edu.hk (Kailun Fang), lugang@cuhk.edu.hk (Ke Xu), lugang@cuhk.edu.hk (Mengjing Li), lugang@cuhk.edu.hk (Shangming Liu), lugang@cuhk.edu.hk (Tahir Muhammad), lugang@cuhk.edu.hk (Tao Huang), lugang@cuhk.edu.hk (Wai-Yee Chan), lugang@cuhk.edu.hk (Xiangfeng Chen), lugang@cuhk.edu.hk (Xianwei Su), lugang@cuhk.edu.hk (Yingying Yin), lugang@cuhk.edu.hk (Yue Lv), lugang@cuhk.edu.hk (Zi-Jiang Chen), lugang@cuhk.edu.hk (Ziqi Wang)",
+      "title": "The slingshot phosphatase 2 is required for acrosome biogenesis during spermatogenesis in mice",
+      "description": "The acrosome is a membranous organelle positioned in the anterior portion of the sperm head and is essential for male fertility. Acrosome biogenesis requires the dynamic cytoskeletal shuttling of vesicles towards nascent acrosome which is regulated by a serie…",
+      "url": "https://elifesciences.org/articles/83129",
+      "urlToImage": "https://elifesciences.org/assets/images/social/icon-600x600@1.75dbe4c9.png",
+      "publishedAt": "2023-03-21T00:00:00Z",
+      "content": "<li><ol><li>Developmental Biology</li><li>Physics of Living Systems</li></ol>\r\nCells use signal relay to transmit information across tissue scales. However, the production of information carried by s… [+4230 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nature.com"
+      },
+      "author": "Smriti Mallapaty",
+      "title": "Bats play host to a horde of nasty viruses — can studying their immunity help stop pandemics?",
+      "description": "Researchers are examining the weird immune systems of bats, hoping to help prevent the next outbreak.",
+      "url": "https://www.nature.com/articles/d41586-023-00791-x",
+      "urlToImage": "https://media.nature.com/lw1024/magazine-assets/d41586-023-00791-x/d41586-023-00791-x_24626800.jpg",
+      "publishedAt": "2023-03-21T00:00:00Z",
+      "content": "Randy Foo fills a pipette with orange juice from a bottle clearly labelled For Bats ONLY. He and his colleague Rommel Yroy are seated at a biological safety cabinet, wrapped in blue gowns and wearing… [+20538 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Wnd.com"
+      },
+      "author": "WND Staff",
+      "title": "Disguised 'total warfare' waged against the U.S.",
+      "description": "It’s one of the most vexing and consequential questions facing Americans today: Why do this nation’s ruling elites seem to be madly in love with China? Or to put a finer point on it: Why are the political and corporate leaders of America – long the freest, mo…",
+      "url": "https://www.wnd.com/2023/03/disguised-total-warfare-waged-u-s/",
+      "urlToImage": "https://www.wnd.com/wp-content/uploads/2023/03/presidential-seal-podium-white-house-building-patriotic-americans.jpg",
+      "publishedAt": "2023-03-20T23:25:18Z",
+      "content": "(Official White House photo by Adam Schultz)\r\nIts one of the most vexing and consequential questions facing Americans today: Why do this nations ruling elites seem to be madly in love with China?\r\nOr… [+13800 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Mand3l.com"
+      },
+      "author": null,
+      "title": "In-Flight Entertainment Challenge",
+      "description": "On a recent flight from NYC -> SFO, I decided to try to re-create as much of the Delta in-flight entertainment system as I could.\nTry the final result here: https://delta-inflight.vercel.app \nAnd...",
+      "url": "https://blog.mand3l.com/post/712193955168731136/the-inflight-entertainment-challenge",
+      "urlToImage": "https://64.media.tumblr.com/1c647fc34ae2f5842654884984e80d07/d4d13788ca8ff90f-66/s1280x1920/f507adc7f99e9bceed3a8d41bc7751dc9cf6838d.jpg",
+      "publishedAt": "2023-03-20T22:55:40Z",
+      "content": "On a recent flight from NYC -&gt; SFO, I decided to try to re-create as much of the Delta in-flight entertainment system as I could.\r\nTry the final result here: https://delta-inflight.vercel.app\r\nAnd… [+3298 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "author": "defreitasabner@gmail.com",
+      "title": "tube-scrapy added to PyPI",
+      "description": "A python package to webscraping for youtube video data as title, video url, thumbnail url, and number of views.",
+      "url": "https://pypi.org/project/tube-scrapy/",
+      "urlToImage": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "publishedAt": "2023-03-20T22:48:30Z",
+      "content": "A python package to webscrap for youtube video data as title, video url, thumbnail url, and number of views. The package runs packages Selenium and Webdriver to access Youtube page and copy videos in… [+1121 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lesswrong.com"
+      },
+      "author": "Simon Berens",
+      "title": "LED Brain Stimulation for Productivity",
+      "description": "Published on March 20, 2023 10:30 PM GMTI haven’t found near infrared radiation referenced in the article - I‘m using near infrared as a brain hack, by shining a cheap 850nm LED light on my forehead. This has, over the last 2 years, enabled me to code for wee…",
+      "url": "https://www.lesswrong.com/posts/rH5tegaspwBhMMndx/led-brain-stimulation-for-productivity",
+      "urlToImage": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
+      "publishedAt": "2023-03-20T22:30:05Z",
+      "content": "I havent found near infrared radiation referenced in the article - Im using near infrared as a brain hack, by shining a cheap 850nm LED light on my forehead. This has, over the last 2 years, enabled … [+779 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "eWeek"
+      },
+      "author": "Aminu Abdullahi",
+      "title": "Best Data Governance Software and Tools",
+      "description": "Data governance tools are software applications that enable organizations to ensure data availability, usability and integrity, with the ultimate goal of ensuring compliance with data management standards.  With the right data governance software, organizatio…",
+      "url": "https://www.eweek.com/big-data-and-analytics/data-governance-software-and-tools/",
+      "urlToImage": "https://www.eweek.com/wp-content/uploads/2022/01/BMC-DBA-Image01-800x800-1.jpg",
+      "publishedAt": "2023-03-20T21:51:47Z",
+      "content": "Data governance tools are software applications that enable organizations to ensure data availability, usability and integrity, with the ultimate goal of ensuring compliance with data management stan… [+28041 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Ben",
+      "title": "New Yorkers friendlier than expected as robots take out the trash #MakeRobotFriend",
+      "description": "This trashbot is doing more than just taking out the trash, it is also helping researchers study human robot interaction. The pi based pair of robots was reported on by TechXplore. NYer’s are so bad after all, some of the findings even gave me a chuckle:Among…",
+      "url": "https://blog.adafruit.com/2023/03/20/new-yorkers-friendlier-than-expected-as-robots-take-out-the-trash-makerobotfriend/",
+      "urlToImage": "https://s0.wp.com/i/blank.jpg",
+      "publishedAt": "2023-03-20T21:44:46Z",
+      "content": "This trashbot is doing more than just taking out the trash, it is also helping researchers study human robot interaction. The pi based pair of robots was reported on by TechXplore. NYer’s are so bad … [+3307 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Digital Trends"
+      },
+      "author": "Alan Truly",
+      "title": "ChatGPT has been down all day, but a fix is being rolled out",
+      "description": "ChatGPT has been down for several hours, causing minor panic among its huge user base. This isn't the first time and some are turning to Bing Chat and Bard.",
+      "url": "https://www.digitaltrends.com/computing/chatgpt-is-down-openai-is-working-on-a-fix/",
+      "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2023/01/ChatGPT-logo-closeup.jpg?resize=1200%2C630&p=1",
+      "publishedAt": "2023-03-20T21:37:36Z",
+      "content": "ChatGPT is currently down, creating an unsettling moment for the large number of people that have come to rely on the advanced AI for help with writing and coding, as well as assistance on a variety … [+1707 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "Emergence of extensively drug-resistant Shigella sonnei strain in France",
+      "description": "Shigellosis, a highly contagious diarrheal disease, is caused by Shigella bacteria circulating in industrializing countries but also in industrialized countries. Scientists who have been monitoring Shigella in France for several years have detected the emerge…",
+      "url": "https://www.sciencedaily.com/releases/2023/03/230320172622.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/scidaily-icon.png",
+      "publishedAt": "2023-03-20T21:26:22Z",
+      "content": "Shigellosis, a highly contagious diarrheal disease, is caused by Shigella bacteria circulating in industrializing countries but also in industrialized countries. Scientists from the French National R… [+4169 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Biztoc.com"
+      },
+      "author": "zdnet.com",
+      "title": "How to use ChatGPT to write code",
+      "description": "One of the more intriguing discoveries about ChatGPT is that it can write pretty good code. I tested this out last month when I asked it to write a WordPress plugin my wife could use on her website. It did a fine job, but it was a very simple project. How can…",
+      "url": "https://biztoc.com/x/8c74aa72c12011a9",
+      "urlToImage": "https://c.biztoc.com/p/8c74aa72c12011a9/og.webp",
+      "publishedAt": "2023-03-20T21:22:13Z",
+      "content": "One of the more intriguing discoveries about ChatGPT is that it can write pretty good code. I tested this out last month when I asked it to write a WordPress plugin my wife could use on her website. … [+278 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Jagran Josh"
+      },
+      "author": "Roopashree Sharma",
+      "title": "Indian Navy Agniveer Syllabus 2023: Download Subject-wise Topics SSR/ MR Exam",
+      "description": "Indian Navy Agniveer Syllabus 2023: Check here detailed syllabus for Indian Navy Agniveer 02/2023 batch Senior Secondary Recruits (SSR) and MR (Matric Recruits) which shall include topics from English, Science, Mathematics and General Awareness.",
+      "url": "https://www.jagranjosh.com/articles/indian-navy-agniveer-syllabus-1679388617-1",
+      "urlToImage": "https://img.jagranjosh.com/images/2023/March/2132023/indian-navy-agniveer-ssr-mr-syllabus-exam-pattern.jpg",
+      "publishedAt": "2023-03-20T20:50:18Z",
+      "content": "Indian Navy Agniveer Syllabus 2023: Check here detailed syllabus for Indian Navy Agniveer 02/2023 batch Senior Secondary Recruits (SSR) and MR (Matric Recruits) which shall include topics from Englis… [+10583 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lesswrong.com"
+      },
+      "author": "Akash",
+      "title": "The Wizard of Oz Problem: How incentives and narratives can skew our perception of AI developments",
+      "description": "Published on March 20, 2023 8:44 PM GMTTLDR: The Wizard of Oz Problem occurs when incentive structures cause people to seek and present information that matches a (favorable or desirable) narrative. This is not a new problem, but it may become more powerful a…",
+      "url": "https://www.lesswrong.com/posts/7LLLkMGq4ncinzrmd/the-wizard-of-oz-problem-how-incentives-and-narratives-can",
+      "urlToImage": "https://lh4.googleusercontent.com/iTVoCOBX7IjSYcWKXLWANMlyXvJKdtz7-hu8Tih6KQmmf9t9bhJgqi3ZbO0BybJJcBEECEFFnm-vxtXWS8YsTlfqD0BnCg55WDI2a7EeY6cCe9rrmqUOEvGyZ_uip5OvPFNcfgbk2nrZu3HzAYR55eY",
+      "publishedAt": "2023-03-20T20:44:29Z",
+      "content": "TLDR: The Wizard of Oz Problem occurs when incentive structures cause people to seek and present information that matches a (favorable or desirable) narrative. This is not a new problem, but it may b… [+11654 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "author": "opensource@networktocode.com",
+      "title": "blackdark-nautobot-secrets-providers added to PyPI",
+      "description": "Nautobot Secrets Providers Plugin.",
+      "url": "https://pypi.org/project/blackdark-nautobot-secrets-providers/",
+      "urlToImage": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "publishedAt": "2023-03-20T20:37:11Z",
+      "content": "Nautobot Secrets Providers is a plugin for Nautobot 1.2.0 or higher that bundles Secrets Providers for integrating with popular secrets backends. Nautobot 1.2.0 added support for integrating with ret… [+22061 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Sap.com"
+      },
+      "author": "ANUSHREE DEY",
+      "title": "Using SAP Build Apps, create a Web app that simulates a lead generation page for C4C",
+      "description": "Use Case: Suppose a Utility company wants to provide you an offer with a quote on electricity. You go to their website; enter how much electricity you usually consume and click “request more information” after […]",
+      "url": "https://blogs.sap.com/2023/03/20/using-sap-build-apps-create-a-web-app-that-simulates-a-lead-generation-page-for-c4c/",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T20:23:21Z",
+      "content": "Use Case: Suppose a Utility company wants to provide you an offer with a quote on electricity. You go to their website; enter how much electricity you usually consume and click request more informati… [+5575 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Jagran Josh"
+      },
+      "author": "Mudit Chhikara",
+      "title": "CBSE Class 12 Information Technology Paper Analysis 2023: Expert Review, Question Paper, Difficulty Level & More",
+      "description": "CBSE Class 12 Information Technology Exam Analysis 2023: Candidates appeared for their CBSE 12th Information Technology board exam today, 21 March 2023. Check the CBSE Class 12 Information Technology paper to review your performance, judge the difficulty leve…",
+      "url": "https://www.jagranjosh.com/articles/cbse-class-12-information-technology-exam-paper-analysis-2023-1679385440-1",
+      "urlToImage": "https://img.jagranjosh.com/images/2023/March/2132023/cbse-class-12-IT-paper-2023-analysis.jpg",
+      "publishedAt": "2023-03-20T19:57:21Z",
+      "content": "CBSE Class 12 Information Technology Exam Analysis 2023: Candidates appeared for their CBSE 12th Information Technology board exam today, 21 March 2023. Check the CBSE Class 12 Information Technology… [+3908 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-times",
+        "name": "The Washington Times"
+      },
+      "author": "Valerie Richardson",
+      "title": "Credit cards caught in political crosshairs over tracking firearms purchases",
+      "description": "The world's largest credit card companies are caught in the middle of a political slugfest over a newly created category that tracks purchases at gun stores.",
+      "url": "https://www.washingtontimes.com/news/2023/mar/20/credit-cards-caught-political-crosshairs-over-trac/",
+      "urlToImage": "https://twt-thumbs.washtimes.com/media/image/2022/01/20/Virus_Outbreak_Gun_Store_Closures_14534.jpg-07cbc_c0-87-3000-1837_s1200x700.jpg?35a85c1aab4dce54169ad5f2739badf8d9eacdc6",
+      "publishedAt": "2023-03-20T19:19:00Z",
+      "content": "The world’s largest credit card companies are caught in the middle of a political slugfest over a newly created category that tracks purchases at gun stores.\r\nFourteen Democratic attorneys general ca… [+4720 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 2 - Languages",
+      "title": "Quosures in R language",
+      "description": "While coding in R programming language  we often need to store certain expressions which later need to be evaluated in a particular environment according to the requirements of the problem. This can be seen as a delayed evaluation of an expression  which is t…",
+      "url": "https://www.geeksforgeeks.org/quosures-in-r-language/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T19:04:55Z",
+      "content": "While coding in R programming language, we often need to store certain expressions which later need to be evaluated in a particular environment according to the requirements of the problem. This can … [+4456 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "John Park",
+      "title": "Vintage Synth Service Note #casio #synthesizer",
+      "description": "I recently picked up an excellent 1980s Casio CZ-101 synthesizer at an estate sale for a song. When I opened it up to do some general cleanup and investigation I found a very nice surprise.The original owner had done a very clean looking set of modifications,…",
+      "url": "https://blog.adafruit.com/2023/03/20/vintage-synth-service-note-casio-synthesizer/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/FrD-HPDaUAA8ccp.jpeg",
+      "publishedAt": "2023-03-20T18:53:14Z",
+      "content": "March 20, 2023 AT 2:53 pm\r\nVintage Synth Service Note #casio #synthesizer\r\nI recently picked up an excellent 1980s Casio CZ-101 synthesizer at an estate sale for a song. When I opened it up to do som… [+3988 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Askubuntu.com"
+      },
+      "author": "Andrew",
+      "title": "Ubuntu freezing after updating GPU drivers",
+      "description": "When using Ubuntu I frequently have my whole laptop freezing. Nothing will work apart from rebooting the system. This only happens whenever I have updated my GPU drivers to any of the proprietary drivers (so this does not happen with the below stated driver).…",
+      "url": "https://askubuntu.com/questions/1460162/ubuntu-freezing-after-updating-gpu-drivers",
+      "urlToImage": "https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon@2.png?v=c492c9229955",
+      "publishedAt": "2023-03-20T18:23:08Z",
+      "content": "When using Ubuntu I frequently have my whole laptop freezing. Nothing will work apart from rebooting the system. This only happens whenever I have updated my GPU drivers to any of the proprietary dri… [+881 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Jonloomer.com"
+      },
+      "author": "Jon Loomer",
+      "title": "9 Custom Events That Fire on My Website",
+      "description": "There are nine custom events that fire on my website when engagement actions happen that can be used for reporting, optimization, and more.\nThe post 9 Custom Events That Fire on My Website appeared first on Jon Loomer Digital.",
+      "url": "https://www.jonloomer.com/9-custom-events-that-fire-on-my-website/",
+      "urlToImage": "https://www.jonloomer.com/wp-content/uploads/2023/03/9-custom-events.png",
+      "publishedAt": "2023-03-20T18:05:13Z",
+      "content": "You should use Meta events to track important actions that happen on your website. While there are standard events for your typical transactions (purchase, lead, contact), I also use nine custom even… [+8085 chars]"
+    },
+    {
+      "source": {
+        "id": "vice-news",
+        "name": "Vice News"
+      },
+      "author": "Chloe Xiang, Jordan Pearson",
+      "title": "OpenAI Research Says 80% of U.S. Workers' Jobs Will Be Impacted by GPT",
+      "description": "The for-profit AI company argues that its products will automate a vast swath of American's job tasks.",
+      "url": "https://www.vice.com/en/article/g5ypy4/openai-research-says-80-of-us-workers-will-have-jobs-impacted-by-gpt",
+      "urlToImage": "https://video-images.vice.com/articles/64189cf445f528bb2ef870a7/lede/1679334802320-gettyimages-1474134702.jpeg?image-resize-opts=Y3JvcD0xeHc6MC43NXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq",
+      "publishedAt": "2023-03-20T17:57:34Z",
+      "content": "As large language models like OpenAI's GPT-4 become more advanced and able to write, code, and do math with more accuracy and consistency, it won’t be long before AI makes its way into the workplace … [+3861 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Jetbrains.com"
+      },
+      "author": "Mala Gupta",
+      "title": "Data Modeling with Records – 5 examples for busy developers",
+      "description": "If you talk about the syntax, Records seem to be a concise way of creating a new data type to store your immutable data. But what about its semantics? In other words, what does the term ‘Record’ imply? What are its features and limitations? What are the best …",
+      "url": "https://blog.jetbrains.com/idea/2023/03/data-modeling-with-records-5-examples-for-busy-developers/",
+      "urlToImage": "https://blog.jetbrains.com/wp-content/uploads/2023/03/compact-canonical.gif",
+      "publishedAt": "2023-03-20T17:36:42Z",
+      "content": "IntelliJ IDEAJavaIf you talk about the syntax, Records seem to be a concise way of creating a new data type to store your immutable data. But what about its semantics? In other words, what does the t… [+21006 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Testfort.com"
+      },
+      "author": "Anna Smith",
+      "title": "What Is Automated Testing in Software Testing?",
+      "description": "Software testing is a significant part of assuring software quality, which provides confidence that the product is functioning as intended before installation. It can be done manually or automatically, requiring either human effort or the use of automation to…",
+      "url": "https://testfort.com/blog/what-is-automated-testing-in-software-testing",
+      "urlToImage": "https://dz2cdn3.dzone.com/storage/article-thumb/16776438-thumb.jpg",
+      "publishedAt": "2023-03-20T17:31:48Z",
+      "content": "Software testing is a significant part of assuring software quality, which provides confidence that the product is functioning as intended before installation. It can be done manually or automaticall… [+7347 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "John Park",
+      "title": "John Park’s CircuitPython Parsec: One Liners #adafruit #circuitpython",
+      "description": "#circuitpythonparsec Use multiple command copy/paste one-liners for quick debugging and testing. Sample one liners here on Todbot’s CircuitPython Tricks.",
+      "url": "https://blog.adafruit.com/2023/03/20/john-parks-circuitpython-parsec-one-liners-adafruit-circuitpython/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/CircuitPython_Parsec_thumbnails-1.jpg",
+      "publishedAt": "2023-03-20T17:13:12Z",
+      "content": "Adafruit publishes a wide range of writing and video content, including interviews and reporting on the maker market and the wider technology world. Our standards page is intended as a guide to best … [+2632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Live Science"
+      },
+      "author": "James O’Malley",
+      "title": "Are coding bootcamps worth it?",
+      "description": "Coding bootcamps are intensive courses designed to turn beginners into pro-coders. But are they worth it?",
+      "url": "https://www.livescience.com/are-coding-bootcamps-worth-it",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/WJj34cdDxhagFgchJ6uJ-1200-80.jpg",
+      "publishedAt": "2023-03-20T17:09:40Z",
+      "content": "Private! Pay attention! Ten-hut! Do you want to prove you’ve got what it takes to be a coder? Then get down to your local recruiting office and enlist to join a coding bootcamp — a short-course that … [+6596 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Ilovefreesoftware.com"
+      },
+      "author": "Mohammad Suleman",
+      "title": "Free Website Monitor to Create Custom Tests for your Websites",
+      "description": "Never miss the small, breaking changes to your sites again with visual regression tests, and automated unit testing. ✅ Free to get started\nThe post Free Website Monitor to Create Custom Tests for your Websites appeared first on I Love Free Software.",
+      "url": "https://www.ilovefreesoftware.com/20/webware/free-website-monitor-to-create-custom-tests-for-your-websites.html",
+      "urlToImage": "https://www.ilovefreesoftware.com/wp-content/uploads/2023/03/Free-Website-Monitor-to-Create-Custom-Tests-for-your-Websites.png",
+      "publishedAt": "2023-03-20T17:00:48Z",
+      "content": "Scanerr is website monitor to create custom website tests that run in the cloud. You can use it to monitor coding as well as other possible failures on your web apps. It offers you a simple interface… [+2317 chars]"
+    },
+    {
+      "source": {
+        "id": "next-big-future",
+        "name": "Next Big Future"
+      },
+      "author": "Brian Wang",
+      "title": "Coding Youtuber Believes GPT4 Can Replace Many Software Developers",
+      "description": "A senior developer tested GPT4 for programming. GPT4 gave the Terraform script code for a single instance of the Fargate API. GPT4 knows that the code will not scale to 10,000 requests per second. It then describes how to create an auto scaling group and make…",
+      "url": "https://www.nextbigfuture.com/2023/03/coding-youtuber-believes-gpt4-can-replace-many-software-developers.html",
+      "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/03/Screen-Shot-2023-03-20-at-9.45.44-AM-1024x494.jpg",
+      "publishedAt": "2023-03-20T16:50:11Z",
+      "content": "Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology… [+593 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Techtarget.com"
+      },
+      "author": "Ben Lutkevich",
+      "title": "GPT-4",
+      "description": "GPT-4 is OpenAI's large multimodal language model that generates text from textual and visual input.",
+      "url": "https://www.techtarget.com/whatis/definition/GPT-4",
+      "urlToImage": "https://cdn.ttgtmedia.com/ITKE/images/logos/TTlogo-379x201.png",
+      "publishedAt": "2023-03-20T16:32:00Z",
+      "content": "What is GPT-4?\r\nGPT-4 is OpenAI's large multimodal language model that generates text from textual and visual input. Open AI is the American AI research company behind Dall-E, ChatGPT and GPT-4's pre… [+10746 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Marketscreener.com"
+      },
+      "author": "MarketScreener",
+      "title": "CPSI Announces Participation in Sidoti Investor Conference",
+      "description": "(marketscreener.com) \nCPSI , a healthcare solutions company, today announced that Chris Fowler, President and Chief Executive Officer, and Matt Chambless, Chief Financial Officer, will participate in the Sidoti March 2023 Virtual Conference, including a prese…",
+      "url": "https://www.marketscreener.com/quote/stock/COMPUTER-PROGRAMS-AND-SYS-8880/news/CPSI-Announces-Participation-in-Sidoti-Investor-Conference-43293787/?utm_medium=RSS&utm_content=20230320",
+      "urlToImage": "https://www.marketscreener.com/images/twitter_MS_fdnoir.png",
+      "publishedAt": "2023-03-20T16:31:02Z",
+      "content": "CPSI (NASDAQ: CPSI), a healthcare solutions company, today announced that Chris Fowler, President and Chief Executive Officer, and Matt Chambless, Chief Financial Officer, will participate in the Sid… [+1610 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Kodeco.com"
+      },
+      "author": null,
+      "title": "Introduction To Unity Unit Testing [FREE]",
+      "description": "Learn all about the Unity Test Framework and how to set up Unit Tests in your Unity projects.",
+      "url": "https://www.kodeco.com/38240193-introduction-to-unity-unit-testing",
+      "urlToImage": "https://files.koenig.kodeco.com/uploads/2023/03/unity_unit_testing_twitter.png",
+      "publishedAt": "2023-03-20T16:00:17Z",
+      "content": "Testing is a part of game development thats often not given enough attention especially in smaller studios without the resources for a dedicated testing team. Fortunately, as a developer, you can pro… [+29033 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Quicksprout.com"
+      },
+      "author": "Lars Lofgren",
+      "title": "How To Start a Beauty Blog in 9 Simple Steps",
+      "description": "We recommend that most people use WordPress with Hostinger because it’s easy to set up, and there are no limits to what you can do. Get started with Hostinger today for just $1.99 per month. Beauty is one of the most popular niches for content creation. For y…",
+      "url": "https://www.quicksprout.com/how-to-start-a-beauty-blog/",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T16:00:00Z",
+      "content": "We recommend that most people use WordPress with Hostinger because its easy to set up, and there are no limits to what you can do. Get started with Hostinger today for just $1.99 per month.\r\nBeauty i… [+12452 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "VentureBeat"
+      },
+      "author": "Jordan Fragen",
+      "title": "Roblox launches generative AI materials & coding tools",
+      "description": "At GDC 2023, Roblox has announced an open opt-in beta for two new generative AI tools that help users generate materials and assist coding.",
+      "url": "https://venturebeat.com/games/roblox-launches-generative-ai-materials-coding-tools-gdc-2023/",
+      "urlToImage": "https://venturebeat.com/wp-content/uploads/2023/03/Generative-AI-Materials.png?w=1200&strip=all",
+      "publishedAt": "2023-03-20T16:00:00Z",
+      "content": "Connect with top gaming leaders in Los Angeles at GamesBeat Summit 2023 this May 22-23. Register here.\r\nRoblox has launched two new generative AI tools to support the 12 million developers on its pla… [+1089 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nofilmschool.com"
+      },
+      "author": "Alyssa Miller",
+      "title": "Can Color Coding Characters Improve Your Story?",
+      "description": "Color coding your character can help your story in serval ways, so let's get into it!\r\nThere are a lot of aspects of visual storytelling that make a story great. From the action, lighting, composition, editing, and choreography, crafting a brilliant visual st…",
+      "url": "https://nofilmschool.com/color-coding-characters",
+      "urlToImage": "https://nofilmschool.com/sites/default/files/styles/facebook/public/big_fish.jpg?itok=ULhZzGRn",
+      "publishedAt": "2023-03-20T16:00:00Z",
+      "content": "Color coding your character can help your story in serval ways, so let's get into it!\r\nThere are a lot of aspects of visual storytelling that make a story great. From the action, lighting, compositio… [+6338 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rahul.biz"
+      },
+      "author": "Rahul .",
+      "title": "What Is JavaScript Slice? Practical Examples and Guide",
+      "description": "If you're new to coding, the term 'slice method' may be daunting. Put simply, the slice method is a powerful JavaScript tool that lets you extract sections of an array or string.\nIt's one of those methods that, once you understand and can use, can make your d…",
+      "url": "https://www.rahul.biz/blog/what-is-javascript-slice-practical-examples-and-guide",
+      "urlToImage": "https://dz2cdn3.dzone.com/storage/article-thumb/16775462-thumb.jpg",
+      "publishedAt": "2023-03-20T15:59:51Z",
+      "content": "If you're new to coding, the term 'slice method' may be daunting. Put simply, the slice method is a powerful JavaScript tool that lets you extract sections of an array or string.\r\nIt's one of those m… [+7221 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "How-To Geek"
+      },
+      "author": "Sponsored",
+      "title": "How to Build a Fast Online Store With Nexcess Managed WooCommerce",
+      "description": "Ecommerce is a multi-million dollar industry that’s poised to grow as physical retailers struggle to keep their doors open, and consumer trust in big brands wanes. If you want your online shop to be part of the small business renaissance, Nexcess Managed WooC…",
+      "url": "https://www.howtogeek.com/878742/how-to-build-a-fast-online-store-with-nexcess-managed-woocommerce/",
+      "urlToImage": "https://www.howtogeek.com/wp-content/uploads/2023/03/nexcess-wrap.jpg?height=200p&trim=2,2,2,2",
+      "publishedAt": "2023-03-20T15:55:06Z",
+      "content": "Nexcess\r\nEcommerce is a multi-million dollar industry that’s poised to grow as physical retailers struggle to keep their doors open, and consumer trust in big brands wanes. If you want your online sh… [+3457 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Science X",
+      "title": "Tracking the emergence of an extensively drug-resistant Shigella sonnei strain in France",
+      "description": "Shigellosis, a highly contagious diarrheal disease, is caused by Shigella bacteria circulating in industrializing countries but also in industrialized countries. Scientists from the French National Reference Center for Escherichia coli, Shigella and Salmonell…",
+      "url": "https://phys.org/news/2023-03-tracking-emergence-extensively-drug-resistant-shigella.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/2023/emergence-of-extensive.jpg",
+      "publishedAt": "2023-03-20T15:53:30Z",
+      "content": "Shigellosis, a highly contagious diarrheal disease, is caused by Shigella bacteria circulating in industrializing countries but also in industrialized countries. Scientists from the French National R… [+4876 chars]"
+    },
+    {
+      "source": {
+        "id": "fortune",
+        "name": "Fortune"
+      },
+      "author": "David Klepper, Manuel Valdes, The Associated Press",
+      "title": "Americans barely have media literacy. Now teachers have to tackle 'digital literacy.'",
+      "description": "“This technology is so new that no one taught us how to use it,” says social studies teacher Shawn Lee. “I would like to think the republic can survive an algorithm.”",
+      "url": "https://fortune.com/2023/03/20/what-is-digital-literacy-high-school-teachers-misinformation/",
+      "urlToImage": "https://content.fortune.com/wp-content/uploads/2023/03/AP23076687613407-e1679325666858.jpg?resize=1200,600",
+      "publishedAt": "2023-03-20T15:22:43Z",
+      "content": "Shawn Lee, a high school social studies teacher in Seattle, wants to see lessons on the internet akin to a kind of 21st century drivers education, an essential for modern life.Lee has tried to bring … [+6783 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "author": "t77yang@uwaterloo.ca",
+      "title": "hammock-plot added to PyPI",
+      "description": "Hammock - visualization of categorical or mixed categorical/continuous data",
+      "url": "https://pypi.org/project/hammock-plot/",
+      "urlToImage": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "publishedAt": "2023-03-20T14:55:12Z",
+      "content": "Description\r\nhammock draws a graph to visualize categorical data - though it also does fine with continuous data.\r\nVariables are lined up parallel to the vertical axis. Categories within a variable a… [+8149 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Sachachua.com"
+      },
+      "author": "Sacha Chua",
+      "title": "2023-03-20 Emacs news",
+      "description": "<ul>\n<li>Upcoming events:\n<ul>\n<li>Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Fri Mar 24 1200 America/Vancouver - 1400 America/Chicago - 1500 America/Toronto - 1900 Etc/GMT - 2000 Europe/Berlin – Sat Mar 25 0030 Asia/Kolkata - 0300…",
+      "url": "https://sachachua.com/blog/2023/03/2023-03-20-emacs-news/",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T14:43:04Z",
+      "content": "<ul><li>Upcoming events:\r\n<ul><li>Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Fri Mar 24 1200 America/Vancouver - 1400 America/Chicago - 1500 America/Toronto - 1900 Etc/GMT… [+1712 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Codeproject.com"
+      },
+      "author": "Member 14125980",
+      "title": "Windows forms - printpreviewdialog",
+      "description": "Hello Is it possible to load a file from a local folder and display it using the Print Preview Dialog? I have spent some time investigating ways to do this and tried various ways of coding but I have had no luck. Is what I'm trying to do even...",
+      "url": "https://www.codeproject.com/Questions/5357224/Windows-forms-printpreviewdialog",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T14:20:00Z",
+      "content": "HelloIs it possible to load a file from a local folder and display it using the Print Preview Dialog?\r\nI have spent some time investigating ways to do this and tried various ways of coding but I have… [+248 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "DART VADAR harnesses the force of enzymes for better RNA drugs",
+      "description": "Gene therapy has been heralded as the new frontier of medicine, but there are still many limitations to current technologies; among them, how to deliver therapeutic genes to specific cells, and only activate them in the right context. A team has created a new…",
+      "url": "https://www.sciencedaily.com/releases/2023/03/230320101933.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/scidaily-icon.png",
+      "publishedAt": "2023-03-20T14:19:33Z",
+      "content": "More than twelve billion doses of mRNA vaccines have been administered globally since the start of the COVID pandemic, saving millions of lives. But RNA-based therapies for other diseases have so far… [+9973 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Kelly",
+      "title": "Laura Bassi #WHM23 #WomensHistoryMonth #WomenInSTEM",
+      "description": "Today we celebrate the significant achievements of 18th century teacher and scientist Laura Bassi, who lived and worked in Bologna during the enlightenment. Bassi was a trailblazer for women in Academic Europe. From the Brooklyn Museum:Laura Bassi significant…",
+      "url": "https://blog.adafruit.com/2023/03/20/laura-bassi-whm23-womenshistorymonth-womeninstem/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/602.128.jpg",
+      "publishedAt": "2023-03-20T14:10:12Z",
+      "content": "Adafruit publishes a wide range of writing and video content, including interviews and reporting on the maker market and the wider technology world. Our standards page is intended as a guide to best … [+2632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Stephanie",
+      "title": "The B-Side #MusicMonday",
+      "description": "The B-Side features a curriculum designed by Carnegie Hall teaching artists and industry execs that is supported by guest-speakers and field trips. Unfortunately applications for the winter and spring workshops are currently closed so if you’re interested kee…",
+      "url": "https://blog.adafruit.com/2023/03/20/the-b-side-musicmonday/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/bside-e1678979551305.png",
+      "publishedAt": "2023-03-20T14:00:34Z",
+      "content": "Adafruit publishes a wide range of writing and video content, including interviews and reporting on the maker market and the wider technology world. Our standards page is intended as a guide to best … [+2632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Callam T. Davidson, Eileen Miller, Morwenna Muir, John C. Dawson, Martin Lee, Stuart Aitken, Alan Serrels, Scott P. Webster, Natalie Z. M. Homer, Ruth Andrew, Valerie G. Brunton, Patrick W. F. Hadoke, Brian R. Walker",
+      "title": "11β-HSD1 inhibition does not affect murine tumour angiogenesis but may exert a selective effect on tumour growth by modulating inflammation and fibrosis",
+      "description": "Glucocorticoids inhibit angiogenesis by activating the glucocorticoid receptor. Inhibition of the glucocorticoid-activating enzyme 11β-hydroxysteroid dehydrogenase type 1 (11β-HSD1) reduces tissue-specific glucocorticoid action and promotes angiogenesis in mu…",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255709",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0255709.g007&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Davidson CT, Miller E, Muir M, Dawson JC, Lee M, Aitken S, et al. (2023) 11-HSD1 inhibition does not affect murine tumour angiogenesis but may exert a selective effect on tumour growth by m… [+36088 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Zoie Wai Man Tse, Shaista Emad, Md. Kamrul Hasan, Ioanna V. Papathanasiou, Ibad ur Rehman, Ka Yiu Lee",
+      "title": "School-based cognitive-behavioural therapy for children and adolescents with social anxiety disorder and social anxiety symptoms: A systematic review",
+      "description": "Background Social anxiety disorder (SAD) is prevalent among children and adolescents. Cognitive-behavioural therapy (CBT) has been used as the first-line treatment. However, evaluation of CBT conducted in a school setting has been scarce.   Objectives This st…",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283329",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0283329.g001&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Tse ZWM, Emad S, Hasan MK, Papathanasiou IV, Rehman Iu, Lee KY (2023) School-based cognitive-behavioural therapy for children and adolescents with social anxiety disorder and social anxiety… [+21040 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Yan Li, Arnold Wong, Wai Man Chung, Mengqi Li, Alex Molasiotis, Daniel Bressington, Christina Zong-Hao Ma, Patrick Pui Kin Kor, Wing Fai Yeung",
+      "title": "Evaluation of a Physical-Psychological Integrative (PPI) intervention for community-dwelling spinal cord injury survivors: Study protocol of a preliminary randomized controlled trial",
+      "description": "Introduction There is a considerably large group of community-dwelling spinal cord injury (SCI) survivors living with low quality of life. Physical inactivity, depression, and chronic pain are major problems faced by SCI survivors discharged from the acute ph…",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282846",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0282846.g003&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Li Y, Wong A, Chung WM, Li M, Molasiotis A, Bressington D, et al. (2023) Evaluation of a Physical-Psychological Integrative (PPI) intervention for community-dwelling spinal cord injury surv… [+30936 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Dohoon Lee, Bonil Koo, Jeewon Yang, Sun Kim",
+      "title": "Metheor: Ultrafast DNA methylation heterogeneity calculation from bisulfite read alignments",
+      "description": "Author summary DNA methylation is the most extensively studied epigenetic modifications that plays a pivotal role in key biological processes. The advance of next-generation sequencing technology combined with bisulfite treatment of DNA, namely bisulfite sequ…",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010946",
+      "urlToImage": "https://journals.plos.org/ploscompbiol/article/figure/image?id=10.1371/journal.pcbi.1010946.g004&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Abstract\r\nPhased DNA methylation states within bisulfite sequencing reads are valuable source of information that can be used to estimate epigenetic diversity across cells as well as epigenomic insta… [+35785 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Changli Mao, Fengliang Zhang, Xiaoqin Li, Tian Yang, Qi Zhao, Yu Wu",
+      "title": "Complete chloroplast genome sequences of Myristicaceae species with the comparative chloroplast genomics and phylogenetic relationships among them",
+      "description": "Background Myristicaceae was widly distributed from tropical Asia to Oceania, Africa, and tropical America. There are 3 genera and 10 species of Myristicaceae present in China, mainly distributed in the south of Yunnan Province. Most research on this family f…",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281042",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0281042.g008&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Mao C, Zhang F, Li X, Yang T, Zhao Q, Wu Y (2023) Complete chloroplast genome sequences of Myristicaceae species with the comparative chloroplast genomics and phylogenetic relationships amo… [+28597 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Linda Carman Copel, Suzanne C. Smeltzer, Christine D. Byrne, Mu-Hsun Chen, Donna S. Havens, Peter Kaufmann, Heather Brom, Jennifer Dean Durning, Linda Maldonado, Patricia K. Bradley, Janell Mensinger, Jennifer Yost",
+      "title": "A thematic analysis of shared experiences of essential health and support personnel in the COVID-19 pandemic",
+      "description": "Aims and objectives Studies have shown that the COVID-19 pandemic has taken a toll on individuals who interact with patients with SARS-CoV-2 but focused largely on clinicians in acute care settings. This qualitative descriptive study aimed to understand the e…",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282946",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0282946.t001&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Abstract\r\nAims and objectives\r\nStudies have shown that the COVID-19 pandemic has taken a toll on individuals who interact with patients with SARS-CoV-2 but focused largely on clinicians in acute care… [+52268 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Olivia A. Pilling, João L. Reis-Cunha, Cooper A. Grace, Alexander S. F. Berry, Matthew W. Mitchell, Jane A. Yu, Clara R. Malekshahi, Elise Krespan, Christina K. Go, Cláudia Lombana, Yun S. Song, Camila F. Amorim, Alexsandro S. Lago, Lucas P. Carvalho, Edgar M. Carvalho, Dustin Brisson, Phillip Scott, Daniel C. Jeffares, Daniel P. Beiting",
+      "title": "Selective whole-genome amplification reveals population genetics of Leishmania braziliensis directly from patient skin biopsies",
+      "description": "Author summary Leishmania braziliensis is the main cause of cutaneous leishmaniasis in Brazil. Due to limitations in culturing, it is important to study the parasite in a culture-independent manner. We use selective whole genome amplification (SWGA) to explor…",
+      "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1011230",
+      "urlToImage": "https://journals.plos.org/plospathogens/article/figure/image?id=10.1371/journal.ppat.1011230.g006&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Pilling OA, Reis-Cunha JL, Grace CA, Berry ASF, Mitchell MW, Yu JA, et al. (2023) Selective whole-genome amplification reveals population genetics of Leishmania braziliensis directly from p… [+53711 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Realpython.com"
+      },
+      "author": "Real Python",
+      "title": "Executing Python Scripts With a Shebang",
+      "description": "In this tutorial, you'll learn when and how to use the shebang line in your Python scripts to execute them from a Unix-like shell. Along the way, you'll run custom scripts written in your domain-specific language interpreted by Python.",
+      "url": "https://realpython.com/python-shebang/",
+      "urlToImage": "https://files.realpython.com/media/Should-I-Put-a-Shebang-At-The-Start-of-My-Python-Script_Watermarked.aad3a85923a2.jpg",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "When you read someone else’s Python code, you frequently see a mysterious line, which always appears at the top of the file, starting with the distinctive shebang (#!) sequence. It looks like a not-s… [+26722 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Rory Sheehan, Hassan Mansour, Matthew Broadbent, Angela Hassiotis, Christoph Mueller, Robert Stewart, Andre Strydom, Andrew Sommerlad",
+      "title": "Recording of intellectual disability in general hospitals in England 2006–2019: Cohort study using linked datasets",
+      "description": "Rory Sheehan and colleagues investigate how often intellectual disability is recorded when people with the condition are admitted to general hospitals in England.",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004117",
+      "urlToImage": "https://journals.plos.org/plosmedicine/article/figure/image?id=10.1371/journal.pmed.1004117.g001&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Sheehan R, Mansour H, Broadbent M, Hassiotis A, Mueller C, Stewart R, et al. (2023) Recording of intellectual disability in general hospitals in England 20062019: Cohort study using linked … [+39106 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "author": "Emily Romeis, Nicole A. P. Lieberman, Barbara Molini, Lauren C. Tantalo, Benjamin Chung, Quynh Phung, Carlos Avendaño, Anastassia Vorobieva, Alexander L. Greninger, Lorenzo Giacani",
+      "title": "Treponema pallidum subsp. pallidum with an Artificially impaired TprK antigenic variation system is attenuated in the Rabbit model of syphilis",
+      "description": "Author summary Syphilis is still endemic in low- and middle-income countries, and it has been resurgent in high-income nations, including the U.S., for years. In endemic areas, there is still significant morbidity and mortality associated with this disease, p…",
+      "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1011259",
+      "urlToImage": "https://journals.plos.org/plospathogens/article/figure/image?id=10.1371/journal.ppat.1011259.g007&size=inline",
+      "publishedAt": "2023-03-20T14:00:00Z",
+      "content": "Citation: Romeis E, Lieberman NAP, Molini B, Tantalo LC, Chung B, Phung Q, et al. (2023) Treponema pallidum subsp. pallidum with an Artificially impaired TprK antigenic variation system is attenuated… [+79560 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Vmblog.com"
+      },
+      "author": "David Marshall",
+      "title": "Low-Code Platform Provider Iterate.ai Adds Generative AI to Interplay",
+      "description": "Iterate.ai announced that its low-code Interplay platform now includes integrations with Stable Diffusion, ChatGPT, and other OpenAI tools across the fast-moving generative AI landscape.",
+      "url": "https://vmblog.com:443/archive/2023/03/20/low-code-platform-provider-iterate-ai-adds-generative-ai-to-interplay.aspx",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T13:47:00Z",
+      "content": "Iterate.ai announced that its low-code Interplay platform now includes integrations with\r\nStable Diffusion, ChatGPT, and other OpenAI tools across the fast-moving\r\ngenerative AI landscape. Interplay … [+4075 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Ambcrypto.com"
+      },
+      "author": "Jacob Thomas",
+      "title": "Coinbase launches Base to integrate web3 capabilities into regular apps",
+      "description": "As we await the advent of Web 3.0, decentralized technologies will probably serve as the foundation for the future Internet. The significance of blockchain in the Web 3.0 revolution has highlighted the function of dApps in Web 3.0 and the value they provide. …",
+      "url": "https://ambcrypto.com/coinbase-launches-base-to-integrate-web3-capabilities-into-regular-apps/",
+      "urlToImage": "https://statics.ambcrypto.com/wp-content/uploads/2023/03/base-.png",
+      "publishedAt": "2023-03-20T13:30:55Z",
+      "content": "As we await the advent of Web 3.0, decentralized technologies will probably serve as the foundation for the future Internet. The significance of blockchain in the Web 3.0 revolution has highlighted t… [+8456 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Anne Barela",
+      "title": "The Great Search: LoRa 915MHz ISM band antenna #TheGreatSearch #DigiKey @DigiKey #deskofladyada",
+      "description": "(Video) On last week’s The Great Search, we wanted to find a way to connect a whip-style antenna to our 915 MHz ISM Band Feather boards with either RFM69 or LoRa modules. We started by finding uFL to SMA adapter cables, with great success.Now we get onto the …",
+      "url": "https://blog.adafruit.com/2023/03/20/the-great-search-lora-915mhz-ism-band-antenna-thegreatsearch-digikey-digikey-deskofladyada/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/The-Great-Search-2021-853-banner-2.jpg",
+      "publishedAt": "2023-03-20T13:30:50Z",
+      "content": "March 20, 2023 AT 9:30 am\r\nThe Great Search: LoRa 915MHz ISM band antenna #TheGreatSearch #DigiKey @DigiKey #deskofladyada\r\n(Video) On last week’s The Great Search, we wanted to find a way to connect… [+3652 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Harvard Business Review"
+      },
+      "author": "Marcelo Cerullo, Kelly Kaili Yang, Ryan C. McDevitt, Karen Joynt Maddox, James W. Roberts, Anaeze C. Offodile II",
+      "title": "Research: What Happens When Private Equity Firms Buy Hospitals?",
+      "description": "The topic of private equity firms acquiring hospitals and health systems in the United States has sparked a fierce debate for years about whether the deals were good or bad for communities they serve. A study of 45 leveraged buyouts produced some surprising f…",
+      "url": "https://hbr.org/2023/03/research-what-happens-when-private-equity-firms-buy-hospitals",
+      "urlToImage": "https://hbr.org/resources/images/article_assets/2023/03/Mar23_20_1139569621.jpg",
+      "publishedAt": "2023-03-20T13:28:02Z",
+      "content": "A study of 42 leveraged buyouts produced surprising findings that should guide policy reforms.\r\n\"&gt;\r\nIn the decades leading up to the Covid-19 pandemic, acquisitions of hospitals and health systems… [+12143 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Anne Barela",
+      "title": "The Python on Hardware Newsletter: subscribe for free #CircuitPython #Python #RaspberryPi @micropython @ThePSF",
+      "description": "Interested in Python, especially on small devices? With the Python on Microcontrollers newsletter, you get all the latest information in one place! The Python on Microcontrollers newsletter is the place for the latest news involving Python on hardware (microc…",
+      "url": "https://blog.adafruit.com/2023/03/20/the-python-on-hardware-newsletter-subscribe-for-free-circuitpython-python-raspberrypi-micropython-thepsf-4/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/all-python-subscribe-2.jpg",
+      "publishedAt": "2023-03-20T13:25:48Z",
+      "content": "Adafruit publishes a wide range of writing and video content, including interviews and reporting on the maker market and the wider technology world. Our standards page is intended as a guide to best … [+2632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Mac Observer"
+      },
+      "author": "Jeff Butts",
+      "title": "How to Install the Xcode Command Line Tools",
+      "description": "Many developers of all sorts enjoy coding on Macs. Its Unix underpinnings make it a terrific platform for software development in Python, Ruby and more. If you’re looking to begin software development on a Mac, though, there are programming languages and util…",
+      "url": "https://www.macobserver.com/tips/how-to/install-xcode-command-line-tools/",
+      "urlToImage": "https://www.macobserver.com/wp-content/uploads/2023/03/How-to-Install-the-Xcode-Command-Line-Tools.jpg",
+      "publishedAt": "2023-03-20T13:22:13Z",
+      "content": "Many developers of all sorts enjoy coding on Macs. Its Unix underpinnings make it a terrific platform for software development in Python, Ruby and more. If youre looking to begin software development… [+4149 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "author": "elseverclash57@gmail.com",
+      "title": "pygamelive added to PyPI",
+      "description": "Pygame live coding package",
+      "url": "https://pypi.org/project/pygamelive/",
+      "urlToImage": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "publishedAt": "2023-03-20T13:02:46Z",
+      "content": "About\r\nThis module provides live coding in pygame.You can see your code changes at once without restart application.\r\nhttps://user-images.githubusercontent.com/125838640/226334376-04f91f11-1775-49e5-… [+1400 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "PRNewswire"
+      },
+      "author": null,
+      "title": "Everlaw Launches New Features to Help Legal Teams Quickly Find Hidden Stories in Emails, Video Depositions and Zoom Videos",
+      "description": "Everlaw Communication Visualizer, Video Depositions and Cloud Connectors for Zoom to be Demoed at Legalweek NEW YORK, March 20, 2023 /PRNewswire/ -- Legalweek -- Everlaw, the cloud-native investigation and litigation platform, unveiled three new features toda…",
+      "url": "https://www.prnewswire.com/news-releases/everlaw-launches-new-features-to-help-legal-teams-quickly-find-hidden-stories-in-emails-video-depositions-and-zoom-videos-301774680.html",
+      "urlToImage": "https://mma.prnewswire.com/media/2034969/Video_Depos_Highlights_Everlaw.jpg?p=facebook",
+      "publishedAt": "2023-03-20T13:00:00Z",
+      "content": "Within Communication Visualizer, small circles or nodes represent key players. Larger nodes indicate higher volumes of correspondence, and the size of the line between any two nodes shows how often p… [+7297 chars]"
+    },
+    {
+      "source": {
+        "id": "vice-news",
+        "name": "Vice News"
+      },
+      "author": "Chloe Xiang, Jordan Pearson",
+      "title": "Startups Are Already Using GPT-4 to Spend Less on Human Coders",
+      "description": "GPT-4 \"saves a lot of time and a lot of money, obviously, because we haven't had to hire additional resources.\"",
+      "url": "https://www.vice.com/en/article/jg5xmp/startups-are-already-using-gpt-4-to-spend-less-on-human-coders",
+      "urlToImage": "https://video-images.vice.com/articles/6414c58b73caf8d34ad8f997/lede/1679083211969-1674655888922-screen-shot-2023-01-25-at-91114-am.png?image-resize-opts=Y3JvcD0wLjkxMjE5ODkxMjE5ODkxMjJ4dzoxeGg7Y2VudGVyLGNlbnRlciZyZXNpemU9MTIwMDoqJnJlc2l6ZT0xMjAwOio",
+      "publishedAt": "2023-03-20T13:00:00Z",
+      "content": "Since GPT-4 was released last week, many users have noticed its advanced coding abilities. GPT-4, OpenAI’s latest version of the large language model that ChatGPT is built on, has been able to code g… [+6445 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "PRNewswire"
+      },
+      "author": null,
+      "title": "Using Artificial Intelligence, HaystackID® Expands Legal Document Review Services and Staffing Marketplace Capabilities",
+      "description": "WASHINGTON, March 20, 2023 /PRNewswire/ -- HaystackID, a specialized eDiscovery services firm supporting law firms and corporate legal departments, announced today its next-generation managed review services which incorporate artificial intelligence and staff…",
+      "url": "https://www.prnewswire.com/news-releases/using-artificial-intelligence-haystackid-expands-legal-document-review-services-and-staffing-marketplace-capabilities-301775758.html",
+      "urlToImage": "https://mma.prnewswire.com/media/1813072/HaystackID.jpg?p=facebook",
+      "publishedAt": "2023-03-20T13:00:00Z",
+      "content": "WASHINGTON, March 20, 2023 /PRNewswire/ -- HaystackID, a specialized eDiscovery services firm supporting law firms and corporate legal departments, announced today its next-generation managed review … [+3846 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "ZDNet"
+      },
+      "author": "David Gewirtz",
+      "title": "How to use ChatGPT to write code",
+      "description": "Can ChatGPT replace programmers? What programming languages does ChatGPT know? We answer these and your other generative AI coding questions.",
+      "url": "https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/",
+      "urlToImage": "https://www.zdnet.com/a/img/resize/4ecb007210b49c131a0f316b6a6e390e0fb7366f/2023/03/18/356537d3-79d5-435d-adb3-530718ad3263/codegpt.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2023-03-20T12:59:44Z",
+      "content": "David Gewirtz/ZDNET\r\nOne of the more intriguing discoveries about ChatGPT is that it can write pretty good code. I tested this out last month when I asked it to write a WordPress plugin my wife could… [+10610 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Sap.com"
+      },
+      "author": "Jana Subramanian",
+      "title": "Securing RISE with SAP S/4HANA cloud, private edition, Customer Data Center option",
+      "description": "(Jana Subramanian serves as  APJ Principal Cybersecurity Advisor for Cloud Security and has been recognized as a Fellow of Information Privacy (FIP) by the International Association of Privacy Professionals (IAPP). As part of his responsibilities, […]",
+      "url": "https://blogs.sap.com/2023/03/20/securing-rise-with-sap-s-4hana-cloud-private-edition-customer-data-center-option/",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T12:54:34Z",
+      "content": "(Jana Subramanian serves as  APJ Principal Cybersecurity Advisor for Cloud Security and has been recognized as a Fellow of Information Privacy (FIP) by the International Association of Privacy Profes… [+19284 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Scitation.org"
+      },
+      "author": "Yingkui Gu, Ronghua Chen, Kuan Wu, Peng Huang, Guangqi Qiu",
+      "title": "A variable-speed-condition bearing fault diagnosis methodology with recurrence plot coding and MobileNet-v3 model",
+      "description": "Review of Scientific Instruments, Volume 94, Issue 3, March 2023. To improve the quality of the non-stationary vibration features and the performance of the variable-speed-condition fault diagnosis, this paper proposed a bearing fault diagnosis approach with …",
+      "url": "https://aip.scitation.org/doi/10.1063/5.0125548?af=R&feed=most-recent&",
+      "urlToImage": "https://aip.scitation.org/action/showOpenGraphArticleImage?doi=10.1063/5.0125548&id=images/medium/5.0125548.figures.online.highlight_f1.jpg",
+      "publishedAt": "2023-03-20T12:41:36Z",
+      "content": "Step 2: MobileNet-v3 model training. By error back-propagation, the network is trained and the network parameters are updated. The network training is finished after reaching the maximum number of it… [+150 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "Intuit Interview Experience for SDE Internship (Off-Campus)",
+      "description": "The first round was the resume selection round  followed by 1 Online Coding Round in the HackerRank platform  2 Technical Interview Rounds s and the HR Round. Coding Round Total Four questions were asked in the coding round. One question was easy  two questio…",
+      "url": "https://www.geeksforgeeks.org/intuit-interview-experience-for-sde-internship-off-campus/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:36:20Z",
+      "content": "The first round was the resume selection round, followed by 1 Online Coding Round in the HackerRank platform, 2 Technical Interview Rounds,s and the HR Round.\r\nCoding Round:Total Four questions were … [+3303 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "Oracle Financial Services Software Interview Experience for Associate Consultant (On-Campus)",
+      "description": "OFSS conducted an on campus drive at my college DIT University  Dehradun  The Interview process was mainly divided into 3 rounds    Round 1   Online Coding Round which was conducted on the HackerRank platform. The first question was normal DSA based  easy med…",
+      "url": "https://www.geeksforgeeks.org/oracle-financial-services-software-interview-experience-for-associate-consultant-on-campus/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:36:02Z",
+      "content": "OFSS conducted an on-campus drive at my college(DIT University, Dehradun) The Interview process was mainly divided into 3 rounds: –\r\nRound 1:- Online Coding Round which was conducted on the HackerRan… [+940 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "Hexaware Interview Experience for PGET (Off-Campus) 2023",
+      "description": "I applied for the Hexaware PGET role on the superset website. There were 3 assessments before the interview   Online Aptitude TestCoding Test   2 questions in 90 minutes Communication Assessment After clearing these rounds I received the mail for Technical In…",
+      "url": "https://www.geeksforgeeks.org/hexaware-interview-experience-for-pget-off-campus-2023/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:36:01Z",
+      "content": "I applied for the Hexaware PGET role on the superset website.\r\nThere were 3 assessments before the interview :\r\n<ol><li>Online Aptitude Test</li><li>Coding Test ( 2 questions in 90 minutes)</li><li>C… [+1219 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "TCS Ninja Interview Experience (On-Campus) 2023",
+      "description": "I applied at TCS in June 2022 through Campus Hiring Process.The eligibility criteria for this job were   B.Tech All Branches   M.Tech All Branches   MCA  M.Sc Batch 2023. Minimum 60  or 6 CGPA throughout academics. There can be a maximum of 1 active backlog d…",
+      "url": "https://www.geeksforgeeks.org/tcs-ninja-interview-experience-on-campus-2023/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:35:59Z",
+      "content": "I applied at TCS in June 2022 through Campus Hiring Process.The eligibility criteria for this job were:\r\n<ul><li> B.Tech(All Branches), M.Tech(All Branches), MCA, M.Sc Batch 2023.</li><li> Minimum 60… [+2615 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "Ribbon Communications Pvt Ltd. Interview Experience",
+      "description": "As a recent graduate in Electronics and Communication Engineering  I was excited to apply for the role of Software Developer at Ribbon Communications Pvt Ltd. I came across this opportunity on Naukri.com and applied for it immediately. After submitting my app…",
+      "url": "https://www.geeksforgeeks.org/ribbon-communications-pvt-ltd-interview-experience-2/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:35:57Z",
+      "content": "As a recent graduate in Electronics and Communication Engineering, I was excited to apply for the role of Software Developer at Ribbon Communications Pvt Ltd. I came across this opportunity on Naukri… [+2573 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeksforgeeks.org"
+      },
+      "author": "Team 4 - Web Technologies",
+      "title": "Intel Interview Experience for Graduate Intern (On-Campus)",
+      "description": "So out of around 35 students  they shortlist only 6 students  and out of 6  one got placed at Infineon. so there are only 5 students for the interview  I was one of them .  Round   1   It was a 1.5hr interview. First  the Interviewer asks me to introduce myse…",
+      "url": "https://www.geeksforgeeks.org/intel-interview-experience-for-graduate-intern-on-campus/",
+      "urlToImage": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+      "publishedAt": "2023-03-20T12:35:54Z",
+      "content": "So out of around 35 students, they shortlist only 6 students, and out of 6, one got placed at Infineon. so there are only 5 students for the interview (I was one of them). \r\nRound – 1:- It was a 1.5h… [+2571 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pythonlibrary.org"
+      },
+      "author": "Mike",
+      "title": "Mike Driscoll: PyDev of the Week: Pierre Raybaut",
+      "description": "Today we welcome Pierre Raybaut (@pierreraybaut) as our PyDev of the Week! Pierre is the creator of Spyder, the Scientific Python IDE. Pierre is also the",
+      "url": "https://www.blog.pythonlibrary.org/2023/03/20/pydev-of-the-week-pierre-raybaut/",
+      "urlToImage": "https://www.blog.pythonlibrary.org/wp-content/uploads/2023/03/Pierre_Raybaut.jpg",
+      "publishedAt": "2023-03-20T12:30:47Z",
+      "content": "Today we welcome Pierre Raybaut (@pierreraybaut) as our PyDev of the Week! Pierre is the creator of Spyder, the Scientific Python IDE. Pierre is also the creator of pythonxy and WinPython.\r\nYou can s… [+6308 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "DevOps.com"
+      },
+      "author": "Gilad David Maayan",
+      "title": "5 Unusual Ways to Improve Code Quality",
+      "description": "Code quality refers to how well-written and maintainable software code is. It encompasses factors such as readability, efficiency, scalability, reliability, maintainability and security. High code quality ensures that software is easy to understand, modify an…",
+      "url": "https://devops.com/5-unusual-ways-to-improve-code-quality/",
+      "urlToImage": "https://devops.com/wp-content/uploads/2023/03/programming-background-with-person-working-with-codes-computer-e1679047506780.jpg",
+      "publishedAt": "2023-03-20T12:30:21Z",
+      "content": "Code quality refers to how well-written and maintainable software code is. It encompasses factors such as readability, efficiency, scalability, reliability, maintainability and security. High code qu… [+7921 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Noah Barsky, Contributor, \n Noah Barsky, Contributor\n https://www.forbes.com/sites/noahbarsky/",
+      "title": "Microsoft AI Move Is Exactly What MBA Students Need, Employers Want And Slumping B-Schools Dread",
+      "description": "Everyday AI accelerates the future of work, upends business education and spurs goliath innovation needs. Which MBA programs will adapt, survive and thrive?",
+      "url": "https://www.forbes.com/sites/noahbarsky/2023/03/20/microsoft-ai-move-is-exactly-what-mba-students-need-employers-want-and-slumping-b-schools-dread/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6415a5b1f81b7e04b2bdc0cb/0x0.jpg?format=jpg&crop=2180,1446,x884,y676,safe&width=1200",
+      "publishedAt": "2023-03-20T12:30:08Z",
+      "content": "Microsoft AI Move Is Exactly What MBA Students Need, Employers Want And Slumping B-Schools Dread\r\ngetty\r\nMicrosoft shares rose 12.4% last week on word of the release of Copilot, a generative artifici… [+7303 chars]"
+    },
+    {
+      "source": {
+        "id": "fortune",
+        "name": "Fortune"
+      },
+      "author": "David Klepper, The Associated Press",
+      "title": "Teaching internet literacy: The growing movement working to offset an explosion of online misinformation",
+      "description": "Incorporating internet literacy can be a challenge — especially given how politicized misinformation about vaccines, public health, voting, climate change and Russia's war in Ukraine has become.",
+      "url": "https://fortune.com/2023/03/20/teaching-internet-literacy-the-growing-movement-working-to-offset-an-explosion-of-online-misinformation/",
+      "urlToImage": "https://content.fortune.com/wp-content/uploads/2023/03/GettyImages-1247922945-e1679314334459.jpg?resize=1200,600",
+      "publishedAt": "2023-03-20T12:12:43Z",
+      "content": "Shawn Lee, a high school social studies teacher in Seattle, wants to see lessons on the internet akin to a kind of 21st century drivers education, an essential for modern life.Lee has tried to bring … [+6743 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Microsoft.com"
+      },
+      "author": "Judson Althoff",
+      "title": "Breaking new ground in healthcare with the next evolution of AI - The Official Microsoft Blog",
+      "description": "Since the beginning of modern medicine, the arc of innovation has delivered previously unimaginable breakthroughs and treatments that have improved health outcomes and lengthened lifespans. We are now in an era where digital transformation is redefining the w…",
+      "url": "https://blogs.microsoft.com/blog/2023/03/20/breaking-new-ground-in-healthcare-with-the-next-evolution-of-ai/",
+      "urlToImage": "https://blogs.microsoft.com/wp-content/uploads/prod/2023/03/Exam_Room_Physician_Patient_8326_RT-1024x683.jpg",
+      "publishedAt": "2023-03-20T12:04:26Z",
+      "content": "Since the beginning of modern medicine, the arc of innovation has delivered previously unimaginable breakthroughs and treatments that have improved health outcomes and lengthened lifespans. We are no… [+8968 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Adafruit.com"
+      },
+      "author": "Kelly",
+      "title": "Secret 4-Player Arcade (with build plans!)",
+      "description": "Awesome build from Bob of I Like To Make Stuff on YouTube. I especially enjoyed getting a look at the control panel before any graphics or buttons are added. The end result is absoultely killer.For those of you who may not want an arcade cabinet in your livin…",
+      "url": "https://blog.adafruit.com/2023/03/20/secret-4-player-arcade-with-build-plans/",
+      "urlToImage": "https://cdn-blog.adafruit.com/uploads/2023/03/secret-4-player-arcade-with-buil.jpg",
+      "publishedAt": "2023-03-20T12:00:21Z",
+      "content": "Adafruit publishes a wide range of writing and video content, including interviews and reporting on the maker market and the wider technology world. Our standards page is intended as a guide to best … [+2632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Global Market Estimates",
+      "title": "Global Chatbot Market Size & Trends – Forecasts to 2028",
+      "description": "The key players covered in the global chatbot market report are Google, Microsoft, Amazon, Acuvate, Aivo, Artificial Solutions, Botsify Inc., Creative...",
+      "url": "https://finance.yahoo.com/news/global-chatbot-market-size-trends-113300815.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/sIwH._2XjjfztE4_9tILgQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD0zMzM-/https://media.zenfs.com/en/globenewswire.com/456c64d87071f4348a0c5e04f1774e69",
+      "publishedAt": "2023-03-20T11:33:00Z",
+      "content": "The key players covered in the global chatbot market report are Google, Microsoft, Amazon, Acuvate, Aivo, Artificial Solutions, Botsify Inc., Creative Virtual Ltd., eGain Corporation, IBM Corporation… [+3913 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "GlobeNewswire"
+      },
+      "author": "Global Market Estimates, Inc.",
+      "title": "Global Chatbot Market Size & Trends – Forecasts to 2028",
+      "description": "The key players covered in the global chatbot market report are Google, Microsoft, Amazon, Acuvate, Aivo, Artificial Solutions, Botsify Inc., Creative Virtual Ltd., eGain Corporation, IBM Corporation, Inbenta Technologies Inc., Next IT Corp., Nuance Communica…",
+      "url": "https://www.globenewswire.com/news-release/2023/03/20/2630156/0/en/Global-Chatbot-Market-Size-Trends-Forecasts-to-2028.html",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/81bdb8cf-1b62-4532-aea8-0ca40caf7ef2",
+      "publishedAt": "2023-03-20T11:33:00Z",
+      "content": "Brooklyn, New York, March 20, 2023 (GLOBE NEWSWIRE) -- According to a new market research report published by Global Market Estimates, the Global ChatbotMarket is expected to grow at a CAGR of 25.2% … [+3291 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The BMJ"
+      },
+      "author": "Castilla-Vallmanya, L., Centeno-Pla, M., Serrano, M., Franco-Valls, H., Martinez-Cabrera, R., Prat-Planas, A., Rojano, E., Ranea, J. A. G., Seoane, P., Oliva, C., Paredes-Fuentes, A. J., Marfany, G., Artuch, R., Grinberg, D., Rabionet, R., Balcells, S., Urreizti, R.",
+      "title": "Advancing in Schaaf-Yang syndrome pathophysiology: from bedside to subcellular analyses of truncated MAGEL2",
+      "description": "Background Schaaf-Yang syndrome (SYS) is caused by truncating mutations in MAGEL2 , mapping to the Prader-Willi region (15q11-q13), with an observed phenotype partially overlapping that of Prader-Willi syndrome. MAGEL2 plays a role in retrograde transport and…",
+      "url": "https://jmg.bmj.com/content/60/4/406?rss=1",
+      "urlToImage": "https://jmg.bmj.com/sites/default/files/highwire/jmedgenet/60/4.cover-source.jpg",
+      "publishedAt": "2023-03-20T11:17:37Z",
+      "content": "Introduction\r\nIn 2013, truncating mutations in MAGEL2 (OMIM 605283) were associated with a new clinical entity,1 first described as a Prader-Willi-like syndrome and currently named as Schaaf-Yang syn… [+18632 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The BMJ"
+      },
+      "author": "Gilchrist, M., Casanova, F., Tyrrell, J. S., Cannon, S., Wood, A. R., Fife, N., Young, K., Oram, R. A., Weedon, M. N.",
+      "title": "Prevalence of Fabry disease-causing variants in the UK Biobank",
+      "description": "Background Fabry disease is an X-linked lysosomal storage disorder resulting from deficiency of the alpha-galactosidase A enzyme leading to accumulation of globotriaosylceramide in multiple organ sites with prominent cardiovascular and renal involvement. Glob…",
+      "url": "https://jmg.bmj.com/content/60/4/391",
+      "urlToImage": "https://jmg.bmj.com/sites/default/files/highwire/jmedgenet/60/4.cover-source.jpg",
+      "publishedAt": "2023-03-20T11:17:37Z",
+      "content": "Introduction\r\nFabry disease (OMIM 301500) is an X-linked lysosomal storage disease caused by variants in the GLA gene. GLA encodes the alpha-galactosidase A (-Gal A) enzyme responsible for degradatio… [+17320 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Scitation.org"
+      },
+      "author": "Huayao Tu, Like Zhang, Yanxiang Luo, Wenxing Lv, Ting Lei, Jialin Cai, Bin Fang, Giovanni Finocchio, Lifeng Bian, Shuping Li, Baoshun Zhang, Zhongming Zeng",
+      "title": "Neural-like population coding based on spin-torque diode",
+      "description": "Applied Physics Letters, Volume 122, Issue 12, March 2023. Neuroscience studies have shown that population coding in biological systems can carry out resilient information processing with ensemble of neurons. Such strategy is valuable for the future developme…",
+      "url": "https://aip.scitation.org/doi/10.1063/5.0142374?af=R&feed=most-recent",
+      "urlToImage": "https://aip.scitation.org/action/showOpenGraphArticleImage?doi=10.1063/5.0142374&id=images/medium/5.0142374.figures.online.highlight_f1.jpg",
+      "publishedAt": "2023-03-20T11:15:32Z",
+      "content": "To sign up for alerts, please log in first. If you need an account, please register here"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Danielle Abril",
+      "title": "AI is changing jobs across industries. Here's what to expect.",
+      "description": "Artificial intelligence is increasingly making its way across industries, changing jobs from retail to medicine to marketing.",
+      "url": "https://www.washingtonpost.com/technology/interactive/2023/ai-jobs-workplace/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7UUSQAOEDRABFFVE6YJPOUVLAQ.jpg&w=1200",
+      "publishedAt": "2023-03-20T11:13:41Z",
+      "content": "In a world of infallible artificial intelligence, computers could do most of our work for us. They could diagnose our illnesses in a second. Robots and autonomous vehicles could shop and deliver our … [+14552 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Github.com"
+      },
+      "author": "andreyvit",
+      "title": "Show HN: Aidev, ask GPT-4 to modify files in your repo",
+      "description": "Hey, I got inspired by GPT Repo Loader and built aidev over the weekend, asking it to build a big chunk of itself as a meta-experiment.I was curious to find the current limits of how far I can push this AI coding stuff. Here's an example of a prompt that I be…",
+      "url": "https://github.com/andreyvit/aidev",
+      "urlToImage": "https://opengraph.githubassets.com/523c10fe995ce4847f48b162cddfa3f50be62519037dc2b27bf34863edc2b9bc/andreyvit/aidev",
+      "publishedAt": "2023-03-20T11:07:59Z",
+      "content": "AI developer: asks GPT-4 to modify an entire folder full of files.\r\nWarning: This README and even parts of the code were written by aidev itself, via GPT-4. This is a meta-experiment. Always review t… [+4663 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Daily Mail"
+      },
+      "author": "Shivali Best",
+      "title": "Rare computer mouse that inspired Steve Jobs to create Apple's first mice sells for £147,000",
+      "description": "The early mouse and coding keyset was created by computing legend Douglas Engelbart, a pioneer of the controller system.",
+      "url": "https://www.dailymail.co.uk/sciencetech/article-11880905/Rare-computer-mouse-inspired-Steve-Jobs-create-Apples-mice-sells-147-000.html",
+      "urlToImage": "https://i.dailymail.co.uk/1s/2023/03/20/10/68895201-0-image-a-79_1679307649240.jpg",
+      "publishedAt": "2023-03-20T10:41:27Z",
+      "content": "1976: Founders Steve Jobs, Steve Wozniak and Ronald Wayne created the company on April 1 1976 as they set about selling computer kits to hobbyists, each of which was built by Wozniak.\r\nThe first prod… [+3292 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Slashdot.org"
+      },
+      "author": "feedfeeder",
+      "title": "When Colleges Offer Coding Boot Camp, Students Can Get a Raw Deal",
+      "description": "Universities boost revenue by partnering with unregulated, for-profit providers. But when a boot camp went bust, some students took the fall.",
+      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=170580239",
+      "urlToImage": null,
+      "publishedAt": "2023-03-20T10:12:42Z",
+      "content": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hongkiat.com"
+      },
+      "author": "Rean",
+      "title": "Are Ready-made Websites Killing Web Design?",
+      "description": "More often than not, you would meet someone who is not as acquainted with the comings and goings of web design and tell you,”I can do the same thing you do, using Squarespace“. To which you might respond with disgust or anger. I mean, it’s not surprising. The…",
+      "url": "https://www.hongkiat.com/blog/ready-made-websites-killing-web-design/",
+      "urlToImage": "https://assets.hongkiat.com/uploads/ready-made-websites-killing-web-design/wordpress-framework.jpg",
+      "publishedAt": "2023-03-20T10:01:18Z",
+      "content": "More often than not, you would meet someone who is not as acquainted to the comings and goings of web design and tell you,I can do the same thing you do, using Squarespace.\r\nTo which you might respon… [+6257 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Kdnuggets.com"
+      },
+      "author": "Bala Priya C",
+      "title": "7 Must-Know Python Tips for Coding Interviews",
+      "description": "Preparing for your next Python coding interview? Here’s a list of useful tips that’ll come in handy and help you write Pythonic code.",
+      "url": "https://www.kdnuggets.com/2023/03/7-mustknow-python-tips-coding-interviews.html",
+      "urlToImage": "https://www.kdnuggets.com/wp-content/uploads/c_7_mustknow_python_tips_coding_interviews_1.png",
+      "publishedAt": "2023-03-20T10:00:47Z",
+      "content": "Image by Author\r\nAlmost all interviews for data science roles include up to two rounds of coding to test a candidates problem solving skills. So even if you have an impressive project portfolio, youl… [+11312 chars]"
+    }
+  ]
+}

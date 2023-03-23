@@ -48,11 +48,9 @@ const Nav = () => {
       <div className={styles.category__1}>
         <ul className={styles.category}>
           <li><button onClick={categoryHandler} className={styles.list}>Anime</button></li>
-          <li><button onClick={categoryHandler} className={styles.list}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Tech</button></li>
-          <li><button onClick={categoryHandler} className={styles.list}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Coding</button></li>
         </ul>
       </div>
@@ -60,11 +58,9 @@ const Nav = () => {
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
           <li><button onClick={categoryHandler} className={styles.list__2}>Anime</button></li>
-          <li><button onClick={categoryHandler} className={styles.list__2}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Tech</button></li>
-          <li><button onClick={categoryHandler} className={styles.list__2}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Coding</button></li>
         </ul>
       </div>
