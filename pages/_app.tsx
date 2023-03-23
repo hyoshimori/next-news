@@ -9,7 +9,7 @@ import { Category } from '@/types/Category';
 export const AppContext = createContext<MyContext>({
   selectedCategory: {
     country: 'us',
-    category: 'anime',
+    category: 'us',
   },
   setSelectedCategory: () => {},
 });
@@ -17,7 +17,7 @@ export const AppContext = createContext<MyContext>({
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [selectedCategory, setSelectedCategory] = useState<Category['MyContext']>({
     country: 'us',
-    category: 'anime',
+    category: 'us',
   });
 
   return (
