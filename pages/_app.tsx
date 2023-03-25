@@ -6,18 +6,21 @@ import { createContext, useState } from 'react';
 import { MyContext } from '@/types/MyContext';
 import { Category } from '@/types/Category';
 
+
+// This interface is to tell typescript the structure of the context. This is why there is a function in it
 export const AppContext = createContext<MyContext>({
   selectedCategory: {
     country: 'us',
-    category: 'us',
+    category: 'tech',
   },
   setSelectedCategory: () => {},
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  // Using useState to pass data via useContext
   const [selectedCategory, setSelectedCategory] = useState<Category['MyContext']>({
     country: 'us',
-    category: 'us',
+    category: 'tech',
   });
 
   return (

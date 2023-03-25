@@ -15,22 +15,14 @@ const Nav = () => {
   };
   //**********************************//
 
-  // Check if the state is correctly updated //
-  const value = useContext(AppContext);
-  // console.log(value)
-  // *************************************** //
-
+  // Using useContext
   const { selectedCategory, setSelectedCategory } = useContext(AppContext);
 
-  // Check if the data is correctly updated//
-  // useEffect(() => {
-  //   console.log('UseEffect', selectedCategory);
-  // }, [selectedCategory]);
-
-
+  // Each child node, the types must be defined. This is why types are nested.
   const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (event) => {
     // console.log("Button clicked!", (event.target as HTMLButtonElement).innerHTML);
     const newCategory = (event.target as HTMLButtonElement).innerHTML.toLowerCase()
+    // Setting the new category. Selected category page will be shown on the app
     setSelectedCategory({
       country: "us",
       category: newCategory,
@@ -47,10 +39,10 @@ const Nav = () => {
       </div>
       <div className={styles.category__1}>
         <ul className={styles.category}>
-          <li><button onClick={categoryHandler} className={styles.list}>US</button></li>
-          <li><button onClick={categoryHandler} className={styles.list}>Japan</button></li>
+          {/* <li><button onClick={categoryHandler} className={styles.list}>US</button></li> */}
           <li><button onClick={categoryHandler} className={styles.list}>Tech</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Anime</button></li>
+          <li><button onClick={categoryHandler} className={styles.list}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Coding</button></li>
@@ -59,10 +51,10 @@ const Nav = () => {
       <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
-          <li><button onClick={categoryHandler} className={styles.list__2}>US</button></li>
-          <li><button onClick={categoryHandler} className={styles.list__2}>Japan</button></li>
+          {/* <li><button onClick={categoryHandler} className={styles.list__2}>US</button></li> */}
           <li><button onClick={categoryHandler} className={styles.list__2}>Tech</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Anime</button></li>
+          <li><button onClick={categoryHandler} className={styles.list__2}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Coding</button></li>
