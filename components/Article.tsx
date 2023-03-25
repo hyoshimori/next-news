@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
-import { getCategoryNews } from '@/hooks/jsonApi';
+
+// ↓ Not in use
+// import { getCategoryNews } from '@/hooks/jsonApi';
 
 import { useNews } from '@/hooks/UseNews';
 import * as NewsType from "@/types/News";
@@ -15,42 +17,33 @@ type Props = {
 const Article = () => {
   const { axios } = useNews();
 
+  // Accessing to UseContext
   const { selectedCategory } = useContext(AppContext);
   const [news, setNews] = useState<NewsType.News>({ articles: [] });
 
 
-  // Get date, "today" and "from 20 days ago" //
-  const date = new Date
-  let currentDate = new Date();
-  let date20DaysAgo = new Date();
-  date20DaysAgo.setDate(currentDate.getDate() - 20);
-  // ************************* //
+  // // Get date, "today" and "from 20 days ago" //
+  // const date = new Date
+  // let currentDate = new Date();
+  // let date20DaysAgo = new Date();
+  // date20DaysAgo.setDate(currentDate.getDate() - 20);
+  // // ************************* //
 
 
-  // return value must be string by "): string"
-  const convertDateFormat = (dateString : string): string => {
-    const date = new Date(dateString);
-    // extracts the year
-    const year = date.getFullYear();
-    // extracts the month
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-  };
-
-  // useEffect(() => {
-  //   const fetchNews = async () => {
-  //     const category = selectedCategory.category;
-  //     const fetchedNews = await getCategoryNews(category);
-  //     setNews(fetchedNews);
-  //   };
-
-  //   fetchNews();
-  // }, [selectedCategory]);
-
+  // // return value must be string by "): string"
+  // const convertDateFormat = (dateString : string): string => {
+  //   const date = new Date(dateString);
+  //   // extracts the year
+  //   const year = date.getFullYear();
+  //   // extracts the month
+  //   const month = String(date.getMonth() + 1).padStart(2, '0');
+  //   const day = String(date.getDate()).padStart(2, '0');
+  //   return `${year}-${month}-${day}`;
+  // };
 
 
   useEffect(() => {
+    // New variable in order for the page to know which category is being rendered
     const category = selectedCategory.category
     // ********** These are for the real api key ********** //
     // Use convertDateFormat function to make "from" and  "to" date
@@ -68,13 +61,10 @@ const Article = () => {
     // ********** These are for the real api key ********** //
 
 
-    // ********** This is for mock server ********** //
-    // const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-    // ********** This is for mock server ********** //
-
-    const apiBaseUrl = process.env.NODE_ENV === 'development'
-  ? process.env.NEXT_PUBLIC_API_BASE_URL_LOCAL
-  : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
+    // const apiBaseUrl = process.env.NODE_ENV === 'development'
+    // process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
+  // ? process.env.NEXT_PUBLIC_API_BASE_URL_LOCAL
+  // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
     // axios.get(`${apiBaseUrl}/${category}`)
     //   .then(response => {
@@ -85,12 +75,11 @@ const Article = () => {
     //     console.log(error);
     // }, [selectedCategory]);
 
-
-    axios.get(`${apiBaseUrl}/${category}`)
+    // API call from render.com
+    axios.get(`https://news-data-base.onrender.com/${category}`)
       .then(response => {
-        console.log(response)
-        // ↓ Use this for the api call
-        setNews(response.data);
+        // Data is being stored to the state which be shown in a loop in the return section
+        setNews(response.data[0]);
       })
       .catch(error => {
         console.log(error);
