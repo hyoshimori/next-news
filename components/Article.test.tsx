@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Article from './Article';
-
 import axios from 'axios';
 
 describe('# Article Component', () => {
