@@ -10,3 +10,13 @@
 .body span{
   margin-right: 40px;
 }
+
+.attribute{
+  text-decoration: none;
+  color: #32C569;
+}
+
+.attribute:hover{
+  color: rgb(70, 70, 70);
+  border-bottom: 1px solid rgb(70, 70, 70);
+}
