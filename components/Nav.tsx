@@ -2,10 +2,16 @@ import styles from "./Nav.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
+import { useRouter } from 'next/router';
 import React, { useState, useContext, MouseEvent, useEffect } from "react";
 import { AppContext } from "../pages/_app";
 
 const Nav = () => {
+  const router = useRouter();
+  if (router.pathname === '/about') {
+    return null;
+  }
+
   // This is a swtich to use the menu //
   const [isSwitchOn, setSwitchOn] = useState(false);
   const toggleSwitch = () => {
@@ -47,6 +53,7 @@ const Nav = () => {
           <li><button onClick={categoryHandler} className={styles.list}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Coding</button></li>
         </ul>
+        <p><a className={styles.attribute} href="/about">About</a></p>
       </div>
       <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
@@ -58,6 +65,7 @@ const Nav = () => {
           <li><button onClick={categoryHandler} className={styles.list__2}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Nintendo</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Coding</button></li>
+          <p><a className={styles.attribute__smaller__screen} href="/about">About</a></p>
         </ul>
       </div>
     </div>

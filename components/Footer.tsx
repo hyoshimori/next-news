@@ -4,8 +4,8 @@ import React from 'react';
 const Footer = () => {
   return (
   <div className={styles.body}>
-    <span>Next News</span>
-    <span>Contact</span>
+    <span><a className={styles.attribute} href="/about">About</a></span>
+    <span>News data is provided by <a className={styles.attribute} target="_blank" href="https://newsapi.org/">NewsAPI</a>.</span>
   </div>
   )
 }

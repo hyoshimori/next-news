@@ -58,7 +58,7 @@ button.list__2:hover{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 10vh 0;
+  margin: 10vh 0 0 0;
 }
 
 .category li, .category__2__ul li{
@@ -80,6 +80,19 @@ button.list__2:hover{
 
 .category__2{
   display: none;
+}
+
+.attribute{
+  margin: 2vh 0;
+  padding: 1px 6px;
+  text-decoration: none;
+  color: #32C569;
+  font-size: 1.2rem !important;
+}
+
+.attribute:hover{
+  color: #1C2128;
+  opacity: 0.5;
 }
 
 @media (max-width: 720px) {
@@ -143,7 +156,20 @@ button.list__2:hover{
     transition: 0.3s;
   }
 
-  .category__2 svg, .category__2 a{
+  .category__2 svg, .category__2{
     padding: 20px;
+  }
+
+  .attribute__smaller__screen{
+    margin: 2vh 0;
+    padding: 1px 6px;
+    text-decoration: none;
+    color: #FEC005;
+    font-size: 1.2rem !important;
+  }
+
+  .attribute__smaller__screen:hover{
+    color: white;
+    /* opacity: 0.5; */
   }
 }
