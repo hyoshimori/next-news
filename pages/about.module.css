@@ -1,0 +1,28 @@
+.body{
+  margin:10vh 10vw;
+  text-align:justify
+}
+
+.body a,
+.body b,
+.body p,
+.body span,
+.body li{
+  color: rgb(70, 70, 70);
+}
+
+.about{
+  width: 80vw;
+  text-align:center;
+}
+
+.right__icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.back {
+  margin-top: 20px;
+  margin-left: 8px;
+}
