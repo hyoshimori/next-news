@@ -21,6 +21,8 @@ const Article = () => {
   const { selectedCategory } = useContext(AppContext);
   // const [news, setNews] = useState<NewsType.News>();
   const [news, setNews] = useState<NewsType.News[]>();
+  // This is for "Loading" message
+  const [loading, setLoading] = useState(true);
 
 
   // // Get date, "today" and "from 20 days ago" //
@@ -72,17 +74,23 @@ const Article = () => {
   axios.get("https://ny-news-data.onrender.com/results")
     .then(res => {
       setNews(res.data);
+      // Displya "Loading while waiting"
+      setLoading(false);
     })
     .catch(error => {
       console.log(error);
+      setLoading(false);
     });
 }, [selectedCategory]);
 
 
   return (
     <div className={styles.body} data-testid="article__component">
+    {loading ? (
+      <div style={{ fontWeight: "bold", marginBottom: "100vh", marginTop: "8px" }}>Loading...</div>
+    ) : (
       <div>
-      <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
+        <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
           {news && news.filter((el, index: number) => index === 0).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
@@ -93,6 +101,7 @@ const Article = () => {
                 <span className={styles.news__top__first__bottom__title}>{el.title}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.abstract}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.byline}</span>
+                <span className={styles.news__top__first__bottom__author}>{el.published_date}</span>
               </div>
             </div>
           </a>
@@ -131,6 +140,7 @@ const Article = () => {
           )}
         </div>
       </div>
+    )}
     </div>
   )
 }
