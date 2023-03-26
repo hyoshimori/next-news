@@ -1,16 +1,17 @@
 export type News = {
-  articles: {
-    source: {
-      name: string;
-    };
-    id: string;
+  source: {
     name: string;
-    title: string;
-    author: string;
-    description: string;
-    url: string;
-    urlToImage: string;
-    publishedAt: string;
-    content: string;
+  };
+  id: string;
+  name: string;
+  title: string;
+  byline: string;
+  abstract: string;
+  url: string;
+  section: string;
+  published_date: string;
+  media?: {
+    length: number;
+    'media-metadata': { url: string, format: string, height: number, width: number }[];
   }[];
 };

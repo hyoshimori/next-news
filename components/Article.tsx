@@ -19,7 +19,8 @@ const Article = () => {
 
   // Accessing to UseContext
   const { selectedCategory } = useContext(AppContext);
-  const [news, setNews] = useState<NewsType.News>({ articles: [] });
+  // const [news, setNews] = useState<NewsType.News>();
+  const [news, setNews] = useState<NewsType.News[]>();
 
 
   // // Get date, "today" and "from 20 days ago" //
@@ -44,9 +45,10 @@ const Article = () => {
 
   useEffect(() => {
     // New variable in order for the page to know which category is being rendered
-    const category = selectedCategory.category
+    // const category = selectedCategory.category
     // ********** These are for the real api key ********** //
     // Use convertDateFormat function to make "from" and  "to" date
+
 
     // const dateString = date.toString();
     // const dateString20Ago = date20DaysAgo.toString()
@@ -55,7 +57,7 @@ const Article = () => {
 
 
     // const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    // const ENDPOINT_URL = `https://newsapi.org/v2/everything?q=${category}&from=${from}&to=${to}&language=en&sortBy=publishedAt&apiKey=${API_KEY}`;
+    // const ENDPOINT_URL = `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=${API_KEY}`;
     // console.log(ENDPOINT_URL)
     // axios.get(ENDPOINT_URL)
     // ********** These are for the real api key ********** //
@@ -66,50 +68,42 @@ const Article = () => {
   // ? process.env.NEXT_PUBLIC_API_BASE_URL_LOCAL
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
-    // axios.get(`${apiBaseUrl}/${category}`)
-    //   .then(response => {
-    //     console.log(response);
-    //     setNews(response.data);
-    //   })
-    //   .catch(error => {
-    //     console.log(error);
-    // }, [selectedCategory]);
 
-    // API call from render.com
-    axios.get(`https://news-data-base.onrender.com/${category}`)
-      .then(response => {
-        // Data is being stored to the state which be shown in a loop in the return section
-        setNews(response.data[0]);
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }, [selectedCategory]);
+  axios.get("https://ny-news-data.onrender.com/results")
+    .then(res => {
+      setNews(res.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}, [selectedCategory]);
+
 
   return (
     <div className={styles.body} data-testid="article__component">
       <div>
       <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
-          {news && news.articles && news.articles.filter((el, index: number) => index === 0).map((el, index: number) =>
+          {news && news.filter((el, index: number) => index === 0).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div key={el.url} className={styles.news__top__first}>
-              <img src={el.urlToImage} alt="" />
+            <img src={el.media?.[0]?.['media-metadata']?.[2]?.url || 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'} alt="" />
               <div className={styles.news__top__first__bottom}>
-                <span className={styles.news__top__first__bottom__source__name}>{el.source.name}</span>
+                <span className={styles.news__top__first__bottom__source__name}>{el.section}</span>
                 <span className={styles.news__top__first__bottom__title}>{el.title}</span>
-                <span className={styles.news__top__first__bottom__author}>{el.author}</span>
+                <span className={styles.news__top__first__bottom__author}>{el.abstract}</span>
+                <span className={styles.news__top__first__bottom__author}>{el.byline}</span>
               </div>
             </div>
           </a>
           )}
           <div className={styles.news__top__wrapper__for__five__articles}>
-            {news && news.articles && news.articles.filter((el, index: number) => index >= 1 && index <= 5).map((el, index: number) =>
+            {news && news && news.filter((el, index: number) => index >= 1 && index <= 5).map((el, index: number) =>
             <a href={el.url} key={el.url} target="_blank">
               <div key={el.url} className={styles.news__top__right}>
-                <span className={styles.news__top__source__name}>{el.source.name}</span>
+                <span className={styles.news__top__source__name}>{el.section}</span>
                 <span className={styles.news__top__title}>{el.title}</span>
-                <span className={styles.news__top__author}>{el.author}</span>
+                <span className={styles.news__top__author}>{el.byline}</span>
               </div>
             </a>
             )}
@@ -117,17 +111,21 @@ const Article = () => {
         </div>
         <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
         <div className={styles.news__Latest__container}>
-          {news && news.articles && news.articles.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
+          {news && news && news.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div className={styles.news__Latest}>
               <div key={el.url} className={styles.news__Latest__name__titile__author}>
-                <span className={styles.news__latest__source__name}>{el.source.name}</span>
+                <span className={styles.news__latest__source__name}>{el.section}</span>
                 <span className={styles.news__latest__title}>{el.title}</span>
-                <span className={styles.news__latest__author}>{el.author}</span>
-                <span className={styles.news__latest__published__At}>{el.publishedAt}</span>
+                <span className={styles.news__latest__author}>{el.byline}</span>
+                <span className={styles.news__latest__published__At}>{el.published_date}</span>
               </div>
-              <p className={styles.news__latest__description}>{el.description}</p>
-              <img src={el.urlToImage} alt="" />
+              <p className={styles.news__latest__description}>{el.abstract}</p>
+              {el.media && el.media.length > 0 && el.media[0]['media-metadata'] ? (
+                <img src={el.media?.[0]['media-metadata']?.[2]?.url} alt="" />
+              ) : (
+                <img src={'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'} alt="" />
+              )}
             </div>
           </a>
           )}

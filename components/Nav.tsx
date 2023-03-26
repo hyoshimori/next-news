@@ -41,30 +41,28 @@ const Nav = () => {
       <MenuIcon data-testid="menu-icon" style={{ cursor: 'pointer' }} className={styles.menu} onClick={toggleSwitch}/>
       <div className={styles.icon__and__message}>
         <h1 className={styles.icon}>NextNews</h1>
-        <span className={styles.botto__icon__message}>Geek News +</span>
+        <span className={styles.botto__icon__message}>My News +</span>
       </div>
       <div className={styles.category__1}>
         <ul className={styles.category}>
-          {/* <li><button onClick={categoryHandler} className={styles.list}>US</button></li> */}
-          <li><button onClick={categoryHandler} className={styles.list}>Tech</button></li>
+          {/* <li><button onClick={categoryHandler} className={styles.list}>Tech</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Anime</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list}>Nintendo</button></li>
-          <li><button onClick={categoryHandler} className={styles.list}>Coding</button></li>
+          <li><button onClick={categoryHandler} className={styles.list}>Coding</button></li> */}
         </ul>
         <p><a className={styles.attribute} href="/about">About</a></p>
       </div>
       <div data-testid="category-list" className={`${styles.category__2} ${isSwitchOn ? styles.category__2__show : styles.category__2}`}>
         <ArrowBackIcon data-testid="back-arrow-icon" style={{ cursor: 'pointer' }} className={styles.menu__2} onClick={toggleSwitch}/>
         <ul className={styles.category__2__ul}>
-          {/* <li><button onClick={categoryHandler} className={styles.list__2}>US</button></li> */}
-          <li><button onClick={categoryHandler} className={styles.list__2}>Tech</button></li>
+          {/* <li><button onClick={categoryHandler} className={styles.list__2}>Tech</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Anime</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Japan</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Game</button></li>
           <li><button onClick={categoryHandler} className={styles.list__2}>Nintendo</button></li>
-          <li><button onClick={categoryHandler} className={styles.list__2}>Coding</button></li>
+          <li><button onClick={categoryHandler} className={styles.list__2}>Coding</button></li> */}
           <p><a className={styles.attribute__smaller__screen} href="/about">About</a></p>
         </ul>
       </div>

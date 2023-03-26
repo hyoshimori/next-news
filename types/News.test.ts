@@ -1,39 +1,43 @@
-import { News } from './News';
+export {};
 
-describe('News type', () => {
-  it('should have the correct properties', () => {
-    console.log('# types/News: ', 'Correct properties check.');
-    const news: News = {
-      articles: [
-        {
-          source: {
-            name: 'forbes',
+describe('News object', () => {
+  const news = {
+    source: {
+      name: 'BBC News',
+    },
+    id: '1234',
+    name: 'Breaking News',
+    title: 'Lorem Ipsum',
+    byline: 'By John Doe',
+    abstract: 'Lorem ipsum dolor sit amet',
+    url: 'https://example.com',
+    section: 'World News',
+    published_date: '2022-03-27',
+    media: [
+      {
+        length: 10,
+        'media-metadata': [
+          {
+            url: 'https://example.com/image.jpg',
+            format: 'jpg',
+            height: 100,
+            width: 100,
           },
-          id: '123',
-          name: 'News Outlet',
-          title: 'A new title',
-          author: 'John Smith',
-          description: 'This is a news article.',
-          url: 'https://example.com/article',
-          urlToImage: 'https://example.com/image.jpg',
-          publishedAt: '2022-03-09T12:34:56Z',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-      ],
-    };
+        ],
+      },
+    ],
+  };
 
-    const article = news.articles[0];
-
-    expect(article.source).toBeDefined();
-    expect(article.source.name).toBeDefined();
-    expect(article.id).toBeDefined();
-    expect(article.name).toBeDefined();
-    expect(article.title).toBeDefined();
-    expect(article.author).toBeDefined();
-    expect(article.description).toBeDefined();
-    expect(article.url).toBeDefined();
-    expect(article.urlToImage).toBeDefined();
-    expect(article.publishedAt).toBeDefined();
-    expect(article.content).toBeDefined();
+  test('has all required properties with correct data types', () => {
+    expect(news).toHaveProperty('source.name', expect.any(String));
+    expect(news).toHaveProperty('id', expect.any(String));
+    expect(news).toHaveProperty('name', expect.any(String));
+    expect(news).toHaveProperty('title', expect.any(String));
+    expect(news).toHaveProperty('byline', expect.any(String));
+    expect(news).toHaveProperty('abstract', expect.any(String));
+    expect(news).toHaveProperty('url', expect.any(String));
+    expect(news).toHaveProperty('section', expect.any(String));
+    expect(news).toHaveProperty('published_date', expect.any(String));
+    expect(news).toHaveProperty('media', expect.any(Array));
   });
 });
