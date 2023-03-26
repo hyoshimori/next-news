@@ -6,27 +6,27 @@ export default function About() {
   return (
   <div className={styles.body}>
     <h1 className={styles.about}>About NextNews</h1>
-    <p>This portfolio website showcases various projects, including a news section that displays the latest news articles from various sources. The news data presented on this website is provided by News API, a powerful and easy-to-use service that aggregates and delivers news data from numerous reputable sources.</p>
-    <b>Please note the following important information related to the news content displayed on this website:</b>
+    <p>Welcome to our News App, a personal non-commercial portfolio project that aggregates and presents news articles using the New York Times API. By using our app, you agree to these simplified terms.</p>
+    <b>Please note that some of the New York Times API features are experimental and might contain inaccuracies, errors, or bugs. The API is provided "as is" without any warranties, express or implied. Use of this app is at your own discretion and risk, and we are not responsible for any damage or loss resulting from its use.:</b>
     <ol>
       <li>
-        <b>News Data Attribution: </b>
-        <span>All news data displayed on this website is sourced from News API. We acknowledge and attribute the news data to News API as the provider of this valuable information.</span>
+        <b>Personal Portfolio:  </b>
+        <span>This app is created as a personal portfolio project and is not intended for commercial use.</span>
       </li>
       <li>
-        <b>Copyright and Proprietary Notices: </b>
-        <span>Any copyright, trademark, or proprietary notices within the news content are retained and displayed as received from News API. We do not remove or obscure these notices and respect the intellectual property rights of the original creators and sources.</span>
+        <b>Non-commercial use: </b>
+        <span>WOur app is for personal, non-commercial use only, in accordance with the New York Times API terms.</span>
       </li>
       <li>
-        <b>Author Attributions and Source Information: </b>
-        <span>We ensure that author names and source information, as provided by News API, are clearly displayed alongside the news content. This maintains proper credit to the original creators and sources of the news articles.</span>
+        <b>Intellectual Property: </b>
+        <span>All content provided by the New York Times API is the property of The New York Times Company and protected by copyrights, trademarks, and other proprietary rights.</span>
       </li>
       <li>
-        <b>Content Ownership and Source Representation: </b>
-        <span>We do not claim ownership of the news content displayed on this website, nor do we misrepresent the source of the content. All news articles and associated data are attributed to their original sources and creators, as provided by News API.</span>
+        <b>No modification allowed: </b>
+        <span>Users are not allowed to modify, reproduce, or redistribute the content provided by the New York Times API in any way.</span>
       </li>
     </ol>
-    <p>By using this website and accessing the news section, you acknowledge and agree to the above terms related to the news content. We strive to maintain transparency and compliance with News API's terms of service while providing users with an informative and engaging experience.</p>
+    <p>By using this website and accessing the news section, you acknowledge and agree to the above terms related to the news content. I strive to maintain transparency and compliance with New York Times' terms of service while providing users with an informative and engaging experience.</p>
     <p>If you have any questions or concerns about the news content or its attribution, please have a look at the term of service.</p>
     <p>Thank you for visiting our portfolio website and exploring our projects. We hope you enjoy your stay and find the content interesting and valuable.</p>
 
