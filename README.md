@@ -1,16 +1,17 @@
 # Next News - News App Portfolio Project
 
-Next News is a news app that showcases my ability to work with Next.js, API calls, JSON data manipulation, and TypeScript. The application fetches news data from a third-party API and displays it in an organized and user-friendly manner.
+Next News is a news app that showcases my ability to work with Next.js, API calls, JSON data manipulation, and TypeScript. The application fetches news data from the New York Times API and displays it in an organized and user-friendly manner.
 
-## Compliance with News API Terms of Usage and Privacy Policy
+## Compliance with New York Times API Terms of Usage and Privacy Policy
 
-In compliance with the terms of usage and privacy policy for the News API, this application is a private, non-commercial project. The API key has been securely stored and is not accessible through the repository. Please ensure you follow the terms of usage and respect the privacy policy when using the News API in your projects. For more information, visit [newsapi.org's Terms of Service](https://newsapi.org/terms) and [newsapi.org's Private Policy](https://newsapi.org/privacy).
+In compliance with the terms of usage and privacy policy for the New York Times API, this application is a private, non-commercial project. The API key has been securely stored and is not accessible through the repository. Please ensure you follow the terms of usage and respect the privacy policy when using the New York Times API in your projects. For more information, visit developer.nytimes.com's [Terms of Service](https://developer.nytimes.com/terms) and nytimes.com's [Privacy Policy](https://help.nytimes.com/hc/en-us/articles/10940941449492).
 
 To summarize the key points:
 
-- The application collects only the necessary data required for providing the service.
-- Users are responsible for any Personal Data of third parties obtained, published, or shared through this Application and must confirm that they have the third party's consent to provide the Data to the Data Controller.
-- The Data Controller processes the Data of Users in a proper manner and takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.
+- The application is a personal portfolio project and is not intended for commercial use.
+- All content provided by the New York Times API is the property of The New York Times Company and protected by copyrights, trademarks, and other proprietary rights.
+- Users are not allowed to modify, reproduce, or redistribute the content provided by the New York Times API in any way.
+- The Data Controller processes the Data of Users in a proper manner and takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data
 
 ## Performance
 
@@ -21,7 +22,7 @@ Next News was developed to provide a polished and intuitive user experience. The
 The news application was built using the following primary technologies:
 
 - Next.js: A popular React framework for building server-rendered React applications.
-- News API: A third-party API used to fetch news data.
+- New York Times API: A third-party API used to fetch news data.
 - TypeScript: A superset of JavaScript that adds static types, improving developer productivity and code quality.
 
 ## Dependencies
@@ -51,6 +52,10 @@ Development dependencies:
 - jest
 - jest-environment-jsdom
 - typescript
+
+## LIVE DEMO
+
+You can see a live demo of the application here: https://next-news-nine.vercel.app/
 
 ## Installation
 
