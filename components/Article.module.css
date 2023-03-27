@@ -1,3 +1,15 @@
+.loading{
+  margin-Bottom:100vh;
+  margin-Top: 8px;
+  font-weight: bold;
+}
+
+.loading p{
+  display: inline-block;
+  margin-top: 10vh;
+  font-size: xx-large;
+}
+
 .body{
   margin: 10px 20px;
   width: 70vw;
