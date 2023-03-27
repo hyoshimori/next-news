@@ -21,6 +21,8 @@ const Article = () => {
   const { selectedCategory } = useContext(AppContext);
   // const [news, setNews] = useState<NewsType.News>();
   const [news, setNews] = useState<NewsType.News[]>();
+  // This is for "Loading" message
+  const [loading, setLoading] = useState(true);
 
 
   // // Get date, "today" and "from 20 days ago" //
@@ -69,21 +71,24 @@ const Article = () => {
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
 
-  axios.get("https://ny-news-data.onrender.com/results")
+  axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
     .then(res => {
       setNews(res.data);
+      // Displya "Loading while waiting"
+      setLoading(false);
     })
     .catch(error => {
-      console.log(error);
+      console.log('Error message:', error.messageror);
+      setLoading(false);
     });
 }, [selectedCategory]);
 
 
   return (
     <div className={styles.body} data-testid="article__component">
-    {/* {loading ? (
+    {loading ? (
       <div style={{ fontWeight: "bold", marginBottom: "100vh", marginTop: "8px" }}>Loading...</div>
-    ) : ( */}
+    ) : (
       <div>
         <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
@@ -135,7 +140,7 @@ const Article = () => {
           )}
         </div>
       </div>
-    {/* )} */}
+    )}
     </div>
   )
 }
