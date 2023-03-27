@@ -23,6 +23,7 @@ const Article = () => {
   const [news, setNews] = useState<NewsType.News[]>();
   // This is for "Loading" message
   const [loading, setLoading] = useState(true);
+  const [errorChecker, setErrorChecker] = useState(false);
 
 
   // // Get date, "today" and "from 20 days ago" //
@@ -71,7 +72,7 @@ const Article = () => {
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
 
-  axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
+  axios.get("https://ny-news-data.onrender.com/results", {timeout: 5000})
     .then(res => {
       setNews(res.data);
       // Displya "Loading while waiting"
@@ -79,7 +80,7 @@ const Article = () => {
     })
     .catch(error => {
       console.log('Error message:', error.messageror);
-      setLoading(false);
+      setErrorChecker(true);
     });
 }, [selectedCategory]);
 
@@ -87,7 +88,10 @@ const Article = () => {
   return (
     <div className={styles.body} data-testid="article__component">
     {loading ? (
-      <div style={{ fontWeight: "bold", marginBottom: "100vh", marginTop: "8px" }}>Loading...</div>
+      <div className={styles.loading}>
+        {!errorChecker && <div className={styles.loading__first__message}>Loading...</div>}
+        {errorChecker ? <div>An error has occurred. Please reload the page to continue.</div> : null}
+      </div>
     ) : (
       <div>
         <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
