@@ -21,8 +21,6 @@ const Article = () => {
   const { selectedCategory } = useContext(AppContext);
   // const [news, setNews] = useState<NewsType.News>();
   const [news, setNews] = useState<NewsType.News[]>();
-  // This is for "Loading" message
-  const [loading, setLoading] = useState(true);
 
 
   // // Get date, "today" and "from 20 days ago" //
@@ -74,12 +72,9 @@ const Article = () => {
   axios.get("https://ny-news-data.onrender.com/results")
     .then(res => {
       setNews(res.data);
-      // Displya "Loading while waiting"
-      setLoading(false);
     })
     .catch(error => {
       console.log(error);
-      setLoading(false);
     });
 }, [selectedCategory]);
 
