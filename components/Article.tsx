@@ -86,9 +86,9 @@ const Article = () => {
 
   return (
     <div className={styles.body} data-testid="article__component">
-    {loading ? (
+    {/* {loading ? (
       <div style={{ fontWeight: "bold", marginBottom: "100vh", marginTop: "8px" }}>Loading...</div>
-    ) : (
+    ) : ( */}
       <div>
         <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
         <div className={styles.news__top__wrapper}>
@@ -140,7 +140,7 @@ const Article = () => {
           )}
         </div>
       </div>
-    )}
+    {/* )} */}
     </div>
   )
 }
