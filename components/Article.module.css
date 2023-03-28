@@ -1,7 +1,7 @@
 .loading{
   margin-Bottom:100vh;
   margin-Top: 8px;
-  font-weight: bold;
+  color: rgb(70, 70, 70);
 }
 
 .loading p{

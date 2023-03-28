@@ -1,5 +1,6 @@
 import styles from "./Article.module.css"
 import React, { useEffect, useState } from 'react';
+import Progress from "./Progress";
 
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
@@ -89,7 +90,8 @@ const Article = () => {
     <div className={styles.body} data-testid="article__component">
     {loading ? (
       <div className={styles.loading}>
-        {!errorChecker && <div className={styles.loading__first__message}>Loading...</div>}
+        {/* {!errorChecker && <div className={styles.loading__first__message}>Loading...</div>} */}
+        {!errorChecker && <Progress />}
         {errorChecker ? <div>An error has occurred. Please reload the page to continue.</div> : null}
       </div>
     ) : (

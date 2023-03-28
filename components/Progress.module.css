@@ -1,0 +1,22 @@
+.body progress {
+  accent-color: #32C569;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 25px;
+  height: 5px;
+}
+
+.body progress::-webkit-progress-bar {
+  height: 5px;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+
+
+.body progress::-webkit-progress-value {
+  border-radius: 25px;
+  background-color: #32C569;
+}
