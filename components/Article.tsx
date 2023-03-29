@@ -73,7 +73,7 @@ const Article = () => {
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
 
-  axios.get("https://ny-news-data.onrender.com/result", {timeout: 10000})
+  axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
     .then(res => {
       setNews(res.data);
       // Displya "Loading while waiting"
