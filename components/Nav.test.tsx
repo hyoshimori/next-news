@@ -1,6 +1,10 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Nav from './Nav';
+import { useRouter } from 'next/router';
+
+
+jest.mock('next/router');
 
 describe('# Nav Component', () => {
   it('renders without crashing', () => {
