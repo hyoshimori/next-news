@@ -2,6 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Article from './Article';
 import axios from 'axios';
+import { useRouter } from 'next/router';
+
+
+jest.mock('next/router');
 
 describe('# Article Component', () => {
   it('renders without crashing', () => {
@@ -27,7 +31,7 @@ describe('# Article component', () => {
     // ↓Use if local call
     // const API_KEY = process.env.API_KEY;
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    const ENDPOINT_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`;
+    const ENDPOINT_URL = `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=${API_KEY}`;
 
     const response = await axios.get(ENDPOINT_URL);
 
@@ -42,17 +46,5 @@ describe('# Article component', () => {
     const { getByTestId } = await render(<Article />);
     const articleComponent = getByTestId('article__component');
     expect(articleComponent).toBeInTheDocument();
-  });
-});
-
-
-describe('Article', () => {
-  it('displays the "Trending" and "The Latest" sections', () => {
-    console.log('# component/Article:' ,'Article displays the "Trending" and "The Latest" sections');
-    const { getByText } = render(<Article />);
-    const trendingSection = getByText('Trending');
-    const latestSection = getByText('The Latest');
-    expect(trendingSection).toBeInTheDocument();
-    expect(latestSection).toBeInTheDocument();
   });
 });

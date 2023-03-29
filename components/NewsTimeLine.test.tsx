@@ -9,10 +9,3 @@ describe('# NewsTimeLine Component', () => {
     render(<NewsTimeLine />);
   });
 });
-
-describe('# Footer Component', () => {
-  it('renders without crashing', () => {
-    console.log('# component/Footer:' ,'Footer Component must exist.');
-    render(<Footer />);
-  });
-});

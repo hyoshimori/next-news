@@ -1,6 +1,8 @@
 import styles from "./Article.module.css"
 import React, { useEffect, useState } from 'react';
 import Progress from "./Progress";
+import Trending from "./Trending";
+
 
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
@@ -11,9 +13,9 @@ import { AppContext } from "../pages/_app";
 import { useNews } from '@/hooks/UseNews';
 import * as NewsType from "@/types/News";
 
-type Props = {
-  news: NewsType.News[];
-}
+// type Props = {
+//   news: NewsType.News[];
+// }
 
 const Article = () => {
   const { axios } = useNews();
@@ -96,7 +98,9 @@ const Article = () => {
       </div>
     ) : (
       <div>
-        <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
+        <div>
+          <Trending />
+        </div>
         <div className={styles.news__top__wrapper}>
           {news && news.filter((el, index: number) => index === 0).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
@@ -124,7 +128,7 @@ const Article = () => {
             )}
           </div>
         </div>
-        <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
+        <p style={{ fontWeight: "bold", marginBottom: "20px" }}>Latest</p>
         <div className={styles.news__Latest__container}>
           {news && news && news.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
