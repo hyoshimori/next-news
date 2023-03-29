@@ -73,7 +73,7 @@ const Article = () => {
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
 
-  axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
+  axios.get("https://ny-news-data.onrender.com/result", {timeout: 10000})
     .then(res => {
       setNews(res.data);
       // Displya "Loading while waiting"
@@ -94,8 +94,8 @@ const Article = () => {
         {!errorChecker && <Progress />}
         {errorChecker ?
           <div className={styles.loading__text}>
-            <p>The free tier services of render.com spin down after 15 minutes of inactivity, and the first request after that may take a while. Please have a look at the <a href="https://render.com/docs/free">Link</a> for more information.</p>
-            <p>Render.comの無料サービスを利用しているため、15分間操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、ページを再リロードしてください。詳しくは以下<a href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
+            <p>The free tier services of render.com spin down after 15 minutes of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information.</p>
+            <p>Render.comの無料サービスを利用しているため、15分間操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、ページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
           </div>
         :
           null
