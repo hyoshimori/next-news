@@ -17,7 +17,6 @@ const Search = () => {
   const [errorChecker, setErrorChecker] = useState(false);
 
   const { axios } = useNews();
-  const { selectedCategory } = useContext(AppContext);
 
   useEffect(() => {
     axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
@@ -40,6 +39,9 @@ const Search = () => {
         })
         .map((el) => ({ title: el.title, url: el.url }));
       console.log(newArr);
+      newArr.map((el) => {
+        console.log(el['title'])
+      })
       setAutoComplete(newArr);
     } else if(input === ''){
       setAutoComplete([]);
@@ -64,6 +66,7 @@ const Search = () => {
           placeholder='Input keywords'
           onChange={(e) => setInput(e.target.value)}
           value={input || ''}
+          onBlur={() => setInput('')}
       />
       <div className={styles.autocomplete__section}>
         {autoComplete.map((el) => {
