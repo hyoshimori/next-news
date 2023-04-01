@@ -7,33 +7,18 @@ import { useContext } from "react";
 import { AppContext } from "../pages/_app";
 
 import * as NewsType from "@/types/News";
+import * as AutoCompleteItemType from "@/types/AutoCompleteItem";
 
 const Search = () => {
-
-  // useState for input, autocomplete, news, loading and error checker //
   const [input, setInput] = useState<string | undefined>(undefined);
-  const [autoComplete, setAutoComplete] = useState<string[]>([]); // Updated the type of autoComplete state variable
-
+  const [autoComplete, setAutoComplete] = useState<AutoCompleteItemType.AutoCompleteItem[]>([]);
   const [news, setNews] = useState<NewsType.News[]>();
   const [loading, setLoading] = useState(true);
   const [errorChecker, setErrorChecker] = useState(false);
-  //**********************************************//
 
   const { axios } = useNews();
-  // Accessing to UseContext
   const { selectedCategory } = useContext(AppContext);
 
-
-  // This is a swtich which manipulates the focus on the inputfield //
-  const [isSwitchOn, setSwitchOn] = useState(false);
-  const toggleSwitch = () => {
-    setSwitchOn(!isSwitchOn);
-  };
-  //****************************************************************//
-
-
-
-  // API call only once when the page is loaded
   useEffect(() => {
     axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
     .then(res => {
@@ -46,8 +31,6 @@ const Search = () => {
     });
   }, [])
 
-
-  // UseEffect for search function
   useEffect(() => {
     console.log(news);
     if (news && input) {
@@ -55,7 +38,7 @@ const Search = () => {
         .filter((el) => {
           return el.title.toLowerCase().includes(input.toLowerCase());
         })
-        .map((el) => el.title);
+        .map((el) => ({ title: el.title, url: el.url }));
       console.log(newArr);
       setAutoComplete(newArr);
     } else if(input === ''){
@@ -63,8 +46,13 @@ const Search = () => {
       console.log(news)
     }
     console.log(input);
-  }, [input]); // Added 'news' to the dependency array
+  }, [input]);
 
+  const handleNavigation = (url: string) => {
+    if (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     <div className={styles.body}>
@@ -76,18 +64,19 @@ const Search = () => {
           placeholder='Input keywords'
           onChange={(e) => setInput(e.target.value)}
           value={input || ''}
-          onBlur={() => toggleSwitch()}
-          onFocus={() => toggleSwitch()}
       />
-      <div className={`${isSwitchOn ? styles.autocomplete__section : styles.autocomplete__section__show}`}>
+      <div className={styles.autocomplete__section}>
         {autoComplete.map((el) => {
-          return(
-              <a key={el} href="#">
-                <p className={styles.autocomplete__title}>{el}</p>
-              </a>
-            )
-          })
-        }
+          return (
+            <p
+              key={el.url}
+              className={styles.autocomplete__title}
+              onClick={() => handleNavigation(el.url)}
+            >
+              {el.title}
+            </p>
+          );
+        })}
       </div>
     </div>
   );
