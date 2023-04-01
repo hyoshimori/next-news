@@ -92,12 +92,19 @@ const Article = () => {
     <div className={styles.body} data-testid="article__component">
     {loading ? (
       <div className={styles.loading}>
-        {/* {!errorChecker && <div className={styles.loading__first__message}>Loading...</div>} */}
-        {!errorChecker && <Progress />}
-        {errorChecker ?
+        {!errorChecker &&
+        <>
+          <Progress />
           <div className={styles.loading__text}>
-            <p>The free tier services of render.com spin down after 15 minutes of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information.</p>
-            <p>Render.comの無料サービスを利用しているため、15分間操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、ページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
+            <p>The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information. </p>
+            <p>Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
+          </div>
+        </>
+        }
+        {errorChecker ?
+          <div className={styles.loading__text__second}>
+            <p>The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information.</p>
+            <p>Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
           </div>
         :
           null
