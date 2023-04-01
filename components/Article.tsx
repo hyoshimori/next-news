@@ -1,6 +1,8 @@
 import styles from "./Article.module.css"
 import React, { useEffect, useState } from 'react';
 import Progress from "./Progress";
+import Trending from "./Trending";
+
 
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
@@ -11,9 +13,9 @@ import { AppContext } from "../pages/_app";
 import { useNews } from '@/hooks/UseNews';
 import * as NewsType from "@/types/News";
 
-type Props = {
-  news: NewsType.News[];
-}
+// type Props = {
+//   news: NewsType.News[];
+// }
 
 const Article = () => {
   const { axios } = useNews();
@@ -103,7 +105,9 @@ const Article = () => {
       </div>
     ) : (
       <div>
-        <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
+        <div>
+          <Trending />
+        </div>
         <div className={styles.news__top__wrapper}>
           {news && news.filter((el, index: number) => index === 0).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
@@ -111,7 +115,7 @@ const Article = () => {
             <img src={el.media?.[0]?.['media-metadata']?.[2]?.url || 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'} alt="" />
               <div className={styles.news__top__first__bottom}>
                 <span className={styles.news__top__first__bottom__source__name}>{el.section}</span>
-                <span className={styles.news__top__first__bottom__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__top__first__bottom__title}>{el.title}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.abstract}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.byline}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.published_date}</span>
@@ -124,21 +128,21 @@ const Article = () => {
             <a href={el.url} key={el.url} target="_blank">
               <div key={el.url} className={styles.news__top__right}>
                 <span className={styles.news__top__source__name}>{el.section}</span>
-                <span className={styles.news__top__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__top__title}>{el.title}</span>
                 <span className={styles.news__top__author}>{el.byline}</span>
               </div>
             </a>
             )}
           </div>
         </div>
-        <p style={{ fontWeight: "bold", marginBottom: "20px" }}>The Latest</p>
+        <p style={{ color: "#FEC005", marginBottom: "20px" }}>Latest</p>
         <div className={styles.news__Latest__container}>
           {news && news && news.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div className={styles.news__Latest}>
               <div key={el.url} className={styles.news__Latest__name__titile__author}>
                 <span className={styles.news__latest__source__name}>{el.section}</span>
-                <span className={styles.news__latest__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__latest__title}>{el.title}</span>
                 <span className={styles.news__latest__author}>{el.byline}</span>
                 <span className={styles.news__latest__published__At}>{el.published_date}</span>
               </div>

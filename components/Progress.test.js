@@ -6,12 +6,14 @@ describe('Progress component', () => {
   beforeEach(() => {
     jest.useFakeTimers();
   });
+  // ↑ This is called before each test. a fake timer, mocking functionality.
 
   afterEach(() => {
     jest.useRealTimers();
   });
+  // ↑ This is called after each test. This restores the real time.
 
-  test('renders progress bar', () => {
+  it('renders progress bar', () => {
     console.log('# component/Progress:', 'Progress Component must exist.');
 
     render(<Progress />);
@@ -20,7 +22,7 @@ describe('Progress component', () => {
     expect(progressBar).toBeInTheDocument();
   });
 
-  test('progress bar has correct max attribute', () => {
+  it('progress bar has correct max attribute', () => {
     console.log('# component/Progress:', 'Progress Component must have correct max attribute.');
 
     render(<Progress />);
@@ -29,7 +31,7 @@ describe('Progress component', () => {
     expect(progressBar).toHaveAttribute('max', '100');
   });
 
-  test('progress bar initializes with correct value', () => {
+  it('progress bar initializes with correct value', () => {
     console.log('# component/Progress:', 'Progress Component must initialize with correct value.');
 
     render(<Progress />);
@@ -38,7 +40,7 @@ describe('Progress component', () => {
     expect(progressBar).toHaveAttribute('value', '0');
   });
 
-  test('progress bar updates value correctly', async () => {
+  it('progress bar updates value correctly', async () => {
     console.log('# component/Progress:', 'Progress Component must update value correctly.');
 
     render(<Progress />);
