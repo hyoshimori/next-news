@@ -96,8 +96,8 @@ const Article = () => {
         {!errorChecker && <Progress />}
         {errorChecker ?
           <div className={styles.loading__text}>
-            <p>The free tier services of render.com spin down after 15 minutes of inactivity, and the first request after that may take a while. Please have a look at the <a href="https://render.com/docs/free">Link</a> for more information.</p>
-            <p>Render.comの無料サービスを利用しているため、15分間操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、ページを再リロードしてください。詳しくは以下<a href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
+            <p>The free tier services of render.com spin down after 15 minutes of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information.</p>
+            <p>Render.comの無料サービスを利用しているため、15分間操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、ページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
           </div>
         :
           null
@@ -115,7 +115,7 @@ const Article = () => {
             <img src={el.media?.[0]?.['media-metadata']?.[2]?.url || 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'} alt="" />
               <div className={styles.news__top__first__bottom}>
                 <span className={styles.news__top__first__bottom__source__name}>{el.section}</span>
-                <span className={styles.news__top__first__bottom__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__top__first__bottom__title}>{el.title}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.abstract}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.byline}</span>
                 <span className={styles.news__top__first__bottom__author}>{el.published_date}</span>
@@ -128,21 +128,21 @@ const Article = () => {
             <a href={el.url} key={el.url} target="_blank">
               <div key={el.url} className={styles.news__top__right}>
                 <span className={styles.news__top__source__name}>{el.section}</span>
-                <span className={styles.news__top__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__top__title}>{el.title}</span>
                 <span className={styles.news__top__author}>{el.byline}</span>
               </div>
             </a>
             )}
           </div>
         </div>
-        <p style={{ fontWeight: "bold", marginBottom: "20px" }}>Latest</p>
+        <p style={{ color: "#FEC005", marginBottom: "20px" }}>Latest</p>
         <div className={styles.news__Latest__container}>
           {news && news && news.filter((el, index: number) => index > 5 && index <= 30).map((el, index: number) =>
           <a href={el.url} key={el.url} target="_blank">
             <div className={styles.news__Latest}>
               <div key={el.url} className={styles.news__Latest__name__titile__author}>
                 <span className={styles.news__latest__source__name}>{el.section}</span>
-                <span className={styles.news__latest__title}>{el.title}</span>
+                <span id="post__title" className={styles.news__latest__title}>{el.title}</span>
                 <span className={styles.news__latest__author}>{el.byline}</span>
                 <span className={styles.news__latest__published__At}>{el.published_date}</span>
               </div>

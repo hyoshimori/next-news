@@ -1,0 +1,22 @@
+.input{
+  color: #0000ff !important;
+}
+
+.body{
+  position: relative;
+}
+
+.autocomplete__section{
+  background-color: aquamarine;
+  z-index: 10;
+  position: absolute;
+}
+
+.autocomplete__section__show{
+  display: none;
+}
+
+.autocomplete__title{
+  display: flex;
+  flex-direction: column;
+}

@@ -5,7 +5,7 @@ const Trending = () => {
 
   return (
   <div className={styles.body}>
-    <p style={{ fontWeight: "bold", marginBottom: "20px", marginTop: "8px" }}>Trending</p>
+    <p style={{ color: "#FEC005" }}>Trending</p>
     <Search />
   </div>
   )
