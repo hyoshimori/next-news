@@ -27,6 +27,8 @@ import * as AutoCompleteItemType from "@/types/AutoCompleteItem";
 //   }[];
 // }
 
+
+// A password creating func
 const generateRandomPassword = () => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_+=[]{}|;:,.<>?/';
   let result = '';
@@ -35,6 +37,13 @@ const generateRandomPassword = () => {
   }
   return result;
 }
+
+// ms stands for milliseconds
+// setTimeout() set a timer which will excute the resolve in n secound later (returns promise object).
+async function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 
 // const removeDuplicates = (data: NewsItemCheck[], key: keyof NewsItemCheck): NewsItemCheck[] => {
 //   return data.filter((item, index, self) => {
@@ -50,50 +59,60 @@ const Search = () => {
   const [news, setNews] = useState<NewsType.News[]>();
   const [loading, setLoading] = useState(true);
   const [errorChecker, setErrorChecker] = useState(false);
+  const [isBlurred, setIsBlurred] = useState<string>('');
 
   const { axios } = useNews();
   const checker: any = []
 
 
-
+  // First useEffect to get api call
   useEffect(() => {
     axios
-      .get("https://ny-news-data.onrender.com/results", { timeout: 10000 })
-      .then(res => {
-        // const uniqueNews = removeDuplicates(res.data, "url");
-        setNews(res.data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.log("Error message:", error.message);
-        setErrorChecker(true);
-      });
+    .get("https://ny-news-data.onrender.com/results", { timeout: 10000 })
+    .then(res => {
+      // const uniqueNews = removeDuplicates(res.data, "url");
+      setNews(res.data);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.log("Error message:", error.message);
+      setErrorChecker(true);
+    });
   }, []);
 
-
-
+  // This useEffect is triggered when there is any change in the input field
   useEffect(() => {
     if (news && input) {
       const newArr = news
-        .filter((el) => {
-          return el.title.toLowerCase().includes(input.toLowerCase());
-        })
-        .map((el) => ({ title: el.title, url: el.url }));
+      .filter((el) => {
+        return el.title.toLowerCase().includes(input.toLowerCase());
+      })
+      .map((el) => ({ title: el.title, url: el.url }));
       newArr.map((el) => {
       })
       setAutoComplete(newArr);
-    } else if(input === ''){
+    } else if (input === '') {
       setAutoComplete([]);
     }
   }, [input]);
 
+  // This func is used to open the link when suggestions are being clicked
   const handleNavigation = (url: string) => {
     if (url) {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
   };
 
+  // This func is used to remove the value in the field
+  const blurringDetector = async () => {
+    await sleep(150)
+    setInput('')
+  }
 
+  // const focusDetector = async () => {
+  //   await sleep(150)
+  //   setInput('')
+  // }
 
   return (
     <div className={styles.body}>
@@ -102,10 +121,11 @@ const Search = () => {
           type="text"
           size="small"
           color="success"
-          placeholder='Input keywords'
+          placeholder={isBlurred.length !== 0? `${isBlurred}` : `Input Keywords`}
           onChange={(e) => setInput(e.target.value)}
           value={input || ''}
-          // onBlur={() => setInput('')}
+          // onFocus={() => focusDetector()}
+          onBlur={() => blurringDetector()}
       />
       <div className={styles.autocomplete__section}>
         {autoComplete.map((el) => {
