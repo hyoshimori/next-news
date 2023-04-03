@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import About from './About';
+import About from './about';
 
-describe('# About component', () => {
+describe('# About componAnt', () => {
   it('renders without crashing', () => {
     console.log('About Component must exist.');
     render(<About />);
