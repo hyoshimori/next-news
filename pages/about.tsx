@@ -1,5 +1,5 @@
 import "normalize.css";
-import styles from "./About.module.css";
+import styles from "./about.module.css";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 export default function About() {
