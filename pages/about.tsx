@@ -15,7 +15,7 @@ export default function About() {
       </li>
       <li>
         <b>Non-commercial use: </b>
-        <span>WOur app is for personal, non-commercial use only, in accordance with the New York Times API terms.</span>
+        <span>Our app is for personal, non-commercial use only, in accordance with the New York Times API terms.</span>
       </li>
       <li>
         <b>Intellectual Property: </b>
