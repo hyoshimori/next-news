@@ -1,6 +1,7 @@
 export {};
+// ↑ This is to explicitly indicate that a module is empty and doesn't export any variables
 
-describe('News object', () => {
+describe('# News type testing', () => {
   const news = {
     source: {
       name: 'BBC News',
@@ -29,6 +30,7 @@ describe('News object', () => {
   };
 
   test('has all required properties with correct data types', () => {
+    console.log('# News type testing' ,'required property must have correct properties.');
     expect(news).toHaveProperty('source.name', expect.any(String));
     expect(news).toHaveProperty('id', expect.any(String));
     expect(news).toHaveProperty('name', expect.any(String));
