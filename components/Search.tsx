@@ -8,24 +8,7 @@ import { AppContext } from "../pages/_app";
 
 import * as NewsType from "@/types/News";
 import * as AutoCompleteItemType from "@/types/AutoCompleteItem";
-
-interface NewsItemCheck {
-  source: {
-    name: string;
-  };
-  id: string;
-  name: string;
-  title: string;
-  byline: string;
-  abstract: string;
-  url: string;
-  section: string;
-  published_date: string;
-  media?: {
-    length: number;
-    'media-metadata': { url: string, format: string, height: number, width: number }[];
-  }[];
-}
+import * as NewsItemCheckType from "@/types/NewsItemCheck";
 
 
 // A password creating func
@@ -48,7 +31,7 @@ async function sleep(ms: number) {
 // ********** This is used to remove the duplicates in the arr ********** //
 // first data as an argument looks like this: {uri: 'nyt://article/1f3a4fbd-9514-5xxxxxxxxxxxxxxxxxxxx', url: 'https://www.nytimes.com/2023/03/31/us/xxxxxxxxxxxxxxxxxxxx', id: 1000xxxxxxxxxx, asset_id: 10000xxxxxxxxxx, source: 'New York Times', …}
 // second argument "key" is the url wich looks like this: https://www.nytimes.com/2023/03/31/arts/telxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-const removeDuplicates = (data: NewsItemCheck[], key: keyof NewsItemCheck): NewsItemCheck[] => {
+const removeDuplicates = (data: NewsItemCheckType.NewsItemCheck[], key: keyof NewsItemCheckType.NewsItemCheck): NewsItemCheckType.NewsItemCheck[] => {
   // ↓ Pick up only the truthy el
   return data.filter((item, index, self) => {
     // ↓ Check if the index of the current el in the loop is the same as the index of the first occurrence of a similar element (based on the key)
@@ -60,6 +43,31 @@ const removeDuplicates = (data: NewsItemCheck[], key: keyof NewsItemCheck): News
   });
 };
 // ********************************************************************** //
+
+// This func wip
+
+// const arrSort = (arr: NewsItemCheckType.NewsItemCheck[]) => {
+//   console.log(arr)
+//   // You must return values with either 1 or -1 or 0 for this custom func
+//   return arr.sort((a, b) => {
+
+//     const abstractA = a.abstract.toLowerCase();
+//     const abstractB = b.abstract.toLowerCase();
+
+//     // Return a negative, zero, or positive value based on the comparison
+//     if (abstractA < abstractB) {
+//       // in case of -1, the el is to be placed before
+//       return -1;
+//     } else if (abstractA > abstractB) {
+//      // in case of 1, the el is to be placed after
+//       return 1;
+//     } else {
+//       // in case of 0, the order of a and b does not matter
+//       return 0;
+//     }
+//   })
+//   return
+// }
 
 
 const Search = () => {
@@ -91,16 +99,18 @@ const Search = () => {
 
   // This useEffect is triggered when there is any change in the input field
   useEffect(() => {
+    // When there is news and input in the state
     if (news && input) {
+      // const sortedNews = arrSort(news) // wip
       const newArr = news
       .filter((el) => {
-        return el.abstract.toLowerCase().includes(input.toLowerCase());
+        // fetch only the tiles which can be found in the news state
+        // el.title.toLowerCase() looks like this: "our new promethean moment", "americans head to europe for the good life on the cheap" ......
+        return el.title.toLowerCase().includes(input.toLowerCase());
       })
       .map((el) => ({ title: el.title, url: el.url }));
-      newArr.map((el) => {
-      })
       setAutoComplete(newArr);
-      console.log(newArr)
+      // When the input filed is empty
     } else if (input === '') {
       setAutoComplete([]);
     }
