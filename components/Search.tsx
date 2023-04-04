@@ -80,6 +80,7 @@ const Search = () => {
   const [isForcused, setIsisForcused] = useState(true);
 
   const { axios } = useNews();
+
   const checker: any = []
 
 
@@ -152,7 +153,11 @@ const Search = () => {
       />
       <div className={styles.autocomplete__section}>
         {loading && !isForcused ?
-          <SearchLoading />
+          <>
+            <SearchLoading />
+            <p>The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while. Please have a look at the <a target="_blank" href="https://render.com/docs/free">Link</a> for more information.</p>
+            <p>Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下<a target="_blank" href="https://render.com/docs/free">リンク</a>をご確認ください。</p>
+          </>
         :
           <div></div>
         }
