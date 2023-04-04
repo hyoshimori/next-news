@@ -1,0 +1,18 @@
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  animation: rotateClockwise 2s linear infinite;
+}
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

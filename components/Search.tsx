@@ -1,6 +1,7 @@
 import styles from './Search.module.css';
 import { TextField } from "@mui/material";
 import { useState, useEffect } from 'react';
+import SearchLoading from "./SearchLoading"
 
 import { useNews } from '@/hooks/UseNews';
 import { useContext } from "react";
@@ -9,7 +10,6 @@ import { AppContext } from "../pages/_app";
 import * as NewsType from "@/types/News";
 import * as AutoCompleteItemType from "@/types/AutoCompleteItem";
 import * as NewsItemCheckType from "@/types/NewsItemCheck";
-
 
 // A password creating func
 const generateRandomPassword = () => {
@@ -77,6 +77,7 @@ const Search = () => {
   const [loading, setLoading] = useState(true);
   const [errorChecker, setErrorChecker] = useState(false);
   const [isBlurred, setIsBlurred] = useState<string | undefined>('');
+  const [isForcused, setIsisForcused] = useState(true);
 
   const { axios } = useNews();
   const checker: any = []
@@ -129,14 +130,12 @@ const Search = () => {
     // setIsBlurred(input)
     await sleep(150)
     setInput('')
+    setIsisForcused(true)
   }
 
-  // const focusDetector = async () => {
-  //   await sleep(100)
-  //   if(isBlurred){
-  //     setInput(isBlurred)
-  //   }
-  // }
+  const focusDetector = () => {
+    setIsisForcused(false)
+  }
 
   return (
     <div className={styles.body}>
@@ -148,10 +147,15 @@ const Search = () => {
           placeholder={isBlurred?.length !== 0? `${isBlurred}` : `Input Keywords`}
           onChange={(e) => setInput(e.target.value)}
           value={input || ''}
-          // onFocus={() => focusDetector()}
+          onFocus={() => focusDetector()}
           onBlur={() => blurringDetector()}
       />
       <div className={styles.autocomplete__section}>
+        {loading && !isForcused ?
+          <SearchLoading />
+        :
+          <div></div>
+        }
         {autoComplete.map((el) => {
           return (
             <p
