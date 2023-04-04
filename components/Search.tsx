@@ -109,6 +109,7 @@ const Search = () => {
         return el.title.toLowerCase().includes(input.toLowerCase());
       })
       .map((el) => ({ title: el.title, url: el.url }));
+      console.log(newArr)
       setAutoComplete(newArr);
       // When the input filed is empty
     } else if (input === '') {
