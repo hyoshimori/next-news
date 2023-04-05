@@ -7,6 +7,8 @@ import Trending from "./Trending";
 import { useContext } from "react";
 import { AppContext } from "../pages/_app";
 
+import { removeDuplicates } from "@/utility/newsUtils";
+
 // ↓ Not in use
 // import { getCategoryNews } from '@/hooks/jsonApi';
 
@@ -75,17 +77,19 @@ const Article = () => {
   // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
 
 
-  axios.get("https://ny-news-data.onrender.com/results", {timeout: 10000})
+  // First useEffect to get api call
+    axios
+    .get("https://ny-news-data-test.onrender.com/results", { timeout: 10000 })
     .then(res => {
-      setNews(res.data);
-      // Displya "Loading while waiting"
+      const uniqueNews = removeDuplicates(res.data, "url");
+      setNews(uniqueNews);
       setLoading(false);
     })
     .catch(error => {
-      console.log('Error message:', error.messageror);
+      console.log("Error message:", error.message);
       setErrorChecker(true);
     });
-}, [selectedCategory]);
+  }, []);
 
 
   return (
