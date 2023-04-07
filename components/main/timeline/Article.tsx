@@ -1,11 +1,11 @@
-import styles from "./Article.module.css"
+import styles from "../../style/Article.module.css"
 import React, { useEffect, useState } from 'react';
-import Progress from "./Progress";
-import Trending from "./Trending";
+import Progress from "../search/Progress";
+import Trending from "../nav/Trending";
 
 
 import { useContext } from "react";
-import { AppContext } from "../pages/_app";
+import { AppContext } from "../../../pages/_app";
 
 import { removeDuplicates } from "@/utility/newsUtils";
 

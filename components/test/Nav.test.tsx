@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Nav from './Nav';
+import Nav from '../main/nav/Nav';
 import { useRouter } from 'next/router';
 
 

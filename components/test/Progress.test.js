@@ -1,6 +1,6 @@
 import { render, screen, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Progress from './Progress';
+import Progress from '../main/search/Progress';
 
 describe('Progress component', () => {
   beforeEach(() => {

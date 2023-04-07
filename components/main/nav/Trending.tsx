@@ -1,5 +1,5 @@
-import styles from './Trending.module.css';
-import Search from './Search'
+import styles from '../../style/Trending.module.css';
+import Search from '../search/Search'
 
 const Trending = () => {
 

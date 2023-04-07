@@ -1,10 +1,10 @@
-import styles from "./Nav.module.css";
+import styles from "../../style/Nav.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import { useRouter } from 'next/router';
 import React, { useState, useContext, MouseEvent, useEffect } from "react";
-import { AppContext } from "../pages/_app";
+import { AppContext } from "../../../pages/_app";
 
 const Nav = () => {
   const router = useRouter();

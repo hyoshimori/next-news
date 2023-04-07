@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import styles from "./Base.module.css";
-import NewsTimeLine from "./components/NewsTimeLine";
+import NewsTimeLine from "./components/main/timeline/NewsTimeLine";
 import "normalize.css";
 
 const Base = () => {

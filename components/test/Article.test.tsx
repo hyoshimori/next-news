@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Article from './Article';
+import Article from '../main/timeline/Article';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
