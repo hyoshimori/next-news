@@ -1,6 +1,8 @@
+// test code "Not yet"
+
 import SyncIcon from '@mui/icons-material/Sync';
 
-import styles from './SearchLoading.module.css';
+import styles from '../../style/SearchLoading.module.css';
 import Search from './Search'
 
 const SearchLoading = () => {

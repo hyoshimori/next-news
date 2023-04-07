@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import NewsTimeLine from './NewsTimeLine';
-import Footer from './Footer';
+import NewsTimeLine from '../main/timeline/NewsTimeLine';
+import Footer from '../main/Footer';
 
 describe('# NewsTimeLine Component', () => {
   it('renders without crashing', () => {

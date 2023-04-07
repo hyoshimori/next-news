@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './Progress.module.css';
+import styles from '../../style/Progress.module.css';
 
 const Progress = () => {
   const [seconds, setSeconds] = useState(0);

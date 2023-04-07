@@ -1,11 +1,11 @@
-import styles from './Search.module.css';
+import styles from '../../style/Search.module.css';
 import { TextField } from "@mui/material";
 import { useState, useEffect } from 'react';
 import SearchLoading from "./SearchLoading"
 
 import { useNews } from '@/hooks/UseNews';
 import { useContext } from "react";
-import { AppContext } from "../pages/_app";
+import { AppContext } from "../../../pages/_app";
 
 import { removeDuplicates } from "@/utility/newsUtils";
 import { generateRandomPassword } from "@/utility/newsGenerateRandomPassword";

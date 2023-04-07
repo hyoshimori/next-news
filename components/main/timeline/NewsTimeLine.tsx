@@ -1,7 +1,7 @@
-import styles from "./NewsTimeLine.module.css"
+import styles from "../../style/NewsTimeLine.module.css"
 import React from 'react';
 import Article from "./Article";
-import Footer from "./Footer";
+import Footer from "../Footer";
 
 const NewsTimeLine = () => {
   return (
