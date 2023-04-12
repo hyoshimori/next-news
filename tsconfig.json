@@ -23,7 +23,8 @@
       "@/types/*": ["types/*"],
       "@/hooks/*": ["hooks/*"],
       "@/muiTheme/*": ["muiTheme/*"],
-      "@/utility/*": ["utility/*"]
+      "@/utility/*": ["utility/*"],
+      "@/store/*": ["store/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts", "mergeData.js"],

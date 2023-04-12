@@ -1,5 +1,8 @@
 import styles from '../../style/Search.module.css';
+
 import { TextField } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
+
 import { useState, useEffect } from 'react';
 import SearchLoading from "./SearchLoading"
 
@@ -30,16 +33,26 @@ const Search = () => {
   const checker: any = []
 
 
+  // This is a swtich to use the menu //
+  const [isSwitchOn, setSwitchOn] = useState(false);
+  const toggleSwitch = () => {
+    setSwitchOn(!isSwitchOn);
+  };
+  //**********************************//
+
+
   // This func is used to remove the value in the field
   const blurringDetector = async () => {
     // setIsBlurred(input)
     await sleep(150)
     setInput('')
     setIsisForcused(true)
+    setSwitchOn(!isSwitchOn);
   }
 
   const focusDetector = () => {
     setIsisForcused(false)
+    setSwitchOn(!isSwitchOn);
   }
 
 
@@ -77,10 +90,9 @@ const Search = () => {
       setAutoComplete([]);
     }
   }, [input]);
-
-
   return (
     <div className={styles.body}>
+      {/* <SearchIcon className={`${styles.search__icon} ${isSwitchOn ? styles.search__icon__show : styles.search__icon}`}/> */}
       <TextField
           className={styles.textfield}
           type="text"
