@@ -2,11 +2,6 @@ import styles from "../../style/Trending.module.css";
 import Search from "../search/Search";
 
 const Trending = () => {
-  const TrendingValues = {
-    trendingText: "Trending",
-    trendingColor: "#FEC005",
-  };
-
   return (
     <div className={styles.body}>
       <p style={{ color: "#FEC005" }}>Trending</p>

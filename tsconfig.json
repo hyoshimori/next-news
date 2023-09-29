@@ -24,9 +24,16 @@
       "@/hooks/*": ["hooks/*"],
       "@/muiTheme/*": ["muiTheme/*"],
       "@/utility/*": ["utility/*"],
-      "@/store/*": ["store/*"]
+      "@/store/*": ["store/*"],
+      "@/context/*": ["context/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts", "mergeData.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types.d.ts",
+    "mergeData.js"
+  ],
   "exclude": ["node_modules"]
 }

@@ -2,21 +2,10 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "../../style/Nav.module.css";
 
-import { AppContext } from "../../../pages/_app";
 import { useRouter } from "next/router";
 import React, { useState, useContext } from "react";
 
 const Nav = () => {
-  const NavValues = {
-    aboutLinkText: "About",
-    aboutLinkHref: "/about",
-    iconMessage: "My News +",
-    mainHeading: "NextNews",
-    menuIconTestId: "menu-icon",
-    backArrowIconTestId: "back-arrow-icon",
-    categoryListTestId: "category-list",
-  };
-
   const router = useRouter();
   if (router.pathname === "/about") {
     return null;
@@ -26,23 +15,6 @@ const Nav = () => {
   const [isSwitchOn, setSwitchOn] = useState(false);
   const toggleSwitch = () => {
     setSwitchOn(!isSwitchOn);
-  };
-
-  // Using useContext
-  const { selectedCategory, setSelectedCategory } = useContext(AppContext);
-
-  // Each child node, the types must be defined. This is why types are nested.
-  const categoryHandler: React.MouseEventHandler<HTMLButtonElement> = (
-    event
-  ) => {
-    const newCategory = (
-      event.target as HTMLButtonElement
-    ).innerHTML.toLowerCase();
-    // Setting the new category. Selected category page will be shown on the app
-    setSelectedCategory({
-      country: "us",
-      category: newCategory,
-    });
   };
 
   return (
