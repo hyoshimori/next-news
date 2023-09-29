@@ -1,5 +1,5 @@
 export interface ArticleContext {
-  FooterValues: {
+  footerValues: {
     aboutLinkText: string;
     aboutLinkHref: string;
     aboutLinkClass: string;
@@ -10,7 +10,7 @@ export interface ArticleContext {
     nytApiLinkClass: string;
     nytApiLinkTarget: string;
   };
-  NavValues: {
+  navValues: {
     aboutLinkText: string;
     aboutLinkHref: string;
     iconMessage: string;
@@ -19,15 +19,15 @@ export interface ArticleContext {
     backArrowIconTestId: string;
     categoryListTestId: string;
   };
-  TrendingValues: {
+  trendingValues: {
     trendingText: string;
     trendingColor: string;
   };
-  ProgressValues: {
+  progressValues: {
     progressMax: string;
     progressText: string;
   };
-  SearchValues: {
+  searchValues: {
     apiUrl: string;
     timeout: number;
     textFieldType: string;
@@ -43,7 +43,7 @@ export interface ArticleContext {
     loadingLinkTextJP: string;
     sleepTime: number;
   };
-  ArticleValues: {
+  articleValues: {
     loadingText: string;
     renderDocLink: string;
     linkText: string;

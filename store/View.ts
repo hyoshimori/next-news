@@ -1,11 +1,6 @@
-import React, { createContext, useContext, ReactNode } from "react";
-import { ArticleContext } from "../../types/typeFiles/ArticleContext";
-
-const AppContext = createContext<ArticleContext | undefined>(undefined);
-
-const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const articleContext = {
-    FooterValues: {
+export const initialProps = {
+  articleProps: {
+    footerValues: {
       aboutLinkText: "About",
       aboutLinkHref: "/about",
       aboutLinkClass: "styles.attribute",
@@ -16,7 +11,7 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       nytApiLinkClass: "styles.attribute",
       nytApiLinkTarget: "_blank",
     },
-    NavValues: {
+    navValues: {
       aboutLinkText: "About",
       aboutLinkHref: "/about",
       iconMessage: "My News +",
@@ -25,15 +20,15 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       backArrowIconTestId: "back-arrow-icon",
       categoryListTestId: "category-list",
     },
-    TrendingValues: {
+    trendingValues: {
       trendingText: "Trending",
       trendingColor: "#FEC005",
     },
-    ProgressValues: {
+    progressValues: {
       progressMax: "100",
       progressText: "100%",
     },
-    SearchValues: {
+    searchValues: {
       apiUrl: "https://ny-news-data-test.onrender.com/results",
       timeout: 10000,
       textFieldType: "text",
@@ -51,7 +46,7 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       loadingLinkTextJP: "リンク",
       sleepTime: 150,
     },
-    ArticleValues: {
+    articleValues: {
       loadingText:
         "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while.",
       renderDocLink: "https://render.com/docs/free",
@@ -64,19 +59,7 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
         "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       apiUrl: "https://ny-news-data-test.onrender.com/results",
     },
-  };
-
-  return (
-    <AppContext.Provider value={articleContext}>{children}</AppContext.Provider>
-  );
+  },
 };
 
-const useAppContext = () => {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error("useAppContext must be used within an AppProvider");
-  }
-  return context;
-};
-
-export { AppProvider, useAppContext };
+export default initialProps;
