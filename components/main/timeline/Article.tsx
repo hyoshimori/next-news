@@ -19,47 +19,7 @@ const Article = () => {
   const [loading, setLoading] = useState(true);
   const [errorChecker, setErrorChecker] = useState(false);
 
-  // // Get date, "today" and "from 20 days ago" //
-  // const date = new Date
-  // let currentDate = new Date();
-  // let date20DaysAgo = new Date();
-  // date20DaysAgo.setDate(currentDate.getDate() - 20);
-  // // ************************* //
-
-  // // return value must be string by "): string"
-  // const convertDateFormat = (dateString : string): string => {
-  //   const date = new Date(dateString);
-  //   // extracts the year
-  //   const year = date.getFullYear();
-  //   // extracts the month
-  //   const month = String(date.getMonth() + 1).padStart(2, '0');
-  //   const day = String(date.getDate()).padStart(2, '0');
-  //   return `${year}-${month}-${day}`;
-  // };
-
   useEffect(() => {
-    // New variable in order for the page to know which category is being rendered
-    // const category = selectedCategory.category
-    // ********** These are for the real api key ********** //
-    // Use convertDateFormat function to make "from" and  "to" date
-
-    // const dateString = date.toString();
-    // const dateString20Ago = date20DaysAgo.toString()
-    // const from = convertDateFormat(dateString);
-    // const to = convertDateFormat(dateString20Ago);
-
-    // const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-    // const ENDPOINT_URL = `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=${API_KEY}`;
-    // console.log(ENDPOINT_URL)
-    // axios.get(ENDPOINT_URL)
-    // ********** These are for the real api key ********** //
-
-    // const apiBaseUrl = process.env.NODE_ENV === 'development'
-    // process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
-    // ? process.env.NEXT_PUBLIC_API_BASE_URL_LOCAL
-    // : process.env.NEXT_PUBLIC_API_BASE_URL_DEPLOYED;
-
-    // First useEffect to get api call
     axios
       .get("https://ny-news-data-test.onrender.com/results", { timeout: 10000 })
       .then((res) => {
