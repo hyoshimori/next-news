@@ -1,16 +1,16 @@
-.input{
+.input {
   color: #0000ff !important;
 }
 
-.textfield{
+.text_field {
   width: 40vw;
 }
 
-.body{
+.body {
   position: relative;
 }
 
-.autocomplete__section{
+.autocomplete_section {
   position: absolute;
   width: calc(40vw - 30px);
   right: 0;
@@ -22,29 +22,29 @@
   z-index: 10;
 }
 
-.autocomplete__section__hide{
+.autocomplete_section_hide {
   display: none;
 }
 
-.autocomplete__title{
+.autocomplete_title {
   z-index: 15;
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
 
-.autocomplete__title:hover{
+.autocomplete_title:hover {
   opacity: 0.5;
 }
 
-.search__icon{
+.search_icon {
   position: absolute;
   left: -33px;
   top: 8px;
   opacity: 0.3;
 }
 
-.search__icon__show{
+.search_icon_show {
   opacity: 1;
   cursor: pointer;
 }

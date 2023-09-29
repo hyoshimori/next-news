@@ -1,6 +1,6 @@
-import styles from "../../style/Nav.module.css";
-import MenuIcon from "@mui/icons-material/Menu";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import MenuIcon from "@mui/icons-material/Menu";
+import styles from "../../style/Nav.module.css";
 
 import { AppContext } from "../../../pages/_app";
 import { useRouter } from "next/router";
@@ -43,11 +43,11 @@ const Nav = () => {
         className={styles.menu}
         onClick={toggleSwitch}
       />
-      <div className={styles.icon__and__message}>
+      <div className={styles.icon_and_message}>
         <h1 className={styles.icon}>NextNews</h1>
-        <span className={styles.botto__icon__message}>My News +</span>
+        <span className={styles.botton_icon_message}>My News +</span>
       </div>
-      <div className={styles.category__1}>
+      <div className={styles.category_1}>
         <ul className={styles.category}></ul>
         <p>
           <a className={styles.attribute} href="/about">
@@ -57,18 +57,18 @@ const Nav = () => {
       </div>
       <div
         data-testid="category-list"
-        className={`${styles.category__2} ${
-          isSwitchOn ? styles.category__2__show : styles.category__2
+        className={`${styles.category_2} ${
+          isSwitchOn ? styles.category_2_show : styles.category_2
         }`}>
         <ArrowBackIcon
           data-testid="back-arrow-icon"
           style={{ cursor: "pointer" }}
-          className={styles.menu__2}
+          className={styles.menu_2}
           onClick={toggleSwitch}
         />
-        <ul className={styles.category__2__ul}>
+        <ul className={styles.category_2_ul}>
           <p>
-            <a className={styles.attribute__smaller__screen} href="/about">
+            <a className={styles.attribute_smaller_screen} href="/about">
               About
             </a>
           </p>

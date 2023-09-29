@@ -77,13 +77,13 @@ const Article = () => {
   }, []);
 
   return (
-    <div className={styles.body} data-testid="article__component">
+    <div className={styles.body} data-test-id="article_component">
       {loading ? (
         <div className={styles.loading}>
           {!errorChecker && (
             <>
               <Progress />
-              <div className={styles.loading__text}>
+              <div className={styles.loading_text}>
                 <p>
                   The free tier services of render.com spin down after a period
                   of inactivity, and the first request after that may take a
@@ -104,7 +104,7 @@ const Article = () => {
             </>
           )}
           {errorChecker ? (
-            <div className={styles.loading__text__second}>
+            <div className={styles.loading_text_second}>
               <p>
                 The free tier services of render.com spin down after a period of
                 inactivity, and the first request after that may take a while.
@@ -129,13 +129,13 @@ const Article = () => {
           <div>
             <Trending />
           </div>
-          <div className={styles.news__top__wrapper}>
+          <div className={styles.news_top_wrapper}>
             {news &&
               news
                 .filter((el, index: number) => index === 0)
                 .map((el, index: number) => (
                   <a href={el.url} key={el.url} target="_blank">
-                    <div key={el.url} className={styles.news__top__first}>
+                    <div key={el.url} className={styles.news_top_first}>
                       <img
                         src={
                           el.media?.[0]?.["media-metadata"]?.[2]?.url ||
@@ -143,51 +143,44 @@ const Article = () => {
                         }
                         alt=""
                       />
-                      <div className={styles.news__top__first__bottom}>
+                      <div className={styles.news_top_first_bottom}>
                         <span
-                          className={
-                            styles.news__top__first__bottom__source__name
-                          }>
+                          className={styles.news_top_first_bottom_source_name}>
                           {el.section}
                         </span>
                         <span
-                          id="post__title"
-                          className={styles.news__top__first__bottom__title}>
+                          id="post_title"
+                          className={styles.news_top_first_bottom_title}>
                           {el.title}
                         </span>
-                        <span
-                          className={styles.news__top__first__bottom__author}>
+                        <span className={styles.news_top_first_bottom_author}>
                           {el.abstract}
                         </span>
-                        <span
-                          className={styles.news__top__first__bottom__author}>
+                        <span className={styles.news_top_first_bottom_author}>
                           {el.byline}
                         </span>
-                        <span
-                          className={styles.news__top__first__bottom__author}>
+                        <span className={styles.news_top_first_bottom_author}>
                           {el.published_date}
                         </span>
                       </div>
                     </div>
                   </a>
                 ))}
-            <div className={styles.news__top__wrapper__for__five__articles}>
+            <div className={styles.news_top_wrapper_for_five_articles}>
               {news &&
                 news &&
                 news
                   .filter((el, index: number) => index >= 1 && index <= 5)
                   .map((el, index: number) => (
                     <a href={el.url} key={el.url} target="_blank">
-                      <div key={el.url} className={styles.news__top__right}>
-                        <span className={styles.news__top__source__name}>
+                      <div key={el.url} className={styles.news_top_right}>
+                        <span className={styles.news_top_source_name}>
                           {el.section}
                         </span>
-                        <span
-                          id="post__title"
-                          className={styles.news__top__title}>
+                        <span id="post_title" className={styles.news_top_title}>
                           {el.title}
                         </span>
-                        <span className={styles.news__top__author}>
+                        <span className={styles.news_top_author}>
                           {el.byline}
                         </span>
                       </div>
@@ -196,33 +189,33 @@ const Article = () => {
             </div>
           </div>
           <p style={{ color: "#FEC005", marginBottom: "20px" }}>Latest</p>
-          <div className={styles.news__Latest__container}>
+          <div className={styles.news_latest_container}>
             {news &&
               news &&
               news
                 .filter((el, index: number) => index > 5 && index <= 30)
                 .map((el, index: number) => (
                   <a href={el.url} key={el.url} target="_blank">
-                    <div className={styles.news__Latest}>
+                    <div className={styles.news_Latest}>
                       <div
                         key={el.url}
-                        className={styles.news__Latest__name__titile__author}>
-                        <span className={styles.news__latest__source__name}>
+                        className={styles.news_Latest_name_title_author}>
+                        <span className={styles.news_latest_source_name}>
                           {el.section}
                         </span>
                         <span
-                          id="post__title"
-                          className={styles.news__latest__title}>
+                          id="post_title"
+                          className={styles.news_latest_title}>
                           {el.title}
                         </span>
-                        <span className={styles.news__latest__author}>
+                        <span className={styles.news_latest_author}>
                           {el.byline}
                         </span>
-                        <span className={styles.news__latest__published__At}>
+                        <span className={styles.news_latest_published_at}>
                           {el.published_date}
                         </span>
                       </div>
-                      <p className={styles.news__latest__description}>
+                      <p className={styles.news_latest_description}>
                         {el.abstract}
                       </p>
                       {el.media &&

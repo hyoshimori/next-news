@@ -66,7 +66,7 @@ export default function About() {
         valuable.
       </p>
 
-      <div className={styles.right__icon}>
+      <div className={styles.right_icon}>
         <a href="./">
           <ArrowBackIosNewIcon className={styles.back} />
         </a>

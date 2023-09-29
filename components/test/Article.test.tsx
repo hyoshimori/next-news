@@ -43,7 +43,7 @@ describe("# Article component", () => {
       "Article renders without throwing any errors"
     );
     const { getByTestId } = await render(<Article />);
-    const articleComponent = getByTestId("article__component");
+    const articleComponent = getByTestId("article_component");
     expect(articleComponent).toBeInTheDocument();
   });
 });

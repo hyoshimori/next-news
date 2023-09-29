@@ -84,9 +84,8 @@ const Search = () => {
   }, [input]);
   return (
     <div className={styles.body}>
-      {/* <SearchIcon className={`${styles.search__icon} ${isSwitchOn ? styles.search__icon__show : styles.search__icon}`}/> */}
       <TextField
-        className={styles.textfield}
+        className={styles.text_field}
         type="text"
         size="small"
         color="success"
@@ -98,7 +97,7 @@ const Search = () => {
         onFocus={() => focusDetector()}
         onBlur={() => blurringDetector()}
       />
-      <div className={styles.autocomplete__section}>
+      <div className={styles.autocomplete_section}>
         {loading && !isForcused ? (
           <>
             <SearchLoading />
@@ -126,7 +125,7 @@ const Search = () => {
           return (
             <p
               key={generateRandomPassword()}
-              className={styles.autocomplete__title}
+              className={styles.autocomplete_title}
               onClick={() => handleNavigation(el.url)}>
               {el.title}
             </p>

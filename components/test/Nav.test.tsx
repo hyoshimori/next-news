@@ -35,7 +35,7 @@ describe("Nav", () => {
     const menuIcon = getByTestId("menu-icon");
     fireEvent.click(menuIcon);
     const categoryList = getByTestId("category-list");
-    expect(categoryList).toHaveClass("category__2__show");
+    expect(categoryList).toHaveClass("category_2_show");
   });
 });
 
@@ -51,6 +51,6 @@ describe("Nav", () => {
     fireEvent.click(menuIcon);
     fireEvent.click(backArrowIcon);
     const categoryList = getByTestId("category-list");
-    expect(categoryList).not.toHaveClass("category__2__show");
+    expect(categoryList).not.toHaveClass("category_2_show");
   });
 });
