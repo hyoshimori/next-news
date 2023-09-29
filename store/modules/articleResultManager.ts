@@ -29,20 +29,20 @@ const initialState = {
 };
 
 const articleResultManager = createSlice({
-  name: 'articleResultManager',
+  name: "articleResultManager",
   initialState,
   reducers: {
-    test(state, {type, payload}){
-      const test = {...state};
-      return test
-    }
-  }
-})
+    test(state, { type, payload }) {
+      const test = { ...state };
+      return test;
+    },
+  },
+});
 
 // This if for dispacth
 const { test } = articleResultManager.actions;
 
-export { test }
+export { test };
 
 // This if for reducer
 export default articleResultManager.reducer;

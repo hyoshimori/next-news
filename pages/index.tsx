@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Base from '../Base'
+import Base from "../Base";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
         <Base />
       </main>
     </>
-  )
+  );
 }
