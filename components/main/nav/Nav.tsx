@@ -7,6 +7,16 @@ import { useRouter } from "next/router";
 import React, { useState, useContext } from "react";
 
 const Nav = () => {
+  const NavValues = {
+    aboutLinkText: "About",
+    aboutLinkHref: "/about",
+    iconMessage: "My News +",
+    mainHeading: "NextNews",
+    menuIconTestId: "menu-icon",
+    backArrowIconTestId: "back-arrow-icon",
+    categoryListTestId: "category-list",
+  };
+
   const router = useRouter();
   if (router.pathname === "/about") {
     return null;

@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import styles from "../../style/Progress.module.css";
 
 const Progress = () => {
+  const ProgressValues = {
+    progressMax: "100",
+    progressText: "100%",
+  };
+
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {

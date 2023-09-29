@@ -17,6 +17,25 @@ import * as AutoCompleteItemType from "@/types/AutoCompleteItem";
 import * as NewsType from "@/types/News";
 
 const Search = () => {
+  const SearchValues = {
+    apiUrl: "https://ny-news-data-test.onrender.com/results",
+    timeout: 10000,
+    textFieldType: "text",
+    textFieldSize: "small",
+    textFieldColor: "success",
+    placeholderText: "Input Keywords",
+    loadingText1:
+      "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while.",
+    loadingText2: "Please have a look at the",
+    loadingLink: "https://render.com/docs/free",
+    loadingLinkText: "Link",
+    loadingTextJP1:
+      "Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、1分ほど待ってからページを再リロードしてください。詳しくは以下",
+    loadingLinkJP: "https://render.com/docs/free",
+    loadingLinkTextJP: "リンク",
+    sleepTime: 150,
+  };
+
   const [input, setInput] = useState<string | undefined>(undefined);
   const [autoComplete, setAutoComplete] = useState<
     AutoCompleteItemType.AutoCompleteItem[]
