@@ -1,25 +1,25 @@
 import React, { ReactNode } from "react";
 import Base from "./Base";
 import Head from "next/head";
-import View from "@/store/View";
+import ArticleView from "@/store/ArticleView";
 
-import { ArticleContext } from "@/types/typeFiles/ArticleContext";
+import { ArticleType } from "@/types/index";
 
-export const ViewContext = React.createContext<ArticleContext | null>(null);
+export const ViewContext = React.createContext<ArticleType | null>(null);
 interface ViewProviderProps {
   children: ReactNode;
 }
 
 export const ViewProvider: React.FC<ViewProviderProps> = ({ children }) => {
   return (
-    <ViewContext.Provider value={View.articleProps}>
+    <ViewContext.Provider value={ArticleView.articleProps}>
       {children}
     </ViewContext.Provider>
   );
 };
 
 export default function Home() {
-  const title = View.articleProps.homeValues.homeTitle;
+  const title = ArticleView.articleProps.homeValues.homeTitle;
   return (
     <ViewProvider>
       <Head>

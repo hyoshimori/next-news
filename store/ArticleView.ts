@@ -1,4 +1,4 @@
-export const initialProps = {
+export const ArticleView = {
   articleProps: {
     footerValues: {
       aboutLinkText: "About",
@@ -41,7 +41,7 @@ export const initialProps = {
       loadingLink: "https://render.com/docs/free",
       loadingLinkText: "Link",
       loadingTextJP1:
-        "Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、1分ほど待ってからページを再リロードしてください。詳しくは以下",
+        "Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、1分ほど待ってからページを再リロードしてください。詳しくは以下リンクをご確認ください: ",
       loadingLinkJP: "https://render.com/docs/free",
       loadingLinkTextJP: "リンク",
       sleepTime: 150,
@@ -54,7 +54,7 @@ export const initialProps = {
       forMoreInformationText: "for more information.",
       pleaseWaitAndReloadText: "Please have a look at the",
       loadingTextJP:
-        "Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下リンクをご確認ください。",
+        "Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下リンクをご確認ください: ",
       defaultImage:
         "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       apiUrl: "https://ny-news-data-test.onrender.com/results",
@@ -65,4 +65,4 @@ export const initialProps = {
   },
 };
 
-export default initialProps;
+export default ArticleView;

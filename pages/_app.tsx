@@ -1,7 +1,5 @@
 import "@/styles/global.css";
-import { Category } from "@/types/typeFiles/Category";
-import { createContext, useState } from "react";
-import { MyContext } from "@/types/typeFiles/MyContext";
+
 import Layout from "@/layouts/NavLayout";
 import styles from "@/styles/Home.module.css";
 import type { AppProps } from "next/app";

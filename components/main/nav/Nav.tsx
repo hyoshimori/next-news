@@ -40,9 +40,8 @@ const Nav = () => {
       </div>
       <div
         data-testid="category-list"
-        className={`${NavStyles.category_2} ${
-          isSwitchOn ? NavStyles.category_2_show : NavStyles.category_2
-        }`}>
+        className={`${NavStyles.category_2} ${isSwitchOn ? NavStyles.category_2_show : NavStyles.category_2
+          }`}>
         <ArrowBackIcon
           data-testid="back-arrow-icon"
           style={{ cursor: "pointer" }}

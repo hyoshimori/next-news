@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { TextField } from "@mui/material";
 
 import { useNews } from "@/hooks/UseNews";
 import { SearchLoading, SearchStyles } from "@/components/index";
-import { AutoCompleteItem, News } from "@/types/index";
+import { AutoCompleteItemType, News } from "@/types/index";
 import {
   generateRandomPasswordUtility,
   handleNavigationUtility,
@@ -12,10 +12,25 @@ import {
   sleepUtility,
 } from "@/utility/index";
 
+import { ViewContext } from "@/pages/index";
+
 const Search = () => {
+
+  const context = useContext(ViewContext);
+
+  // Avoid error when context is null
+  if (!context) {
+    return (
+      <></>
+    )
+  };
+
+  const { searchValues } = context;
+
+  const { articleValues } = context;
   const [input, setInput] = useState<string | undefined>(undefined);
-  const [autoComplete, setAutoComplete] = useState<AutoCompleteItem[]>([]);
-  const [errorChecker, setErrorChecker] = useState(false);
+  const [autoComplete, setAutoComplete] = useState<AutoCompleteItemType[]>([]);
+  const [, setErrorChecker] = useState(false);
   const [isBlurred, setIsBlurred] = useState<string | undefined>("");
   const [isFocused, setIsFocused] = useState(true);
   const [loading, setLoading] = useState(true);
@@ -47,7 +62,7 @@ const Search = () => {
   // Api call run when the page is rendered
   useEffect(() => {
     axios
-      .get("https://ny-news-data-test.onrender.com/results", { timeout: 10000 })
+      .get(searchValues.apiUrl, { timeout: 10000 })
       .then((res) => {
         const uniqueNews = removeDuplicatesUtility(res.data, "url");
         setNews(uniqueNews);
@@ -80,11 +95,11 @@ const Search = () => {
     <div className={SearchStyles.body}>
       <TextField
         className={SearchStyles.text_field}
-        type="text"
+        type={searchValues.textFieldType}
         size="small"
         color="success"
         placeholder={
-          isBlurred?.length !== 0 ? `${isBlurred}` : `Input Keywords`
+          isBlurred?.length !== 0 ? `${isBlurred}` : `${searchValues.placeholderText}}`
         }
         onChange={(e) => setInput(e.target.value)}
         value={input || ""}
@@ -96,20 +111,16 @@ const Search = () => {
           <>
             <SearchLoading />
             <p>
-              The free tier services of render.com spin down after a period of
-              inactivity, and the first request after that may take a while.
-              Please have a look at the{" "}
-              <a target="_blank" href="https://render.com/docs/free">
-                Link
+              {searchValues.loadingText1}{" "}
+              <a target="_blank" href={searchValues.loadingLink}>
+                {searchValues.loadingLinkText}
               </a>{" "}
-              for more information.
             </p>
             <p>
-              Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、1分ほど待ってからページを再リロードしてください。詳しくは以下
-              <a target="_blank" href="https://render.com/docs/free">
-                リンク
+              {searchValues.loadingLinkTextJP}
+              <a target="_blank" href={searchValues.loadingLink}>
+                {searchValues.loadingLinkText}
               </a>
-              をご確認ください。
             </p>
           </>
         ) : (

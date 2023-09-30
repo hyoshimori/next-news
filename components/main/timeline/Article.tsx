@@ -4,17 +4,24 @@ import { Progress, ArticleStyles, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
 import { ViewContext } from "@/pages/index";
-import * as NewsType from "@/types/typeFiles/News";
+import * as NewsType from "@/types/index";
+import type { ArticleType } from "@/types/index";
 
-// interface ViewContextProps {
-//   articleValues: ArticleValues;
-//   // Other properties of the context can be added here if there are any
-// }
-// import type from "@/types/typeFiles/News";
+interface ViewContextProps {
+  articleValues: ArticleType["articleValues"];
+}
 
 const Article = () => {
-  // const { articleValues } = useContext(ViewContext);
+  const context = useContext(ViewContext);
 
+  // Avoid error when context is null
+  if (!context) {
+    return (
+      <></>
+    )
+  };
+
+  const { articleValues } = context;
   const { axios } = useNews();
 
   // const [news, setNews] = useState<NewsType.News>();
@@ -25,7 +32,7 @@ const Article = () => {
 
   useEffect(() => {
     axios
-      .get("https://ny-news-data-test.onrender.com/results", { timeout: 10000 })
+      .get(articleValues.apiUrl, { timeout: 10000 })
       .then((res) => {
         const uniqueNews = removeDuplicatesUtility(res.data, "url");
         setNews(uniqueNews);
@@ -37,6 +44,26 @@ const Article = () => {
       });
   }, []);
 
+  const LoadingText = () => {
+    return (
+      <div className={ArticleStyles.loading_text}>
+        <p>
+          {articleValues.loadingText}{" "}
+          <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
+            {articleValues.linkText}
+          </a>{" "}
+          {articleValues.forMoreInformationText}{" "}
+        </p>
+        <p>
+          {articleValues.loadingTextJP}{" "}
+          <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
+            {articleValues.linkText}
+          </a>
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className={ArticleStyles.body} data-test-id="article_component">
       {loading ? (
@@ -44,43 +71,23 @@ const Article = () => {
           {!errorChecker && (
             <>
               <Progress />
-              <div className={ArticleStyles.loading_text}>
-                <p>
-                  The free tier services of render.com spin down after a period
-                  of inactivity, and the first request after that may take a
-                  while. Please have a look at the{" "}
-                  <a target="_blank" href="https://render.com/docs/free">
-                    Link
-                  </a>{" "}
-                  for more information.{" "}
-                </p>
-                <p>
-                  Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下
-                  <a target="_blank" href="https://render.com/docs/free">
-                    リンク
-                  </a>
-                  をご確認ください。
-                </p>
-              </div>
+              <LoadingText />
             </>
           )}
           {errorChecker ? (
             <div className={ArticleStyles.loading_text_second}>
               <p>
-                The free tier services of render.com spin down after a period of
-                inactivity, and the first request after that may take a while.
-                Please have a look at the{" "}
-                <a target="_blank" href="https://render.com/docs/free">
-                  Link
+                {articleValues.forMoreInformationText}{" "}
+                <a target="_blank" href={articleValues.renderDocLink}>
+                  {articleValues.linkText}
                 </a>{" "}
-                for more information.
+                {articleValues.forMoreInformationText}
               </p>
               <p>
-                Render.comの無料サービスを利用しているため、しばらく操作がないとスピンダウンします。その後の最初のリクエストに時間がかかることがあります。ご利用の際は、15秒ほど待ってからページを再リロードしてください。詳しくは以下
-                <a target="_blank" href="https://render.com/docs/free">
-                  リンク
+                {articleValues.loadingTextJP}
+                <a target="_blank" href={articleValues.renderDocLink}>
+                  {articleValues.linkText}
                 </a>
-                をご確認ください。
               </p>
             </div>
           ) : null}
@@ -100,7 +107,7 @@ const Article = () => {
                       <img
                         src={
                           el.media?.[0]?.["media-metadata"]?.[2]?.url ||
-                          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                          `${articleValues.defaultImage}`
                         }
                         alt=""
                       />
@@ -196,19 +203,14 @@ const Article = () => {
                         {el.abstract}
                       </p>
                       {el.media &&
-                      el.media.length > 0 &&
-                      el.media[0]["media-metadata"] ? (
+                        el.media.length > 0 &&
+                        el.media[0]["media-metadata"] ? (
                         <img
                           src={el.media?.[0]["media-metadata"]?.[2]?.url}
                           alt=""
                         />
                       ) : (
-                        <img
-                          src={
-                            "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                          }
-                          alt=""
-                        />
+                        <img src={`${articleValues.defaultImage}`} alt="" />
                       )}
                     </div>
                   </a>

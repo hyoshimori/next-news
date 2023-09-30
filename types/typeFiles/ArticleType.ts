@@ -1,4 +1,4 @@
-export interface ArticleContext {
+export interface ArticleType {
   footerValues: {
     aboutLinkText: string;
     aboutLinkHref: string;

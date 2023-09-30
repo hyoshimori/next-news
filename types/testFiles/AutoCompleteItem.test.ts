@@ -2,7 +2,7 @@ export {};
 // ↑ This is to explicitly indicate that a module is empty and doesn't export any variables
 
 describe("# Category type testing", () => {
-  const autoCompleteItem = {
+  const autoCompleteItemType = {
     title: "coding",
     url: "localhost:3000",
   };
@@ -12,7 +12,7 @@ describe("# Category type testing", () => {
       "# Category type testing",
       "required property must have correct properties."
     );
-    expect(autoCompleteItem).toHaveProperty("title", expect.any(String));
-    expect(autoCompleteItem).toHaveProperty("url", expect.any(String));
+    expect(autoCompleteItemType).toHaveProperty("title", expect.any(String));
+    expect(autoCompleteItemType).toHaveProperty("url", expect.any(String));
   });
 });

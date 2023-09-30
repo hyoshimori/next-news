@@ -6,9 +6,6 @@ import { ViewContext } from "./index";
 
 const Base = () => {
   const contextValue = useContext(ViewContext);
-
-  console.log(contextValue);
-
   return (
     <div>
       <NewsTimeLine />

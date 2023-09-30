@@ -2,7 +2,7 @@ export {};
 // ↑ This is to explicitly indicate that a module is empty and doesn't export any variables
 
 describe("# News type testing", () => {
-  const news = {
+  const NewsType = {
     source: {
       name: "BBC News",
     },
@@ -34,15 +34,15 @@ describe("# News type testing", () => {
       "# News type testing",
       "required property must have correct properties."
     );
-    expect(news).toHaveProperty("source.name", expect.any(String));
-    expect(news).toHaveProperty("id", expect.any(String));
-    expect(news).toHaveProperty("name", expect.any(String));
-    expect(news).toHaveProperty("title", expect.any(String));
-    expect(news).toHaveProperty("byline", expect.any(String));
-    expect(news).toHaveProperty("abstract", expect.any(String));
-    expect(news).toHaveProperty("url", expect.any(String));
-    expect(news).toHaveProperty("section", expect.any(String));
-    expect(news).toHaveProperty("published_date", expect.any(String));
-    expect(news).toHaveProperty("media", expect.any(Array));
+    expect(NewsType).toHaveProperty("source.name", expect.any(String));
+    expect(NewsType).toHaveProperty("id", expect.any(String));
+    expect(NewsType).toHaveProperty("name", expect.any(String));
+    expect(NewsType).toHaveProperty("title", expect.any(String));
+    expect(NewsType).toHaveProperty("byline", expect.any(String));
+    expect(NewsType).toHaveProperty("abstract", expect.any(String));
+    expect(NewsType).toHaveProperty("url", expect.any(String));
+    expect(NewsType).toHaveProperty("section", expect.any(String));
+    expect(NewsType).toHaveProperty("published_date", expect.any(String));
+    expect(NewsType).toHaveProperty("media", expect.any(Array));
   });
 });
