@@ -23,7 +23,6 @@ const Article = () => {
 
   const { articleValues } = context;
   const { axios } = useNews();
-
   // const [news, setNews] = useState<NewsType.News>();
   const [news, setNews] = useState<NewsType.News[]>();
   // This is for "Loading" message
