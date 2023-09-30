@@ -1,17 +1,18 @@
-import { render, screen, act } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Progress from '../main/search/Progress';
+
+import { Progress } from "@/components/Progress";
 
 describe('Progress component', () => {
+  // This is called before each test. a fake timer, mocking functionality.
   beforeEach(() => {
     jest.useFakeTimers();
   });
-  // ↑ This is called before each test. a fake timer, mocking functionality.
 
+  // This is called after each test. This restores the real time.
   afterEach(() => {
     jest.useRealTimers();
   });
-  // ↑ This is called after each test. This restores the real time.
 
   it('renders progress bar', () => {
     console.log('# component/Progress:', 'Progress Component must exist.');

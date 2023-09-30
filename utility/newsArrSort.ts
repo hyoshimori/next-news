@@ -1,10 +1,8 @@
-import * as NewsItemCheckType from "@/types/NewsItemCheck";
+import * as NewsItemCheckType from "@/types/typeFiles/NewsItemCheckType";
 
 export const arrSort = (arr: NewsItemCheckType.NewsItemCheck[]) => {
-  console.log(arr)
   // You must return values with either 1 or -1 or 0 for this custom func
   return arr.sort((a, b) => {
-
     const abstractA = a.abstract.toLowerCase();
     const abstractB = b.abstract.toLowerCase();
 
@@ -13,12 +11,14 @@ export const arrSort = (arr: NewsItemCheckType.NewsItemCheck[]) => {
       // in case of -1, the el is to be placed before
       return -1;
     } else if (abstractA > abstractB) {
-     // in case of 1, the el is to be placed after
+      // in case of 1, the el is to be placed after
       return 1;
     } else {
       // in case of 0, the order of a and b does not matter
       return 0;
     }
-  })
-  return
-}
+  });
+  return;
+};
+
+export default arrSort;

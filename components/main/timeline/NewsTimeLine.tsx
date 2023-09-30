@@ -1,15 +1,14 @@
-import styles from "../../style/NewsTimeLine.module.css"
-import React from 'react';
-import Article from "./Article";
-import Footer from "../footer/Footer";
+import React from "react";
+
+import { Article, Footer, NewsTimeLineStyles } from "@/components/index";
 
 const NewsTimeLine = () => {
   return (
-  <div className={styles.body}>
-    <Article />
-    <Footer />
-  </div>
-  )
-}
+    <div className={NewsTimeLineStyles.body}>
+      <Article />
+      <Footer />
+    </div>
+  );
+};
 
-export default NewsTimeLine
+export default NewsTimeLine;

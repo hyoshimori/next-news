@@ -1,22 +1,22 @@
-.body{
-  margin:10vh 10vw;
-  text-align:justify
+.body {
+  margin: 10vh 10vw;
+  text-align: justify;
 }
 
 .body a,
 .body b,
 .body p,
 .body span,
-.body li{
+.body li {
   color: rgb(70, 70, 70);
 }
 
-.about{
+.about {
   width: 80vw;
-  text-align:center;
+  text-align: center;
 }
 
-.right__icon{
+.right_icon {
   display: flex;
   justify-content: flex-end;
   align-items: center;
