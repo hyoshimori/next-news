@@ -1,9 +1,9 @@
-import { Category } from "./CategoryType";
+import { CategoryType } from "./CategoryType";
 
 // This interface helps TypeScript understand the structure of the context data.
 export interface MyContext {
-  selectedCategory: Category["MyContext"];
+  selectedCategory: CategoryType["MyContext"];
   setSelectedCategory: React.Dispatch<
-    React.SetStateAction<Category["MyContext"]>
+    React.SetStateAction<CategoryType["MyContext"]>
   >;
 }
