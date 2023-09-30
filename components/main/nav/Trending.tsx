@@ -1,9 +1,8 @@
-import styles from "../../style/Trending.module.css";
-import Search from "../search/Search";
+import { Search, TrendingStyles } from "@/components/index";
 
 const Trending = () => {
   return (
-    <div className={styles.body}>
+    <div className={TrendingStyles.body}>
       <p style={{ color: "#FEC005" }}>Trending</p>
       <Search />
     </div>

@@ -1,12 +1,13 @@
-import styles from "../../style/Footer.module.css";
 import React from "react";
+
+import { FooterStyles } from "@/components/index";
 
 const Footer = () => {
   return (
-    <div className={styles.body}>
+    <div className={FooterStyles.body}>
       <span>
         |{" "}
-        <a className={styles.attribute} href="/about">
+        <a className={FooterStyles.attribute} href="/about">
           About
         </a>{" "}
         NextNews.
@@ -14,7 +15,7 @@ const Footer = () => {
       <span>
         | Data by{" "}
         <a
-          className={styles.attribute}
+          className={FooterStyles.attribute}
           target="_blank"
           href="https://developer.nytimes.com/apis">
           New York Times API

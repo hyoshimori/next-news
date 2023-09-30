@@ -1,6 +1,7 @@
-import { render, screen, act } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Trending from "../main/nav/Trending";
+import { render } from "@testing-library/react";
+
+import { Trending } from "@/components/index";
 
 describe("Trending component", () => {
   it("Renders Trending compnent", () => {

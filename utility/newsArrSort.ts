@@ -20,3 +20,5 @@ export const arrSort = (arr: NewsItemCheckType.NewsItemCheck[]) => {
   });
   return;
 };
+
+export default arrSort;

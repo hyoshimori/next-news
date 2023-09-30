@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 import Base from "./Base";
 import Head from "next/head";
-import View from "../store/view";
+import View from "@/store/View";
 
-import { ArticleContext } from "../types/typeFiles/ArticleContext";
+import { ArticleContext } from "@/types/typeFiles/ArticleContext";
 
 export const ViewContext = React.createContext<ArticleContext | null>(null);
 interface ViewProviderProps {
@@ -19,10 +19,11 @@ export const ViewProvider: React.FC<ViewProviderProps> = ({ children }) => {
 };
 
 export default function Home() {
+  const title = View.articleProps.homeValues.homeTitle;
   return (
     <ViewProvider>
       <Head>
-        <title>NextNews</title>
+        <title>{title}</title>
       </Head>
       <main>
         <Base />

@@ -8,3 +8,5 @@ export const generateRandomPassword = () => {
   }
   return result;
 };
+
+export default generateRandomPassword;

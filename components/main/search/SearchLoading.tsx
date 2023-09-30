@@ -1,13 +1,11 @@
-// test code "Not yet"
-
 import SyncIcon from "@mui/icons-material/Sync";
 
-import styles from "../../style/SearchLoading.module.css";
+import { SearchLoadingStyles } from "@/components/index";
 
 const SearchLoading = () => {
   return (
-    <div className={styles.body}>
-      <SyncIcon className={styles.icon} />
+    <div className={SearchLoadingStyles.body}>
+      <SyncIcon className={SearchLoadingStyles.icon} />
     </div>
   );
 };

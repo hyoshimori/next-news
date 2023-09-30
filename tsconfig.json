@@ -24,8 +24,7 @@
       "@/hooks/*": ["hooks/*"],
       "@/muiTheme/*": ["muiTheme/*"],
       "@/utility/*": ["utility/*"],
-      "@/store/*": ["store/*"],
-      "@/context/*": ["context/*"]
+      "@/store/*": ["store/*"]
     }
   },
   "include": [

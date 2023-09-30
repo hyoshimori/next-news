@@ -59,6 +59,9 @@ export const initialProps = {
         "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       apiUrl: "https://ny-news-data-test.onrender.com/results",
     },
+    homeValues: {
+      homeTitle: "NextNews",
+    },
   },
 };
 

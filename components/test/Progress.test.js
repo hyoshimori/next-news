@@ -1,6 +1,7 @@
-import { render, screen, act } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Progress from '../main/search/Progress';
+
+import { Progress } from "@/components/Progress";
 
 describe('Progress component', () => {
   // This is called before each test. a fake timer, mocking functionality.

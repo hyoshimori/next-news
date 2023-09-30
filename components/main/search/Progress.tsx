@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "../../style/Progress.module.css";
+
+import { ProgressStyles } from "@/components/index";
 
 const Progress = () => {
   const [seconds, setSeconds] = useState(0);
@@ -15,7 +16,7 @@ const Progress = () => {
   }, []);
 
   return (
-    <div className={styles.body}>
+    <div className={ProgressStyles.body}>
       <progress max="100" value={seconds}>
         100%
       </progress>

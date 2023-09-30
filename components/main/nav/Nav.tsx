@@ -1,9 +1,10 @@
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MenuIcon from "@mui/icons-material/Menu";
-import styles from "../../style/Nav.module.css";
 
-import { useRouter } from "next/router";
-import React, { useState, useContext } from "react";
+import { NavStyles } from "@/components/index";
 
 const Nav = () => {
   const router = useRouter();
@@ -18,39 +19,39 @@ const Nav = () => {
   };
 
   return (
-    <div className={styles.body}>
+    <div className={NavStyles.body}>
       <MenuIcon
         data-testid="menu-icon"
         style={{ cursor: "pointer" }}
-        className={styles.menu}
+        className={NavStyles.menu}
         onClick={toggleSwitch}
       />
-      <div className={styles.icon_and_message}>
-        <h1 className={styles.icon}>NextNews</h1>
-        <span className={styles.botton_icon_message}>My News +</span>
+      <div className={NavStyles.icon_and_message}>
+        <h1 className={NavStyles.icon}>NextNews</h1>
+        <span className={NavStyles.botton_icon_message}>My News +</span>
       </div>
-      <div className={styles.category_1}>
-        <ul className={styles.category}></ul>
+      <div className={NavStyles.category_1}>
+        <ul className={NavStyles.category}></ul>
         <p>
-          <a className={styles.attribute} href="/about">
+          <a className={NavStyles.attribute} href="/about">
             About
           </a>
         </p>
       </div>
       <div
         data-testid="category-list"
-        className={`${styles.category_2} ${
-          isSwitchOn ? styles.category_2_show : styles.category_2
+        className={`${NavStyles.category_2} ${
+          isSwitchOn ? NavStyles.category_2_show : NavStyles.category_2
         }`}>
         <ArrowBackIcon
           data-testid="back-arrow-icon"
           style={{ cursor: "pointer" }}
-          className={styles.menu_2}
+          className={NavStyles.menu_2}
           onClick={toggleSwitch}
         />
-        <ul className={styles.category_2_ul}>
+        <ul className={NavStyles.category_2_ul}>
           <p>
-            <a className={styles.attribute_smaller_screen} href="/about">
+            <a className={NavStyles.attribute_smaller_screen} href="/about">
               About
             </a>
           </p>

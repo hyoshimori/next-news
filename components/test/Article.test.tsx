@@ -1,6 +1,7 @@
 import React from "react";
+
+import { Article } from "@/components/index";
 import { render } from "@testing-library/react";
-import Article from "../main/timeline/Article";
 import axios from "axios";
 
 jest.mock("next/router");

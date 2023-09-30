@@ -53,4 +53,7 @@ export interface ArticleContext {
     defaultImage: string;
     apiUrl: string;
   };
+  homeValues: {
+    homeTitle: string;
+  };
 }

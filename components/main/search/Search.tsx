@@ -1,31 +1,25 @@
-import styles from "../../style/Search.module.css";
+import { useState, useEffect } from "react";
 
 import { TextField } from "@mui/material";
 
-import { useState, useEffect } from "react";
-import SearchLoading from "./SearchLoading";
-
 import { useNews } from "@/hooks/UseNews";
-
-// import { arrSort } from "@/utility/newsArrSort"; => WIP
-import { generateRandomPassword } from "@/utility/newsGenerateRandomPassword";
-import { handleNavigation } from "@/utility/newsHandleNavigation";
-import { removeDuplicates } from "@/utility/newsUtils";
-import { sleep } from "@/utility/newsSleep";
-
-import * as AutoCompleteItemType from "@/types/typeFiles/AutoCompleteItem";
-import * as NewsType from "@/types/typeFiles/News";
+import { SearchLoading, SearchStyles } from "@/components/index";
+import { AutoCompleteItem, News } from "@/types/index";
+import {
+  generateRandomPasswordUtility,
+  handleNavigationUtility,
+  removeDuplicatesUtility,
+  sleepUtility,
+} from "@/utility/index";
 
 const Search = () => {
   const [input, setInput] = useState<string | undefined>(undefined);
-  const [autoComplete, setAutoComplete] = useState<
-    AutoCompleteItemType.AutoCompleteItem[]
-  >([]);
+  const [autoComplete, setAutoComplete] = useState<AutoCompleteItem[]>([]);
   const [errorChecker, setErrorChecker] = useState(false);
   const [isBlurred, setIsBlurred] = useState<string | undefined>("");
-  const [isForcused, setIsisForcused] = useState(true);
+  const [isFocused, setIsFocused] = useState(true);
   const [loading, setLoading] = useState(true);
-  const [news, setNews] = useState<NewsType.News[]>();
+  const [news, setNews] = useState<News[]>([]);
 
   const { axios } = useNews();
   const checker: any = [];
@@ -39,14 +33,14 @@ const Search = () => {
   // This func is used to remove the value in the field
   const blurringDetector = async () => {
     // setIsBlurred(input)
-    await sleep(150);
+    await sleepUtility(150);
     setInput("");
-    setIsisForcused(true);
+    setIsFocused(true);
     setSwitchOn(!isSwitchOn);
   };
 
   const focusDetector = () => {
-    setIsisForcused(false);
+    setIsFocused(false);
     setSwitchOn(!isSwitchOn);
   };
 
@@ -55,7 +49,7 @@ const Search = () => {
     axios
       .get("https://ny-news-data-test.onrender.com/results", { timeout: 10000 })
       .then((res) => {
-        const uniqueNews = removeDuplicates(res.data, "url");
+        const uniqueNews = removeDuplicatesUtility(res.data, "url");
         setNews(uniqueNews);
         setLoading(false);
       })
@@ -83,9 +77,9 @@ const Search = () => {
     }
   }, [input]);
   return (
-    <div className={styles.body}>
+    <div className={SearchStyles.body}>
       <TextField
-        className={styles.text_field}
+        className={SearchStyles.text_field}
         type="text"
         size="small"
         color="success"
@@ -97,8 +91,8 @@ const Search = () => {
         onFocus={() => focusDetector()}
         onBlur={() => blurringDetector()}
       />
-      <div className={styles.autocomplete_section}>
-        {loading && !isForcused ? (
+      <div className={SearchStyles.autocomplete_section}>
+        {loading && !isFocused ? (
           <>
             <SearchLoading />
             <p>
@@ -124,9 +118,9 @@ const Search = () => {
         {autoComplete.map((el) => {
           return (
             <p
-              key={generateRandomPassword()}
-              className={styles.autocomplete_title}
-              onClick={() => handleNavigation(el.url)}>
+              key={generateRandomPasswordUtility()}
+              className={SearchStyles.autocomplete_title}
+              onClick={() => handleNavigationUtility(el.url)}>
               {el.title}
             </p>
           );

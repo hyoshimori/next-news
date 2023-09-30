@@ -22,3 +22,5 @@ export const removeDuplicates = (
   });
 };
 // ********************************************************************** //
+
+export default removeDuplicates;

@@ -1,11 +1,10 @@
-import styles from "../../style/NewsTimeLine.module.css";
 import React from "react";
-import Article from "./Article";
-import Footer from "../footer/Footer";
+
+import { Article, Footer, NewsTimeLineStyles } from "@/components/index";
 
 const NewsTimeLine = () => {
   return (
-    <div className={styles.body}>
+    <div className={NewsTimeLineStyles.body}>
       <Article />
       <Footer />
     </div>
