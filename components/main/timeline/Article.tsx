@@ -32,7 +32,7 @@ const Article = () => {
   useEffect(() => {
     let elapsed = 0;
 
-    // Reload page after 15 seconds 
+    // Reload page after 15 seconds
     const intervalId = setInterval(() => {
       elapsed += 1000;
       if (elapsed >= 15000) {
@@ -44,15 +44,21 @@ const Article = () => {
     axios
       .get(articleValues.apiUrl, { timeout: 10000 })
       .then((res) => {
+        clearInterval(intervalId); // Clear the interval on successful request
         const uniqueNews = removeDuplicatesUtility(res.data, "url");
         setNews(uniqueNews);
         setLoading(false);
       })
       .catch((error) => {
+        clearInterval(intervalId); // Clear the interval on error
         console.log("Error message:", error.message);
         setErrorChecker(true);
       });
+
+    // Optionally clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
   }, []);
+
 
   const LoadingText = () => {
     return (
