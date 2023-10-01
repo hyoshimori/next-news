@@ -1,4 +1,4 @@
-export type News = {
+export type NewsType = {
   source: {
     name: string;
   };
@@ -12,6 +12,11 @@ export type News = {
   published_date: string;
   media?: {
     length: number;
-    'media-metadata': { url: string, format: string, height: number, width: number }[];
+    "media-metadata": {
+      url: string;
+      format: string;
+      height: number;
+      width: number;
+    }[];
   }[];
 };
