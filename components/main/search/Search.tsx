@@ -3,7 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import { TextField } from "@mui/material";
 
 import { useNews } from "@/hooks/UseNews";
-import { SearchLoading, SearchStyles } from "@/components/index";
+import { LoadingSpinner, SearchStyles } from "@/components/index";
 import { AutoCompleteItemType, News } from "@/types/index";
 import {
   generateRandomPasswordUtility,
@@ -108,7 +108,7 @@ const Search = () => {
       <div className={SearchStyles.autocomplete_section}>
         {loading && !isFocused ? (
           <>
-            <SearchLoading />
+            <LoadingSpinner />
             <p>
               {searchValues.loadingText1}{" "}
               <a target="_blank" href={searchValues.loadingLink}>

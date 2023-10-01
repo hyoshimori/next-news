@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import { Progress, ArticleStyles, Trending } from "@/components/index";
+import { ArticleStyles, LoadingSpinner, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
 import { ViewContext } from "@/pages/index";
@@ -30,6 +30,17 @@ const Article = () => {
   const [errorChecker, setErrorChecker] = useState(false);
 
   useEffect(() => {
+    let elapsed = 0;
+
+    // Reload page after 15 seconds 
+    const intervalId = setInterval(() => {
+      elapsed += 1000;
+      if (elapsed >= 15000) {
+        console.log('Reloading due to timeout');
+        window.location.reload();
+      }
+    }, 1000);
+
     axios
       .get(articleValues.apiUrl, { timeout: 10000 })
       .then((res) => {
@@ -69,7 +80,7 @@ const Article = () => {
         <div className={ArticleStyles.loading}>
           {!errorChecker && (
             <>
-              <Progress />
+              <LoadingSpinner />
               <LoadingText />
             </>
           )}
