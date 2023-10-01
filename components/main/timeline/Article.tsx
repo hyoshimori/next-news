@@ -83,15 +83,10 @@ const Article = () => {
     <div className={ArticleStyles.body} data-test-id="article_component">
       {loading ? (
         <div className={ArticleStyles.loading}>
-          {!errorChecker && (
-            <>
-              <LoadingSpinner />
-              <LoadingText />
-            </>
-          )}
-          {errorChecker ? (
+          <>
+            <LoadingSpinner />
             <LoadingText />
-          ) : null}
+          </>
         </div>
       ) : (
         <div>
