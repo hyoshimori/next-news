@@ -90,21 +90,7 @@ const Article = () => {
             </>
           )}
           {errorChecker ? (
-            <div className={ArticleStyles.loading_text_second}>
-              <p>
-                {articleValues.forMoreInformationText}{" "}
-                <a target="_blank" href={articleValues.renderDocLink}>
-                  {articleValues.linkText}
-                </a>{" "}
-                {articleValues.forMoreInformationText}
-              </p>
-              <p>
-                {articleValues.loadingTextJP}
-                <a target="_blank" href={articleValues.renderDocLink}>
-                  {articleValues.linkText}
-                </a>
-              </p>
-            </div>
+            <LoadingText />
           ) : null}
         </div>
       ) : (
