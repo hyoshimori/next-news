@@ -50,7 +50,6 @@ const Article = () => {
         setLoading(false);
       })
       .catch((error) => {
-        clearInterval(intervalId); // Clear the interval on error
         console.log("Error message:", error.message);
         setErrorChecker(true);
       });
@@ -84,29 +83,10 @@ const Article = () => {
     <div className={ArticleStyles.body} data-test-id="article_component">
       {loading ? (
         <div className={ArticleStyles.loading}>
-          {!errorChecker && (
-            <>
-              <LoadingSpinner />
-              <LoadingText />
-            </>
-          )}
-          {errorChecker ? (
-            <div className={ArticleStyles.loading_text_second}>
-              <p>
-                {articleValues.forMoreInformationText}{" "}
-                <a target="_blank" href={articleValues.renderDocLink}>
-                  {articleValues.linkText}
-                </a>{" "}
-                {articleValues.forMoreInformationText}
-              </p>
-              <p>
-                {articleValues.loadingTextJP}
-                <a target="_blank" href={articleValues.renderDocLink}>
-                  {articleValues.linkText}
-                </a>
-              </p>
-            </div>
-          ) : null}
+          <>
+            <LoadingSpinner />
+            <LoadingText />
+          </>
         </div>
       ) : (
         <div>
