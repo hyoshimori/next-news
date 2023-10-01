@@ -1,63 +1,36 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState, useEffect } from 'react';
 
-import { ArticleStyles, LoadingSpinner, Trending } from "@/components/index";
-import { removeDuplicatesUtility } from "@/utility/index";
+import useSWR from 'swr';
+
+import { ArticleStyles, LoadingSpinner, Trending } from '@/components/index';
+import { removeDuplicatesUtility } from '@/utility/index';
 import { useNews } from "@/hooks/UseNews";
-import { ViewContext } from "@/pages/index";
-import * as NewsType from "@/types/index";
-import type { ArticleType } from "@/types/index";
+import { ViewContext } from '@/pages/index';
+import type { ArticleType, NewsType } from '@/types/index';
 
 interface ViewContextProps {
-  articleValues: ArticleType["articleValues"];
+  articleValues: ArticleType['articleValues'];
 }
+
+const { axios } = useNews();
+const fetcher = (url: string) => axios.get(url).then(res => res.data);
 
 const Article = () => {
   const context = useContext(ViewContext);
-
-  // Avoid error when context is null
   if (!context) {
-    return (
-      <></>
-    )
-  };
+    return null;
+  }
 
   const { articleValues } = context;
-  const { axios } = useNews();
-  // const [news, setNews] = useState<NewsType.News>();
-  const [news, setNews] = useState<NewsType.News[]>();
-  // This is for "Loading" message
-  const [loading, setLoading] = useState(true);
-  const [errorChecker, setErrorChecker] = useState(false);
+  const { data } = useSWR(articleValues.apiUrl, fetcher, { dedupingInterval: 15000, errorRetryInterval: 10000 });
+
+  const [uniqueNews, setUniqueNews] = useState<NewsType[] | null>(null);
 
   useEffect(() => {
-    let elapsed = 0;
-
-    // Reload page after 15 seconds
-    const intervalId = setInterval(() => {
-      elapsed += 1000;
-      if (elapsed >= 15000) {
-        console.log('Reloading due to timeout');
-        window.location.reload();
-      }
-    }, 1000);
-
-    axios
-      .get(articleValues.apiUrl, { timeout: 10000 })
-      .then((res) => {
-        clearInterval(intervalId); // Clear the interval on successful request
-        const uniqueNews = removeDuplicatesUtility(res.data, "url");
-        setNews(uniqueNews);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log("Error message:", error.message);
-        setErrorChecker(true);
-      });
-
-    // Optionally clear the interval when the component unmounts
-    return () => clearInterval(intervalId);
-  }, []);
-
+    if (data) {
+      setUniqueNews(removeDuplicatesUtility(data, 'url'));
+    }
+  }, [data]);
 
   const LoadingText = () => {
     return (
@@ -81,7 +54,7 @@ const Article = () => {
 
   return (
     <div className={ArticleStyles.body} data-test-id="article_component">
-      {loading ? (
+      {!data ? (
         <div className={ArticleStyles.loading}>
           <>
             <LoadingSpinner />
@@ -94,8 +67,8 @@ const Article = () => {
             <Trending />
           </div>
           <div className={ArticleStyles.news_top_wrapper}>
-            {news &&
-              news
+            {uniqueNews &&
+              uniqueNews
                 .filter((el, index: number) => index === 0)
                 .map((el, index: number) => (
                   <a href={el.url} key={el.url} target="_blank">
@@ -142,9 +115,9 @@ const Article = () => {
                   </a>
                 ))}
             <div className={ArticleStyles.news_top_wrapper_for_five_articles}>
-              {news &&
-                news &&
-                news
+              {uniqueNews &&
+                uniqueNews &&
+                uniqueNews
                   .filter((el, index: number) => index >= 1 && index <= 5)
                   .map((el, index: number) => (
                     <a href={el.url} key={el.url} target="_blank">
@@ -169,9 +142,9 @@ const Article = () => {
           </div>
           <p style={{ color: "#FEC005", marginBottom: "20px" }}>Latest</p>
           <div className={ArticleStyles.news_latest_container}>
-            {news &&
-              news &&
-              news
+            {uniqueNews &&
+              uniqueNews &&
+              uniqueNews
                 .filter((el, index: number) => index > 5 && index <= 30)
                 .map((el, index: number) => (
                   <a href={el.url} key={el.url} target="_blank">
