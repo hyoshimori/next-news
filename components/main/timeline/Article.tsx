@@ -50,7 +50,6 @@ const Article = () => {
         setLoading(false);
       })
       .catch((error) => {
-        clearInterval(intervalId); // Clear the interval on error
         console.log("Error message:", error.message);
         setErrorChecker(true);
       });
