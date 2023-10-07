@@ -98,12 +98,12 @@ const Search = () => {
         size="small"
         color="success"
         placeholder={
-          isBlurred?.length !== 0 ? `${isBlurred}` : `${searchValues.placeholderText}}`
+          isBlurred?.length !== 0 ? `${isBlurred}` : `${searchValues.placeholderText}`
         }
         onChange={(e) => setInput(e.target.value)}
         value={input || ""}
         onFocus={() => focusDetector()}
-        onBlur={() => blurringDetector()}
+      // onBlur={() => blurringDetector()}
       />
       <div className={SearchStyles.autocomplete_section}>
         {loading && !isFocused ? (
@@ -130,7 +130,7 @@ const Search = () => {
             <p
               key={generateRandomPasswordUtility()}
               className={SearchStyles.autocomplete_title}
-              onClick={() => handleNavigationUtility(el.url)}>
+              onClick={() => { }}>
               {el.title}
             </p>
           );

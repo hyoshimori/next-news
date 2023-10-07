@@ -19,5 +19,3 @@ export { default as SearchStyles } from "@/components/style/Search.module.css";
 export { default as LoadingSpinnerStyles } from "@/components/style/LoadingSpinner.module.css";
 export { default as ArticleStyles } from "@/components/style/Article.module.css";
 export { default as NavStyles } from "@/components/style/Nav.module.css";
-
-//* Tests //

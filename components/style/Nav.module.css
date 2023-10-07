@@ -1,20 +1,14 @@
-/* #2BC859
-#FEC005 */
+/* Base Styles */
+.body {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  width: 15vw;
+  margin-right: auto;
+}
 
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-} */
-
-.button_nav {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+.body h1 {
+  margin-top: 10px;
 }
 
 .icon_and_message {
@@ -23,14 +17,12 @@
   align-items: center;
 }
 
-.body {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  width: 15vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.button_nav,
+button.list,
+button.list_2 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .botton_icon_message {
@@ -40,35 +32,14 @@
   color: #fec005 !important;
 }
 
-.category {
-  padding-left: 0;
-}
-
-button.list,
-button.list_2 {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-button.list_2 {
-  color: white;
-}
-
-button.list:hover {
-  color: #32c569;
-}
-
-button.list_2:hover {
-  color: #32c569 !important;
-}
-
 .category,
 .category_2_ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  padding-left: 0;
   margin: 10vh 0 0 0;
+  text-align: center;
 }
 
 .category li,
@@ -81,8 +52,28 @@ button.list_2:hover {
   opacity: 0.5;
 }
 
-.body h1 {
-  margin-top: 10px;
+button.list:hover,
+button.list_2:hover {
+  color: #32c569;
+}
+
+button.list_2 {
+  color: white;
+}
+
+.attribute {
+  display: inline-block;
+  width: 100%;
+  padding: 1px 6px;
+  text-decoration: none;
+  color: #32c569;
+  font-size: 1.2rem !important;
+  text-align: center;
+}
+
+.attribute:hover {
+  color: #1c2128;
+  opacity: 0.5;
 }
 
 .menu {
@@ -93,19 +84,7 @@ button.list_2:hover {
   display: none;
 }
 
-.attribute {
-  margin: 2vh 0;
-  padding: 1px 6px;
-  text-decoration: none;
-  color: #32c569;
-  font-size: 1.2rem !important;
-}
-
-.attribute:hover {
-  color: #1c2128;
-  opacity: 0.5;
-}
-
+/* Media Queries */
 @media (max-width: 720px) {
   .body {
     display: flex;
@@ -121,10 +100,7 @@ button.list_2:hover {
   }
 
   .icon_and_message {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .botton_icon_message {
@@ -182,6 +158,5 @@ button.list_2:hover {
 
   .attribute_smaller_screen:hover {
     color: white;
-    /* opacity: 0.5; */
   }
 }

@@ -9,11 +9,11 @@
 .body span,
 .body li {
   color: rgb(70, 70, 70);
+  text-align: center;
 }
 
 .about {
   width: 80vw;
-  text-align: center;
 }
 
 .right_icon {
