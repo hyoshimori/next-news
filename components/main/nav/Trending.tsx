@@ -22,7 +22,7 @@ const Trending = () => {
   return (
     <div className={TrendingStyles.body}>
       <p style={{ color: `${trendingValues.trendingColor}` }}>{trendingValues.trendingText}</p>
-      <Search />
+      {/* <Search /> */}
     </div>
   );
 };

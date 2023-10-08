@@ -1,6 +1,5 @@
 .body {
   display: flex;
-  justify-content: center;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -11,8 +10,6 @@
 
 .body h1 {
   display: inline-block;
-  /* background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
-  background: -webkit-linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%); */
   background: linear-gradient(45deg, #9cff8b 16%, #2bd2ff 57%, #2bff88 90%);
   background: -webkit-linear-gradient(
     45deg,
@@ -37,6 +34,7 @@
 .body p,
 .body a {
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .body li {

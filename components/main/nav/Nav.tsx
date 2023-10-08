@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
+import Link from 'next/link';
+
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -27,7 +29,9 @@ const Nav = () => {
         onClick={toggleSwitch}
       />
       <div className={NavStyles.icon_and_message}>
-        <h1 className={NavStyles.icon}>NextNews</h1>
+        <Link href="/">
+          <h1 className={NavStyles.icon}>NextNews</h1>
+        </Link>
         <span className={NavStyles.botton_icon_message}>My News +</span>
       </div>
       <div className={NavStyles.category_1}>

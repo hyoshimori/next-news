@@ -90,6 +90,7 @@ const Search = () => {
       setAutoComplete([]);
     }
   }, [input]);
+
   return (
     <div className={SearchStyles.body}>
       <TextField
