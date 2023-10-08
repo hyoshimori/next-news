@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 
-import { ArticleStyles, Footer, LoadingSpinner, LoadingTextStyles } from "@/components/index";
-import LoadingText from "../../components/main/timeline/LoadingText";
+import { ArticleStyles, Footer, LoadingSpinner, LoadDetailStyles } from "@/components/index";
+import LoadDetail from "../../components/main/timeline/LoadDetail";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { ViewContext } from "@/pages/_app";
 import * as NewsType from "@/types/index";
@@ -90,10 +90,10 @@ export default function Id() {
 
     if (loading) {
         return (
-            <div className={LoadingTextStyles.body}>
-                <div className={LoadingTextStyles.loading}>
+            <div className={LoadDetailStyles.body}>
+                <div className={LoadDetailStyles.loading}>
                     <LoadingSpinner />
-                    <LoadingText />
+                    <LoadDetail />
                 </div>
             </div>
         );

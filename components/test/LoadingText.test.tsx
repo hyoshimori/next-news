@@ -1,17 +1,17 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import LoadingText from "@/components/main/timeline/LoadingText";
+import LoadDetail from "@/components/main/timeline/LoadDetail";
 
-describe("<LoadingText />", () => {
+describe("<LoadDetail />", () => {
     const mockArticleStyles = {
         loading_text: "loading_text_class"
     };
 
     const mockArticleValues = {
-        loadingText: "Loading...",
+        LoadDetail: "Loading...",
         renderDocLink: "https://example.com",
         linkText: "Click here",
         forMoreInformationText: "for more information.",
-        loadingTextJP: "読み込み中..."
+        LoadDetailJP: "読み込み中..."
     };
 });

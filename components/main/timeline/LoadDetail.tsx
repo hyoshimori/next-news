@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import type { ArticleType } from "@/types/index";
 
-import { LoadingTextStyles } from "@/components/index";
+import { LoadDetailStyles } from "@/components/index";
 import { ViewContext } from "@/pages/_app";
 
 interface ViewContextProps {
     articleValues: ArticleType["articleValues"];
 }
 
-const LoadingText = () => {
+const LoadDetail = () => {
 
     const context = useContext(ViewContext);
 
@@ -22,7 +22,7 @@ const LoadingText = () => {
     const { articleValues } = context;
 
     return (
-        <div className={LoadingTextStyles.loading_text}>
+        <div className={LoadDetailStyles.loading_text}>
             <p>
                 {articleValues.loadingText}{" "}
                 <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
@@ -40,4 +40,4 @@ const LoadingText = () => {
     );
 }
 
-export default LoadingText;
+export default LoadDetail;

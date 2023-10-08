@@ -3,8 +3,7 @@ import Link from 'next/link';
 
 import { useRouter } from 'next/router';
 
-import { ArticleStyles, LoadingSpinner, LoadingTextStyles, Trending } from "@/components/index";
-import LoadingText from "../../main/timeline/LoadingText";
+import { ArticleStyles, LoadingSpinner, LoadDetailStyles, LoadDetail, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
 import { ViewContext } from "@/pages/_app";
@@ -68,9 +67,9 @@ const Article = () => {
 
   if (loading) {
     return (
-      <div className={LoadingTextStyles.loading}>
+      <div className={LoadDetailStyles.loading}>
         <LoadingSpinner />
-        <LoadingText />
+        <LoadDetail />
       </div>
     );
   }
@@ -82,7 +81,7 @@ const Article = () => {
         <div className={ArticleStyles.loading}>
           <>
             <LoadingSpinner />
-            <LoadingText />
+            <LoadDetail />
           </>
         </div>
       ) : (

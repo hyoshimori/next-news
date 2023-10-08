@@ -7,7 +7,7 @@ export { default as Progress } from "@/components/main/search/Progress";
 export { default as Trending } from "@/components/main/nav/Trending";
 export { default as Nav } from "@/components/main/nav/Trending";
 export { default as NewsTimeLine } from "@/components/main/timeline/NewsTimeLine";
-// export { default as LoadingText } from "@/components/main/timeline/LoadingText";
+export { default as LoadDetail } from "@/components/main/timeline/LoadDetail";
 
 //* Styles //
 export { default as NewsTimeLineStyles } from "@/components/style/NewsTimeLine.module.css";
@@ -18,4 +18,4 @@ export { default as SearchStyles } from "@/components/style/Search.module.css";
 export { default as LoadingSpinnerStyles } from "@/components/style/LoadingSpinner.module.css";
 export { default as ArticleStyles } from "@/components/style/Article.module.css";
 export { default as NavStyles } from "@/components/style/Nav.module.css";
-export { default as LoadingTextStyles } from "@/components/style/LoadingText.module.css";
+export { default as LoadDetailStyles } from "@/components/style/LoadDetail.module.css";
