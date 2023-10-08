@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
+import Link from 'next/link';
+
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -8,15 +10,17 @@ import { NavStyles } from "@/components/index";
 
 const Nav = () => {
   const router = useRouter();
+
+  // Always call hooks at the top level, before any conditionals.
+  const [isSwitchOn, setSwitchOn] = useState(false);
+
+  const toggleSwitch = () => {
+    setSwitchOn(prevSwitch => !prevSwitch);
+  };
+
   if (router.pathname === "/about") {
     return null;
   }
-
-  // This is a swtich to use the menu
-  const [isSwitchOn, setSwitchOn] = useState(false);
-  const toggleSwitch = () => {
-    setSwitchOn(!isSwitchOn);
-  };
 
   return (
     <div className={NavStyles.body}>
@@ -27,15 +31,17 @@ const Nav = () => {
         onClick={toggleSwitch}
       />
       <div className={NavStyles.icon_and_message}>
-        <h1 className={NavStyles.icon}>NextNews</h1>
+        <Link href="/">
+          <h1 className={NavStyles.icon}>NextNews</h1>
+        </Link>
         <span className={NavStyles.botton_icon_message}>My News +</span>
       </div>
       <div className={NavStyles.category_1}>
         <ul className={NavStyles.category}></ul>
         <p>
-          <a className={NavStyles.attribute} href="/about">
+          <Link className={NavStyles?.attribute} href="/about">
             About
-          </a>
+          </Link>
         </p>
       </div>
       <div
@@ -50,9 +56,9 @@ const Nav = () => {
         />
         <ul className={NavStyles.category_2_ul}>
           <p>
-            <a className={NavStyles.attribute_smaller_screen} href="/about">
+            <Link className={NavStyles?.attribute_smaller_screen} href="/about">
               About
-            </a>
+            </Link>
           </p>
         </ul>
       </div>

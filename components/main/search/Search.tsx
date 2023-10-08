@@ -12,22 +12,17 @@ import {
   sleepUtility,
 } from "@/utility/index";
 
-import { ViewContext } from "@/pages/index";
+import { ViewContext } from "@/pages/_app";
 
 const Search = () => {
 
   const context = useContext(ViewContext);
 
   // Avoid error when context is null
-  if (!context) {
-    return (
-      <></>
-    )
-  };
+  const { searchValues } = context || {};
 
-  const { searchValues } = context;
 
-  const { articleValues } = context;
+
   const [input, setInput] = useState<string | undefined>(undefined);
   const [autoComplete, setAutoComplete] = useState<AutoCompleteItemType[]>([]);
   const [, setErrorChecker] = useState(false);
@@ -61,17 +56,19 @@ const Search = () => {
 
   // Api call run when the page is rendered
   useEffect(() => {
-    axios
-      .get(searchValues.apiUrl, { timeout: 10000 })
-      .then((res) => {
-        const uniqueNews = removeDuplicatesUtility(res.data, "url");
-        setNews(uniqueNews);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log("Error message:", error.message);
-        setErrorChecker(true);
-      });
+    if (searchValues && searchValues.apiUrl) {
+      axios
+        .get(searchValues.apiUrl, { timeout: 10000 })
+        .then((res) => {
+          const uniqueNews = removeDuplicatesUtility(res.data, "url");
+          setNews(uniqueNews);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.log("Error message:", error.message);
+          setErrorChecker(true);
+        });
+    }
   }, []);
 
   // This useEffect is triggered when there is any change in the input field
@@ -90,15 +87,16 @@ const Search = () => {
       setAutoComplete([]);
     }
   }, [input]);
+
   return (
     <div className={SearchStyles.body}>
       <TextField
         className={SearchStyles.text_field}
-        type={searchValues.textFieldType}
+        type={searchValues?.textFieldType}
         size="small"
         color="success"
         placeholder={
-          isBlurred?.length !== 0 ? `${isBlurred}` : `${searchValues.placeholderText}}`
+          isBlurred?.length !== 0 ? `${isBlurred}` : `${searchValues?.placeholderText}`
         }
         onChange={(e) => setInput(e.target.value)}
         value={input || ""}
@@ -110,15 +108,15 @@ const Search = () => {
           <>
             <LoadingSpinner />
             <p>
-              {searchValues.loadingText1}{" "}
-              <a target="_blank" href={searchValues.loadingLink}>
-                {searchValues.loadingLinkText}
+              {searchValues?.loadingText1}{" "}
+              <a target="_blank" href={searchValues?.loadingLink}>
+                {searchValues?.loadingLinkText}
               </a>{" "}
             </p>
             <p>
-              {searchValues.loadingLinkTextJP}
-              <a target="_blank" href={searchValues.loadingLink}>
-                {searchValues.loadingLinkText}
+              {searchValues?.loadingLinkTextJP}
+              <a target="_blank" href={searchValues?.loadingLink}>
+                {searchValues?.loadingLinkText}
               </a>
             </p>
           </>
@@ -130,7 +128,7 @@ const Search = () => {
             <p
               key={generateRandomPasswordUtility()}
               className={SearchStyles.autocomplete_title}
-              onClick={() => handleNavigationUtility(el.url)}>
+              onClick={() => { }}>
               {el.title}
             </p>
           );

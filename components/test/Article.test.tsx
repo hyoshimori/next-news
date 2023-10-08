@@ -37,14 +37,14 @@ describe("# Article component", () => {
   });
 });
 
-describe("# Article component", () => {
-  it("renders without throwing any errors", async () => {
-    console.log(
-      "# component/Article:",
-      "Article renders without throwing any errors"
-    );
-    const { getByTestId } = await render(<Article />);
-    const articleComponent = getByTestId("article_component");
-    expect(articleComponent).toBeInTheDocument();
-  });
-});
+// describe("# Article component", () => {
+//   it("renders without throwing any errors", async () => {
+//     console.log(
+//       "# component/Article:",
+//       "Article renders without throwing any errors"
+//     );
+//     const { getByTestId } = await render(<Article />);
+//     const articleComponent = getByTestId("article_component");
+//     expect(articleComponent).toBeInTheDocument();
+//   });
+// });

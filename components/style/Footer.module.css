@@ -1,4 +1,5 @@
-.body{
+/* Base styles */
+.body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -7,25 +8,27 @@
   margin-bottom: 20px;
 }
 
-.body span{
+.body span {
   margin-right: 40px;
 }
 
-.attribute{
+.attribute {
   text-decoration: none;
-  color: #32C569;
+  color: #32c569;
 }
 
-.attribute:hover{
+.attribute:hover {
   color: rgb(70, 70, 70);
   border-bottom: 1px solid rgb(70, 70, 70);
 }
 
+/* Media queries */
 @media (max-width: 720px) {
-  .body{
+  .body {
     flex-direction: column;
   }
-  .body span{
+
+  .body span {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 10px;

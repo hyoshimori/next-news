@@ -36,7 +36,7 @@ export const ArticleView = {
       textFieldColor: "success",
       placeholderText: "Input Keywords",
       loadingText1:
-        "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while.",
+        "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while (Around 1 min).",
       loadingText2: "Please have a look at the",
       loadingLink: "https://render.com/docs/free",
       loadingLinkText: "Link",
@@ -48,7 +48,7 @@ export const ArticleView = {
     },
     articleValues: {
       loadingText:
-        "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while.",
+        "The free tier services of render.com spin down after a period of inactivity, and the first request after that may take a while (Around 1 min).",
       renderDocLink: "https://render.com/docs/free",
       linkText: "Link",
       forMoreInformationText: "for more information.",

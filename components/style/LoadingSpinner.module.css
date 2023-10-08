@@ -1,8 +1,9 @@
-.body{
+.body {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  transform: scaleX(-1);
 }
 
 .icon {
@@ -14,6 +15,6 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }

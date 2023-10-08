@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import { FooterStyles } from "@/components/index";
 
-import { ViewContext } from "@/pages/index";
+import { ViewContext } from "@/pages/_app";
 import type { ArticleType } from "@/types/index";
 
 interface ViewContextProps {

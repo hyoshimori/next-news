@@ -1,9 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
+import Link from 'next/link';
 
-import { ArticleStyles, LoadingSpinner, Trending } from "@/components/index";
+import { useRouter } from 'next/router';
+
+import { ArticleStyles, LoadingSpinner, LoadDetailStyles, LoadDetail, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
-import { ViewContext } from "@/pages/index";
+import { ViewContext } from "@/pages/_app";
 import * as NewsType from "@/types/index";
 import type { ArticleType } from "@/types/index";
 
@@ -12,24 +15,20 @@ interface ViewContextProps {
 }
 
 const Article = () => {
+  const router = useRouter();
   const context = useContext(ViewContext);
 
   // Avoid error when context is null
-  if (!context) {
-    return (
-      <></>
-    )
-  };
+  const { articleValues } = context || {};
 
-  const { articleValues } = context;
   const { axios } = useNews();
-  // const [news, setNews] = useState<NewsType.News>();
   const [news, setNews] = useState<NewsType.News[]>();
-  // This is for "Loading" message
+  const [serializedNews, setSerializedNews] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [errorChecker, setErrorChecker] = useState(false);
 
   useEffect(() => {
+
     let elapsed = 0;
 
     // Reload page after 15 seconds
@@ -41,11 +40,19 @@ const Article = () => {
       }
     }, 1000);
 
+    if (!articleValues) {
+      console.error("articleValues is undefined");
+      // Handle this case appropriately; maybe return or set an error state.
+      return;
+    }
+
     axios
       .get(articleValues.apiUrl, { timeout: 10000 })
       .then((res) => {
         clearInterval(intervalId); // Clear the interval on successful request
         const uniqueNews = removeDuplicatesUtility(res.data, "url");
+        const serializedData = encodeURIComponent(JSON.stringify(uniqueNews));
+        setSerializedNews(serializedData);
         setNews(uniqueNews);
         setLoading(false);
       })
@@ -58,26 +65,15 @@ const Article = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-
-  const LoadingText = () => {
+  if (loading) {
     return (
-      <div className={ArticleStyles.loading_text}>
-        <p>
-          {articleValues.loadingText}{" "}
-          <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
-            {articleValues.linkText}
-          </a>{" "}
-          {articleValues.forMoreInformationText}{" "}
-        </p>
-        <p>
-          {articleValues.loadingTextJP}{" "}
-          <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
-            {articleValues.linkText}
-          </a>
-        </p>
+      <div className={LoadDetailStyles.loading}>
+        <LoadingSpinner />
+        <LoadDetail />
       </div>
     );
   }
+
 
   return (
     <div className={ArticleStyles.body} data-test-id="article_component">
@@ -85,7 +81,7 @@ const Article = () => {
         <div className={ArticleStyles.loading}>
           <>
             <LoadingSpinner />
-            <LoadingText />
+            <LoadDetail />
           </>
         </div>
       ) : (
@@ -96,14 +92,21 @@ const Article = () => {
           <div className={ArticleStyles.news_top_wrapper}>
             {news &&
               news
-                .filter((el, index: number) => index === 0)
+                .filter((el, index: number) => index === 15)
                 .map((el, index: number) => (
-                  <a href={el.url} key={el.url} target="_blank">
+                  <Link
+                    href={{
+                      pathname: `/posts/${el.id}`,
+                      query: { data: serializedNews }
+                    }}
+                    as={`/posts/${el.id}`}
+                    key={el.url}
+                  >
                     <div key={el.url} className={ArticleStyles.news_top_first}>
                       <img
                         src={
-                          el.media?.[0]?.["media-metadata"]?.[2]?.url ||
-                          `${articleValues.defaultImage}`
+                          el.media?.[0]?.["media-metadata"]?.[2]?.url
+                          || `${articleValues?.defaultImage}`
                         }
                         alt=""
                       />
@@ -119,12 +122,12 @@ const Article = () => {
                           className={ArticleStyles.news_top_first_bottom_title}>
                           {el.title}
                         </span>
-                        <span
+                        {/* <span
                           className={
                             ArticleStyles.news_top_first_bottom_author
                           }>
                           {el.abstract}
-                        </span>
+                        </span> */}
                         <span
                           className={
                             ArticleStyles.news_top_first_bottom_author
@@ -139,7 +142,7 @@ const Article = () => {
                         </span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 ))}
             <div className={ArticleStyles.news_top_wrapper_for_five_articles}>
               {news &&
@@ -147,7 +150,14 @@ const Article = () => {
                 news
                   .filter((el, index: number) => index >= 1 && index <= 5)
                   .map((el, index: number) => (
-                    <a href={el.url} key={el.url} target="_blank">
+                    <Link
+                      href={{
+                        pathname: `/posts/${el.id}`,
+                        query: { data: serializedNews }
+                      }}
+                      as={`/posts/${el.id}`}
+                      key={el.url}
+                    >
                       <div
                         key={el.url}
                         className={ArticleStyles.news_top_right}>
@@ -163,7 +173,7 @@ const Article = () => {
                           {el.byline}
                         </span>
                       </div>
-                    </a>
+                    </Link>
                   ))}
             </div>
           </div>
@@ -174,7 +184,14 @@ const Article = () => {
               news
                 .filter((el, index: number) => index > 5 && index <= 30)
                 .map((el, index: number) => (
-                  <a href={el.url} key={el.url} target="_blank">
+                  <Link
+                    href={{
+                      pathname: `/posts/${el.id}`,
+                      query: { data: serializedNews }
+                    }}
+                    as={`/posts/${el.id}`}
+                    key={el.url}
+                  >
                     <div className={ArticleStyles.news_Latest}>
                       <div
                         key={el.url}
@@ -206,10 +223,10 @@ const Article = () => {
                           alt=""
                         />
                       ) : (
-                        <img src={`${articleValues.defaultImage}`} alt="" />
+                        <img src={`${articleValues?.defaultImage}`} alt="" />
                       )}
                     </div>
-                  </a>
+                  </Link>
                 ))}
           </div>
         </div>
