@@ -1,5 +1,4 @@
 //* Main Components //
-
 export { default as Article } from "@/components/main/timeline/Article";
 export { default as Footer } from "@/components/main/footer/Footer";
 export { default as Search } from "@/components/main/search/Search";
@@ -11,7 +10,6 @@ export { default as NewsTimeLine } from "@/components/main/timeline/NewsTimeLine
 export { default as LoadingText } from "@/components/main/timeline/LoadingText";
 
 //* Styles //
-
 export { default as NewsTimeLineStyles } from "@/components/style/NewsTimeLine.module.css";
 export { default as FooterStyles } from "@/components/style/Footer.module.css";
 export { default as TrendingStyles } from "@/components/style/Trending.module.css";
