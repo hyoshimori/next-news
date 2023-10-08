@@ -8,7 +8,7 @@ interface ViewContextProps {
     articleValues: ArticleType["articleValues"];
 }
 
-export default function LoadingText() {
+const LoadingText = () => {
 
     const context = useContext(ViewContext);
 
@@ -39,3 +39,5 @@ export default function LoadingText() {
         </div>
     );
 }
+
+export default LoadingText;
