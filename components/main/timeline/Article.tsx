@@ -19,13 +19,8 @@ const Article = () => {
   const context = useContext(ViewContext);
 
   // Avoid error when context is null
-  if (!context) {
-    return (
-      <></>
-    )
-  };
+  const { articleValues } = context || {};
 
-  const { articleValues } = context;
   const { axios } = useNews();
   const [news, setNews] = useState<NewsType.News[]>();
   const [serializedNews, setSerializedNews] = useState<string | null>(null);
@@ -44,6 +39,12 @@ const Article = () => {
         window.location.reload();
       }
     }, 1000);
+
+    if (!articleValues) {
+      console.error("articleValues is undefined");
+      // Handle this case appropriately; maybe return or set an error state.
+      return;
+    }
 
     axios
       .get(articleValues.apiUrl, { timeout: 10000 })
@@ -105,7 +106,7 @@ const Article = () => {
                       <img
                         src={
                           el.media?.[0]?.["media-metadata"]?.[2]?.url
-                          || `${articleValues.defaultImage}`
+                          || `${articleValues?.defaultImage}`
                         }
                         alt=""
                       />
@@ -222,7 +223,7 @@ const Article = () => {
                           alt=""
                         />
                       ) : (
-                        <img src={`${articleValues.defaultImage}`} alt="" />
+                        <img src={`${articleValues?.defaultImage}`} alt="" />
                       )}
                     </div>
                   </Link>

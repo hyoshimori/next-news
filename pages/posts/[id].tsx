@@ -23,7 +23,9 @@ export default function Id() {
     const router = useRouter();
 
     const context = useContext(ViewContext);
-    const { articleValues } = context;
+
+    // Avoid error when context is null
+    const { articleValues } = context || {};
 
     // set useStates
     const [matchedPost, setMatchedPost] = useState<NewsType.News | undefined>(undefined);
@@ -60,6 +62,13 @@ export default function Id() {
                 }
             }, 1000);
 
+
+            if (!articleValues) {
+                console.error("articleValues is undefined");
+                // Handle this case appropriately; maybe return or set an error state.
+                return;
+            }
+
             axios.get(articleValues.apiUrl, { timeout: 10000 })
                 .then((res) => {
                     clearInterval(intervalId);
@@ -76,7 +85,7 @@ export default function Id() {
 
             return () => clearInterval(intervalId);
         }
-    }, [matchedPost, articleValues.apiUrl, axios]);
+    }, [matchedPost, axios]);
 
     if (loading) {
         return (
@@ -106,7 +115,6 @@ export default function Id() {
                         </div>
                     </div>
                     <div className={ShowStyles.lower_body}>
-                        <figcaption>{matchedPost?.source}</figcaption>
                         <p>{matchedPost?.published_date}</p>
                         <p><strong>{matchedPost?.byline}</strong></p>
                         <p>{matchedPost?.abstract}</p>
