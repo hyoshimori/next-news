@@ -122,12 +122,12 @@ const Article = () => {
                           className={ArticleStyles.news_top_first_bottom_title}>
                           {el.title}
                         </span>
-                        <span
+                        {/* <span
                           className={
                             ArticleStyles.news_top_first_bottom_author
                           }>
                           {el.abstract}
-                        </span>
+                        </span> */}
                         <span
                           className={
                             ArticleStyles.news_top_first_bottom_author
