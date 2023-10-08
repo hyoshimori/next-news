@@ -2,14 +2,16 @@
 .body {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  border-top: 2px solid rgb(240, 240, 240);
-  padding-top: 20px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.body span {
-  margin-right: 40px;
+.body span:first-child {
+  margin-left: 25px;
+}
+
+.body span:last-child {
+  margin-left: 15px;
 }
 
 .attribute {
@@ -25,7 +27,7 @@
 /* Media queries */
 @media (max-width: 720px) {
   .body {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .body span {

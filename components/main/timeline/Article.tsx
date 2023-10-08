@@ -182,7 +182,7 @@ const Article = () => {
             {news &&
               news &&
               news
-                .filter((el, index: number) => index > 5 && index <= 30)
+                .filter((el, index: number) => index > 5 && index <= 15)
                 .map((el, index: number) => (
                   <Link
                     href={{
