@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { ArticleStyles, Footer, LoadingSpinner, LoadingTextStyles } from "@/components/index";
-import LoadingText from "@/components/main/timeline/LoadingText";
+import LoadingText from "../../components/main/timeline/LoadingText";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { ViewContext } from "@/pages/_app";
 import * as NewsType from "@/types/index";
