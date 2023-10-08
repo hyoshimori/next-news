@@ -1,33 +1,36 @@
-import React, { ReactNode } from "react";
+import React, { useContext } from "react";
 import Base from "./Base";
 import Head from "next/head";
-import ArticleView from "@/store/ArticleView";
 
-import { ArticleType } from "@/types/index";
+import { ViewContext } from "@/pages/_app";
+import type { ArticleType } from "@/types/index";
 
-export const ViewContext = React.createContext<ArticleType | null>(null);
-interface ViewProviderProps {
-  children: ReactNode;
+
+interface ViewContextProps {
+  articleValues: ArticleType;
 }
 
-export const ViewProvider: React.FC<ViewProviderProps> = ({ children }) => {
-  return (
-    <ViewContext.Provider value={ArticleView.articleProps}>
-      {children}
-    </ViewContext.Provider>
-  );
-};
 
 export default function Home() {
-  const title = ArticleView.articleProps.homeValues.homeTitle;
+  const context = useContext(ViewContext);
+  const title = context?.homeValues.homeTitle;
+
+  // Avoid error when context is null
+  if (!context) {
+    return (
+      <></>
+    )
+  };
+
   return (
-    <ViewProvider>
+    <>
       <Head>
         <title>{title}</title>
       </Head>
       <main>
         <Base />
       </main>
-    </ViewProvider>
+    </>
   );
 }
+

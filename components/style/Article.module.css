@@ -1,14 +1,20 @@
 /* General Styles */
 .body {
   width: 70vw;
+  max-width: 800px;
   margin: 0;
   padding: 10px 40px;
 }
 
 .loading {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
   margin-bottom: 100vh;
   margin-top: 8px;
   color: rgb(70, 70, 70);
+  display: flex;
 }
 
 .loading p:first-child {
@@ -19,9 +25,10 @@
 
 .loading_text,
 .loading_text_second {
+  width: 60vw;
+  max-width: 600px;
   text-align: center;
   padding: 20px;
-  width: 60vw;
   border-radius: 10px;
   box-shadow: 0px 5px 10px 0px rgba(220, 220, 220, 0.5);
 }
@@ -208,7 +215,7 @@ span.news_latest_title {
 @media (min-width: 720px) {
   .news_top_wrapper_for_five_articles {
     overflow-x: scroll;
-    max-width: 27vw;
+    width: 270px;
   }
 }
 

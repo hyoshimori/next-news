@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import NewsTimeLine from "@/components/main/timeline/NewsTimeLine";
 import "normalize.css";
 
-import { ViewContext } from "./index";
+import { ViewContext } from "./_app";
 
 const Base = () => {
   const contextValue = useContext(ViewContext);

@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
+import Link from 'next/link';
 
 import { ArticleStyles, LoadingSpinner, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
-import { ViewContext } from "@/pages/index";
+import { ViewContext } from "@/pages/_app";
 import * as NewsType from "@/types/index";
 import type { ArticleType } from "@/types/index";
 
@@ -98,7 +99,7 @@ const Article = () => {
               news
                 .filter((el, index: number) => index === 0)
                 .map((el, index: number) => (
-                  <a href={el.url} key={el.url} target="_blank">
+                  <Link href={`/posts/${el.id}`} key={el.url}>
                     <div key={el.url} className={ArticleStyles.news_top_first}>
                       <img
                         src={
@@ -139,7 +140,7 @@ const Article = () => {
                         </span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 ))}
             <div className={ArticleStyles.news_top_wrapper_for_five_articles}>
               {news &&
@@ -147,7 +148,7 @@ const Article = () => {
                 news
                   .filter((el, index: number) => index >= 1 && index <= 5)
                   .map((el, index: number) => (
-                    <a href={el.url} key={el.url} target="_blank">
+                    <Link href={el.url} key={el.url}>
                       <div
                         key={el.url}
                         className={ArticleStyles.news_top_right}>
@@ -163,7 +164,7 @@ const Article = () => {
                           {el.byline}
                         </span>
                       </div>
-                    </a>
+                    </Link>
                   ))}
             </div>
           </div>
@@ -174,7 +175,7 @@ const Article = () => {
               news
                 .filter((el, index: number) => index > 5 && index <= 30)
                 .map((el, index: number) => (
-                  <a href={el.url} key={el.url} target="_blank">
+                  <Link href={el.url} key={el.url}>
                     <div className={ArticleStyles.news_Latest}>
                       <div
                         key={el.url}
@@ -209,7 +210,7 @@ const Article = () => {
                         <img src={`${articleValues.defaultImage}`} alt="" />
                       )}
                     </div>
-                  </a>
+                  </Link>
                 ))}
           </div>
         </div>

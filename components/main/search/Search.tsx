@@ -12,7 +12,7 @@ import {
   sleepUtility,
 } from "@/utility/index";
 
-import { ViewContext } from "@/pages/index";
+import { ViewContext } from "@/pages/_app";
 
 const Search = () => {
 
@@ -103,7 +103,7 @@ const Search = () => {
         onChange={(e) => setInput(e.target.value)}
         value={input || ""}
         onFocus={() => focusDetector()}
-      // onBlur={() => blurringDetector()}
+        onBlur={() => blurringDetector()}
       />
       <div className={SearchStyles.autocomplete_section}>
         {loading && !isFocused ? (
