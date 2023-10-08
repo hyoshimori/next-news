@@ -24,7 +24,6 @@ export default function LoadingText() {
     return (
         <div className={LoadingTextStyles.loading_text}>
             <p>
-                hello
                 {articleValues.loadingText}{" "}
                 <a target="_blank" rel="noopener noreferrer" href={articleValues.renderDocLink}>
                     {articleValues.linkText}
