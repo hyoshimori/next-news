@@ -7,7 +7,7 @@ export { default as Progress } from "@/components/main/search/Progress";
 export { default as Trending } from "@/components/main/nav/Trending";
 export { default as Nav } from "@/components/main/nav/Trending";
 export { default as NewsTimeLine } from "@/components/main/timeline/NewsTimeLine";
-export { default as LoadingText } from "@/components/main/timeline/LoadingText";
+// export { default as LoadingText } from "@/components/main/timeline/LoadingText";
 
 //* Styles //
 export { default as NewsTimeLineStyles } from "@/components/style/NewsTimeLine.module.css";
