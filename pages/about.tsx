@@ -14,7 +14,7 @@ export default function About() {
       <b>
         Please note that some of the New York Times API features are
         experimental and might contain inaccuracies, errors, or bugs. The API is
-        provided "as is" without any warranties, express or implied. Use of this
+        provided as is without any warranties, express or implied. Use of this
         app is at your own discretion and risk, and we are not responsible for
         any damage or loss resulting from its use.:
       </b>
@@ -52,7 +52,7 @@ export default function About() {
       <p>
         By using this website and accessing the news section, you acknowledge
         and agree to the above terms related to the news content. I strive to
-        maintain transparency and compliance with New York Times' terms of
+        maintain transparency and compliance with New York Times terms of
         service while providing users with an informative and engaging
         experience.
       </p>
