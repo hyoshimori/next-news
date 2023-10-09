@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { useRouter } from 'next/router';
 
-import { ArticleStyles, LoadingSpinner, LoadDetailStyles, LoadDetail, Trending } from "@/components/index";
+import { ArticleStyles, Footer, LoadDetail, LoadDetailStyles, LoadingSpinner, Trending } from "@/components/index";
 import { removeDuplicatesUtility } from "@/utility/index";
 import { useNews } from "@/hooks/UseNews";
 import { ViewContext } from "@/pages/_app";
@@ -92,7 +92,7 @@ const Article = () => {
           <div className={ArticleStyles.news_top_wrapper}>
             {news &&
               news
-                .filter((el, index: number) => index === 15)
+                .filter((el, index: number) => index === 55)
                 .map((el, index: number) => (
                   <Link
                     href={{
@@ -231,6 +231,7 @@ const Article = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 .body {
   margin: 10vh 10vw;
   text-align: justify;
+  max-width: 800px;
 }
 
 .body a,
@@ -12,7 +13,7 @@
 }
 
 .about {
-  width: 80vw;
+  width: 100%;
   text-align: center;
 }
 
