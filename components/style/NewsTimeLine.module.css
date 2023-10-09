@@ -1,9 +1,5 @@
-.body{
-  width: 80vw;
-}
-
 @media (max-width: 720px) {
-  .body{
+  .body {
     width: 100vw;
   }
 }

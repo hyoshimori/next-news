@@ -7,11 +7,9 @@
 }
 
 .body span:first-child {
-  margin-left: 25px;
 }
 
 .body span:last-child {
-  margin-left: 15px;
 }
 
 .attribute {
@@ -26,13 +24,8 @@
 
 /* Media queries */
 @media (max-width: 720px) {
-  .body {
-    /* flex-direction: column; */
-  }
-
   .body span {
-    margin-right: 20px;
-    margin-left: 20px;
     margin-bottom: 10px;
+    margin-top: 30px;
   }
 }
