@@ -1,12 +1,10 @@
 .body {
   display: flex;
   justify-content: center;
-  width: 80vw;
 }
 
 .loading {
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   height: 60vh;
   margin-bottom: 50vh;
@@ -22,7 +20,7 @@
 }
 
 .loading_text {
-  width: 60vw;
+  width: 80vw;
   max-width: 600px;
   text-align: center;
   padding: 20px;
