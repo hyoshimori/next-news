@@ -20,7 +20,6 @@
 }
 
 .loading_text {
-  width: 80vw;
   max-width: 600px;
   text-align: center;
   padding: 20px;
@@ -39,7 +38,18 @@
   opacity: 0.5;
 }
 
+@media (min-width: 721px) {
+  .loading {
+    width: 60vw;
+    margin-left: 130px;
+  }
+}
+
 @media (max-width: 720px) {
+  .loading {
+    width: 100vw;
+  }
+
   .body {
     width: 100vw;
     margin-top: 50px;
