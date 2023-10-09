@@ -75,7 +75,11 @@ p.side_title {
   margin-top: auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 721px) {
+  .base {
+    margin-left: 180px;
+  }
+
   .upper_body {
     align-items: flex-start;
   }
@@ -84,6 +88,7 @@ p.side_title {
 @media (max-width: 720px) {
   .body {
     width: 90vw;
+    margin: 0 auto;
   }
 
   .side_body {
