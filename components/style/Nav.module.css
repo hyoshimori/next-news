@@ -159,3 +159,11 @@ button.list_2 {
     color: white;
   }
 }
+
+@media (min-width: 721px) {
+  .body {
+    height: 100vw;
+    left: 0;
+    position: absolute;
+  }
+}

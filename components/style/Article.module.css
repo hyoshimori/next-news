@@ -1,9 +1,10 @@
 /* General Styles */
 .body {
-  width: 70vw;
   max-width: 800px;
   margin: 0;
   padding: 10px 40px;
+  width: 60vw;
+  margin: 0 0 0 50px;
 }
 
 /* News Styles */
@@ -114,11 +115,6 @@ span.news_latest_title {
 @media (max-width: 1060px) {
   .news_latest_description {
     display: none;
-  }
-
-  .body {
-    width: 60vw;
-    margin: 0 auto;
   }
 
   .news_Latest img {
