@@ -151,7 +151,7 @@ export default function Id() {
                     </div>
                 </div>
             </div >
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
