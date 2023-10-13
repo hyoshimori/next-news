@@ -9,7 +9,6 @@ interface ViewContextProps {
 }
 
 const LoadDetail = () => {
-
     const context = useContext(ViewContext);
 
     // Avoid error when context is null

@@ -15,7 +15,6 @@ interface ViewContextProps {
 }
 
 const Article = () => {
-  const router = useRouter();
   const context = useContext(ViewContext);
 
   // Avoid error when context is null
@@ -25,7 +24,7 @@ const Article = () => {
   const [news, setNews] = useState<NewsType.News[]>();
   const [serializedNews, setSerializedNews] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [errorChecker, setErrorChecker] = useState(false);
+  const [, setErrorChecker] = useState(false);
 
   useEffect(() => {
 
@@ -122,12 +121,6 @@ const Article = () => {
                           className={ArticleStyles.news_top_first_bottom_title}>
                           {el.title}
                         </span>
-                        {/* <span
-                          className={
-                            ArticleStyles.news_top_first_bottom_author
-                          }>
-                          {el.abstract}
-                        </span> */}
                         <span
                           className={
                             ArticleStyles.news_top_first_bottom_author

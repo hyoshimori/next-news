@@ -2,12 +2,11 @@ import { useState, useEffect, useContext } from "react";
 
 import { TextField } from "@mui/material";
 
-import { useNews } from "@/hooks/UseNews";
-import { LoadingSpinner, SearchStyles } from "@/components/index";
 import { AutoCompleteItemType, News } from "@/types/index";
+import { LoadingSpinner, SearchStyles } from "@/components/index";
+import { useNews } from "@/hooks/UseNews";
 import {
   generateRandomPasswordUtility,
-  handleNavigationUtility,
   removeDuplicatesUtility,
   sleepUtility,
 } from "@/utility/index";
@@ -20,8 +19,6 @@ const Search = () => {
 
   // Avoid error when context is null
   const { searchValues } = context || {};
-
-
 
   const [input, setInput] = useState<string | undefined>(undefined);
   const [autoComplete, setAutoComplete] = useState<AutoCompleteItemType[]>([]);
