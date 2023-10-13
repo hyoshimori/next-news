@@ -16,15 +16,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
+      "@/components/*": ["src/assets/components/*"],
+      "@/pages/*": ["src/pages/*"],
       "@/styles/*": ["styles/*"],
-      "@/layouts/*": ["layouts/*"],
-      "@/types/*": ["types/*"],
-      "@/hooks/*": ["hooks/*"],
+      "@/layouts/*": ["src/assets/layouts/*"],
+      "@/types/*": ["src/assets/types/*"],
+      "@/hooks/*": ["src/assets/hooks/*"],
       "@/muiTheme/*": ["muiTheme/*"],
-      "@/utility/*": ["utility/*"],
-      "@/store/*": ["store/*"]
+      "@/utility/*": ["src/assets/utility/*"],
+      "@/store/*": ["src/assets/store/*"]
     }
   },
   "include": [
