@@ -2,9 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Link from 'next/link';
-import Error from 'next/error';
 
-import { ArticleStyles, Error404, Footer, LoadDetailStyles, LoadingSpinner } from "@/pages/components/index";
+import { ArticleStyles, ErrorMessage, Footer, LoadDetailStyles, LoadingSpinner } from "@/pages/components/index";
 import LoadDetail from "../components/main/timeline/LoadDetail";
 import { removeDuplicatesUtility } from "@/pages/utility/index";
 import { ViewContext } from "@/pages/_app";
@@ -109,7 +108,7 @@ export default function Id() {
     }
 
     if (!matchedPost) {
-        return <Error404 statusCode={404} />;
+        return <ErrorMessage />;
     }
 
     return (
