@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { ProgressStyles } from "@/components/index";
+import { ProgressStyles } from "@/pages/components/index";
 
 const Progress = () => {
   const [seconds, setSeconds] = useState(0);

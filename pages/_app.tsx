@@ -1,14 +1,14 @@
 import React from 'react';
 
 import "@/styles/global.css";
-import Layout from "@/layouts/NavLayout";
+import Layout from "@/pages/layouts/NavLayout";
 import styles from "@/styles/Home.module.css";
 import type { AppProps } from "next/app";
 
 // Using useState to pass data via useContext
 
-import { ArticleType } from "@/types/index";
-import ArticleView from "@/store/ArticleView";
+import { ArticleType } from "@/pages/types/index";
+import ArticleView from "@/pages/store/ArticleView";
 
 
 export const ViewContext = React.createContext<ArticleType | null>(null);

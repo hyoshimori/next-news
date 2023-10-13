@@ -2,14 +2,14 @@ import { useState, useEffect, useContext } from "react";
 
 import { TextField } from "@mui/material";
 
-import { AutoCompleteItemType, News } from "@/types/index";
-import { LoadingSpinner, SearchStyles } from "@/components/index";
-import { useNews } from "@/hooks/UseNews";
+import { AutoCompleteItemType, News } from "@/pages/types/index";
+import { LoadingSpinner, SearchStyles } from "@/pages/components/index";
+import { useNews } from "@/pages/hooks/UseNews";
 import {
   generateRandomPasswordUtility,
   removeDuplicatesUtility,
   sleepUtility,
-} from "@/utility/index";
+} from "@/pages/utility/index";
 
 import { ViewContext } from "@/pages/_app";
 

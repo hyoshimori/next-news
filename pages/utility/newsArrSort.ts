@@ -1,4 +1,4 @@
-import * as NewsItemCheckType from "@/types/typeFiles/NewsItemCheckType";
+import * as NewsItemCheckType from "@/pages/types/typeFiles/NewsItemCheckType";
 
 export const arrSort = (arr: NewsItemCheckType.NewsItemCheck[]) => {
   // You must return values with either 1 or -1 or 0 for this custom func

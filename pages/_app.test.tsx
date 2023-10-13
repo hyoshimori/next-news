@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import NavLayout from "../layouts/NavLayout";
+import NavLayout from "./layouts/NavLayout";
 
 jest.mock("next/router");
 

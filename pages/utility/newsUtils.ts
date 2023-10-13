@@ -1,4 +1,4 @@
-import * as NewsItemCheckType from "@/types/typeFiles/NewsItemCheckType";
+import * as NewsItemCheckType from "@/pages/types/typeFiles/NewsItemCheckType";
 
 // ********** This is used to remove the duplicates in the arr ********** //
 // first data as an argument looks like this: {uri: 'nyt://article/1f3a4fbd-9514-5xxxxxxxxxxxxxxxxxxxx', url: 'https://www.nytimes.com/2023/03/31/us/xxxxxxxxxxxxxxxxxxxx', id: 1000xxxxxxxxxx, asset_id: 10000xxxxxxxxxx, source: 'New York Times', …}

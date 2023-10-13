@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Search, TrendingStyles } from "@/components/index";
+import { Search, TrendingStyles } from "@/pages/components/index";
 
 import { ViewContext } from "@/pages/_app";
-import type { ArticleType } from "@/types/index";
+import type { ArticleType } from "@/pages/types/index";
 interface ViewContextProps {
   articleValues: ArticleType["trendingValues"];
 }

@@ -3,7 +3,7 @@ import Base from "./Base";
 import Head from "next/head";
 
 import { ViewContext } from "@/pages/_app";
-import type { ArticleType } from "@/types/index";
+import type { ArticleType } from "@/pages/types/index";
 
 
 interface ViewContextProps {

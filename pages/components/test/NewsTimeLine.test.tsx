@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NewsTimeLine } from "@/components/index";
+import { NewsTimeLine } from "@/pages/components/index";
 import { render } from "@testing-library/react";
 
 describe("# NewsTimeLine Component", () => {

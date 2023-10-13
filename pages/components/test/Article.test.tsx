@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Article } from "@/components/index";
+import { Article } from "@/pages/components/index";
 import { render } from "@testing-library/react";
 import axios from "axios";
 

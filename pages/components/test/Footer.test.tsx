@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Footer } from "@/components/index";
+import { Footer } from "@/pages/components/index";
 import { render } from "@testing-library/react";
 
 describe("# Footer Component", () => {

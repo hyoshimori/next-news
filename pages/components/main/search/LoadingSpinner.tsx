@@ -1,6 +1,6 @@
 import SyncIcon from "@mui/icons-material/Sync";
 
-import { LoadingSpinnerStyles } from "@/components/index";
+import { LoadingSpinnerStyles } from "@/pages/components/index";
 
 const LoadingSpinner = () => {
   return (

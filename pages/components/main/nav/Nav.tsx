@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import { NavStyles } from "@/components/index";
+import { NavStyles } from "@/pages/components/index";
 
 const Nav = () => {
   const router = useRouter();

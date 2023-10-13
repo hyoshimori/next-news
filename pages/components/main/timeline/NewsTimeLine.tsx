@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Article, NewsTimeLineStyles } from "@/components/index";
+import { Article, NewsTimeLineStyles } from "@/pages/components/index";
 
 const NewsTimeLine = () => {
   return (

@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import { Search } from "@/components/index";
+import { Search } from "@/pages/components/index";
 
 describe("Search component", () => {
   it("Renders Search compnent", () => {

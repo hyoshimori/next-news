@@ -1,13 +1,13 @@
 //* Main Components //
-export { default as Article } from "@/components/main/timeline/Article";
-export { default as Footer } from "@/components/main/footer/Footer";
-export { default as Search } from "@/components/main/search/Search";
-export { default as LoadingSpinner } from "@/components/main/search/LoadingSpinner";
-export { default as Progress } from "@/components/main/search/Progress";
-export { default as Trending } from "@/components/main/nav/Trending";
-export { default as Nav } from "@/components/main/nav/Trending";
-export { default as NewsTimeLine } from "@/components/main/timeline/NewsTimeLine";
-export { default as LoadDetail } from "@/components/main/timeline/LoadDetail";
+export { default as Article } from "@/pages/components/main/timeline/Article";
+export { default as Footer } from "@/pages/components/main/footer/Footer";
+export { default as Search } from "@/pages/components/main/search/Search";
+export { default as LoadingSpinner } from "@/pages/components/main/search/LoadingSpinner";
+export { default as Progress } from "@/pages/components/main/search/Progress";
+export { default as Trending } from "@/pages/components/main/nav/Trending";
+export { default as Nav } from "@/pages/components/main/nav/Trending";
+export { default as NewsTimeLine } from "@/pages/components/main/timeline/NewsTimeLine";
+export { default as LoadDetail } from "@/pages/components/main/timeline/LoadDetail";
 
 //* Styles //
 export { default as NewsTimeLineStyles } from "@/components/style/NewsTimeLine.module.css";

@@ -3,14 +3,14 @@ import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 
-import { ArticleStyles, Footer, LoadingSpinner, LoadDetailStyles } from "@/components/index";
-import LoadDetail from "../../components/main/timeline/LoadDetail";
-import { removeDuplicatesUtility } from "@/utility/index";
+import { ArticleStyles, Footer, LoadingSpinner, LoadDetailStyles } from "@/pages/components/index";
+import LoadDetail from "../components/main/timeline/LoadDetail";
+import { removeDuplicatesUtility } from "@/pages/utility/index";
 import { ViewContext } from "@/pages/_app";
-import * as NewsType from "@/types/index";
-import type { ArticleType } from "@/types/index";
+import * as NewsType from "@/pages/types/index";
+import type { ArticleType } from "@/pages/types/index";
 
-import { useNews } from "@/hooks/UseNews";
+import { useNews } from "@/pages/hooks/UseNews";
 import ShowStyles from "./ShowStyles.module.css";
 
 interface ViewContextProps {

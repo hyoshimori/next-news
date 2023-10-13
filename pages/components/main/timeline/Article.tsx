@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 import { useRouter } from 'next/router';
 
-import { ArticleStyles, Footer, LoadDetail, LoadDetailStyles, LoadingSpinner, Trending } from "@/components/index";
-import { removeDuplicatesUtility } from "@/utility/index";
-import { useNews } from "@/hooks/UseNews";
+import { ArticleStyles, Footer, LoadDetail, LoadDetailStyles, LoadingSpinner, Trending } from "@/pages/components/index";
+import { removeDuplicatesUtility } from "@/pages/utility/index";
+import { useNews } from "@/pages/hooks/UseNews";
 import { ViewContext } from "@/pages/_app";
-import * as NewsType from "@/types/index";
-import type { ArticleType } from "@/types/index";
+import * as NewsType from "@/pages/types/index";
+import type { ArticleType } from "@/pages/types/index";
 
 interface ViewContextProps {
   articleValues: ArticleType["articleValues"];

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import NewsTimeLine from "@/components/main/timeline/NewsTimeLine";
+import NewsTimeLine from "@/pages/components/main/timeline/NewsTimeLine";
 import "normalize.css";
 
 import { ViewContext } from "./_app";

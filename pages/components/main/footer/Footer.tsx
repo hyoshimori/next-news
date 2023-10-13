@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 
-import { FooterStyles } from "@/components/index";
+import { FooterStyles } from "@/pages/components/index";
 
 import { ViewContext } from "@/pages/_app";
-import type { ArticleType } from "@/types/index";
+import type { ArticleType } from "@/pages/types/index";
 
 interface ViewContextProps {
   articleValues: ArticleType["footerValues"];

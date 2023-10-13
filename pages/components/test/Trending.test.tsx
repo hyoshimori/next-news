@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import { Trending } from "@/components/index";
+import { Trending } from "@/pages/components/index";
 
 describe("Trending component", () => {
   it("Renders Trending compnent", () => {

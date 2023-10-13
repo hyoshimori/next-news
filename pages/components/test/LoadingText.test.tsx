@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import LoadDetail from "@/components/main/timeline/LoadDetail";
+import LoadDetail from "@/pages/components/main/timeline/LoadDetail";
 
 describe("<LoadDetail />", () => {
     const mockArticleStyles = {

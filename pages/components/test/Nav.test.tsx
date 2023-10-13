@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Nav } from "@/components/index";
+import { Nav } from "@/pages/components/index";
 import { render, fireEvent } from "@testing-library/react";
 
 jest.mock("next/router");

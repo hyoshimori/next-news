@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import type { ArticleType } from "@/types/index";
+import type { ArticleType } from "@/pages/types/index";
 
-import { LoadDetailStyles } from "@/components/index";
+import { LoadDetailStyles } from "@/pages/components/index";
 import { ViewContext } from "@/pages/_app";
 
 interface ViewContextProps {
