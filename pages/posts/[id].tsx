@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Link from 'next/link';
+import Error from 'next/error';
 
-import { ArticleStyles, Footer, LoadingSpinner, LoadDetailStyles } from "@/pages/components/index";
+import { ArticleStyles, Error404, Footer, LoadDetailStyles, LoadingSpinner } from "@/pages/components/index";
 import LoadDetail from "../components/main/timeline/LoadDetail";
 import { removeDuplicatesUtility } from "@/pages/utility/index";
 import { ViewContext } from "@/pages/_app";
@@ -34,6 +35,7 @@ export default function Id() {
     const [serializedNews, setSerializedNews] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
     const [errorChecker, setErrorChecker] = useState(false);
+    const [renderStopper, setRenderStopper] = useState(0);
 
     // get id from router
     const postId = router.query.id as string;
@@ -61,8 +63,12 @@ export default function Id() {
                     console.log('Reloading due to timeout');
                     window.location.reload();
                 }
-            }, 1000);
+                setRenderStopper(renderStopper + 1);
+            }, 10000);
 
+            if (renderStopper >= 5 && !matchedPost) {
+                clearInterval(intervalId);
+            }
 
             if (!articleValues) {
                 console.error("articleValues is undefined");
@@ -70,6 +76,7 @@ export default function Id() {
                 return;
             }
 
+            if (renderStopper >= 5 && !matchedPost) { return }
             axios.get(articleValues.apiUrl, { timeout: 10000 })
                 .then((res) => {
                     clearInterval(intervalId);
@@ -78,6 +85,8 @@ export default function Id() {
                     setSerializedNews(serializedData);
                     setNews(uniqueNews);
                     setLoading(false);
+                    setRenderStopper(renderStopper + 1);
+                    console.log("uniqueNews:", uniqueNews);
                 })
                 .catch((error) => {
                     console.log("Error message:", error.message);
@@ -97,6 +106,10 @@ export default function Id() {
                 </div>
             </div>
         );
+    }
+
+    if (!matchedPost) {
+        return <Error404 statusCode={404} />;
     }
 
     return (

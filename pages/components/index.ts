@@ -8,6 +8,7 @@ export { default as Trending } from "@/pages/components/main/nav/Trending";
 export { default as Nav } from "@/pages/components/main/nav/Trending";
 export { default as NewsTimeLine } from "@/pages/components/main/timeline/NewsTimeLine";
 export { default as LoadDetail } from "@/pages/components/main/timeline/LoadDetail";
+export { default as Error404 } from "@/pages/components/main/others/Error404";
 
 //* Styles //
 export { default as NewsTimeLineStyles } from "@/components/style/NewsTimeLine.module.css";
@@ -19,3 +20,4 @@ export { default as LoadingSpinnerStyles } from "@/components/style/LoadingSpinn
 export { default as ArticleStyles } from "@/components/style/Article.module.css";
 export { default as NavStyles } from "@/components/style/Nav.module.css";
 export { default as LoadDetailStyles } from "@/components/style/LoadDetail.module.css";
+export { default as Error404Styles } from "@/components/style/Error404.module.css";

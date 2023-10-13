@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Link from 'next/link';
 
-import { useRouter } from 'next/router';
-
 import { ArticleStyles, Footer, LoadDetail, LoadDetailStyles, LoadingSpinner, Trending } from "@/pages/components/index";
 import { removeDuplicatesUtility } from "@/pages/utility/index";
 import { useNews } from "@/pages/hooks/UseNews";
