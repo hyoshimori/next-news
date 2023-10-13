@@ -1,7 +1,6 @@
 .base {
   display: flex;
   max-width: 800px;
-  padding-bottom: 40px;
 }
 
 .base_and_footer {
@@ -26,6 +25,7 @@
 .title_and_photo {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .side_body {
